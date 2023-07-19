@@ -3,6 +3,7 @@ import "./FirstTwoWeeks.css";
 import { useState } from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
+import Button from "../UniversalComponents/Button";
 
 function FirstTwoWeeks() {
   const [reflectionPointsCollection, setReflectionPointsCollection] = useState([
@@ -46,6 +47,21 @@ function FirstTwoWeeks() {
       link: "https://hlam-collab.atlassian.net/wiki/spaces/ID/pages/530057952/Village+halls",
     },
     {
+      text: "Quick Start Guide",
+      link: "https://tinyurl.com/mr4c6s6p",
+    },
+  ]);
+
+  const [secondResourcesList, setSecondResourcesList] = useState([
+    {
+      text: "GitLab Access Guide",
+      link: "https://tinyurl.com/y4ebnwsc",
+    },
+    {
+      text: "Coding Standards Miro",
+      link: "https://miro.com/app/board/uXjVPOIesoM=/",
+    },
+    {
       text: "Active Savings Confluence Space",
       link: "https://confluence.hargreaveslansdown.co.uk/display/AS/Active+Savings",
     },
@@ -56,37 +72,6 @@ function FirstTwoWeeks() {
     {
       text: "DSApp Code Layers",
       link: "https://tinyurl.com/5a3db2uu",
-    },
-  ]);
-
-  const [secondResourcesList, setSecondResourcesList] = useState([
-    {
-      text: "Quick Start Guide",
-      link: "https://tinyurl.com/mr4c6s6p",
-    },
-    {
-      text: "GitLab Access Guide",
-      link: "https://tinyurl.com/y4ebnwsc",
-    },
-    {
-      text: "Jenkins",
-      link: "https://jenkins-savings.hargreaveslansdown.co.uk/",
-    },
-    {
-      text: "Coding Standards Miro",
-      link: "https://miro.com/app/board/uXjVPOIesoM=/",
-    },
-    {
-      text: "SonarQube",
-      link: "https://sonarqube.hargreaveslansdown.co.uk/projects",
-    },
-    {
-      text: "Workday",
-      link: "https://wd3.myworkday.com/hargreaveslansdown/",
-    },
-    {
-      text: "Savings Cheat Sheet",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494518362/Savings+Cheat+Sheet",
     },
   ]);
 
@@ -136,8 +121,122 @@ function FirstTwoWeeks() {
   };
 
   return (
-    <div className="FirstTwoWeeks">
-      <h1>FirstTwoWeeks</h1>
+    <div id="week1MainContainer">
+      <div className="basicSetUp">
+        <h3 className="sectionHeader" id="getUpToSpeedHeader">
+          Get up to Speed
+        </h3>
+        <div className="getUpToSpeedTasksList">
+          {getUpToSpeedList.map((task, index) => (
+            <div key={index} className="getUpToSpeedTaskItem">
+              <input type="checkbox" id={`task-${index}`} />
+              <label htmlFor={`task-${index}`}>{task}</label>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="resources">
+        <h3 className="sectionHeader" id="resourcesHeader">
+          Resources
+        </h3>
+        <div className="mainResourceDiv">
+          <div className="resourcesList">
+            {firstResourcesList.map((object) => (
+              <div className="TesterFirstTwoWeeksResourceItem">
+                <a
+                  className="resourceAnchor"
+                  href={object.link}
+                  target="_blank">
+                  {object.text}
+                </a>
+              </div>
+            ))}
+          </div>
+          <div className="secondResourcesList">
+            {secondResourcesList.map((object) => (
+              <div className="TesterFirstTwoWeeksResourceItem">
+                <a
+                  className="resourceAnchor"
+                  href={object.link}
+                  target="_blank">
+                  {object.text}
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="savingsSpecificTasks">
+        <h3 className="sectionHeader" id="savingsSpecificTasksHeader">
+          Savings Specific Tasks
+        </h3>
+        <div className="savingsSpecificTasksList">
+          {savingsSpecificTasksList.map((task, index) => (
+            <div key={index} className="savingsSpecificTaskListItem">
+              <input type="checkbox" id={`task-${index}`} />
+              <label htmlFor={`task-${index}`}>{task}</label>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="ReflectionPoints">
+        <h3 className="sectionHeader" id="reflectionPointsHeader">
+          Reflection Points
+        </h3>
+
+        <div className="addReflectionPointInputDiv">
+          <textarea
+            id="addReflectionPointInputBox"
+            type="text"
+            value={newReflectionPoint}
+            onChange={(e) => setNewReflectionPoint(e.target.value)}
+          />
+        </div>
+
+        <div className="FirstTwoWeeksSubmitReflectionButtonDiv">
+          <button
+            id="FirstTwoWeeksSubmitReflectionButton"
+            onClick={handleAddReflectionPoint}>
+            Sumbit
+          </button>
+        </div>
+      </div>
+
+      <div className="addTask">
+        <h3 className="sectionHeader" id="addTaskHeader">
+          Add Task
+        </h3>
+
+        <div className="addTaskInputDiv">
+          <input
+            id="addTaskInputBox"
+            type="input"
+            value={newTask}
+            onChange={(e) => setNewTask(e.target.value)}
+          />
+        </div>
+
+        <div className="sectionOptions">
+          {sections.map((section, index) => (
+            <div key={index} className="sectionItems">
+              <input
+                type="radio"
+                id={`section-${index}`}
+                name="section"
+                value={section}
+              />
+              <label htmlFor={`section-${index}`}>{section}</label>
+            </div>
+          ))}
+        </div>
+
+        <div className="FirstTwoWeeksAddTaskButtonDiv">
+          <Button label="Add Task" />
+        </div>
+      </div>
     </div>
   );
 }

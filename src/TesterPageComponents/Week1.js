@@ -3,6 +3,7 @@ import "./Week1.css";
 import { useState } from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
+import Button from "../UniversalComponents/Button";
 
 function Week1() {
   const zeusSquatPeopleToMeet = [
@@ -261,9 +262,7 @@ function Week1() {
           ))}
         </div>
         <div className="FirstWeekAddTaskButtonDiv">
-          <button id="FirstWeekAddTaskButton" onClick={handleAddTask}>
-            Add Task
-          </button>
+          <Button label="Add Task" />
         </div>
       </div>
     </div>
