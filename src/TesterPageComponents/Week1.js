@@ -28,6 +28,16 @@ function Week1() {
     "Automates Squad Member 6",
   ];
 
+  const developmentSquad = "Zeus";
+
+  const [chosenArray, setChosenArray] = useState(
+    developmentSquad === "Zeus"
+      ? zeusSquatPeopleToMeet
+      : developmentSquad === "Prosperity"
+      ? prosperitySquatPeopleToMeet
+      : automatesSquadPeopleToMeet
+  );
+
   return (
     <div className="Week1">
       <h1>Week1</h1>
