@@ -1,4 +1,8 @@
 import React from "react";
+import "./FirstTwoWeeks.css";
+import { useState } from "react";
+import { useRef } from "react";
+import { useEffect } from "react";
 
 function FirstTwoWeeks() {
   return (
