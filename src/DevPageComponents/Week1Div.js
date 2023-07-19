@@ -184,7 +184,10 @@ const Week1Div = () => {
           <div className="resourcesList">
             {firstResourcesList.map((object) => (
               <div className="resourceItem">
-                <a className="resourceAnchor" href={object.link}>
+                <a
+                  className="resourceAnchor"
+                  href={object.link}
+                  target="_blank">
                   {object.text}
                 </a>
               </div>
@@ -193,7 +196,10 @@ const Week1Div = () => {
           <div className="secondResourcesList">
             {secondResourcesList.map((object) => (
               <div className="resourceItem">
-                <a className="resourceAnchor" href={object.link}>
+                <a
+                  className="resourceAnchor"
+                  href={object.link}
+                  target="_blank">
                   {object.text}
                 </a>
               </div>
