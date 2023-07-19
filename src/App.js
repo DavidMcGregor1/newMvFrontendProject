@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
-import React, { useState, useEffect, useParams } from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import { FaLaptopCode } from "react-icons/fa";
 import { BsFillClipboardCheckFill } from "react-icons/bs";
 import { IoSettingsSharp } from "react-icons/io5";

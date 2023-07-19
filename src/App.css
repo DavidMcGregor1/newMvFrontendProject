@@ -1,38 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #1c1a5e;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.headerContainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cardColumnsContainer {
+  margin-top: 20px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+
+.cardColumns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.cardContainer {
+  background-color: white;
+  color: black;
+  height: 250px;
+  width: 250px;
+  border-radius: 8px;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cardContainer:hover {
+  background-color: #01DEB2;
+}
+
+#selectHeader {
   color: white;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.icon {
+  color: black;
+  font-size: 90px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#iconContainer {
+  text-align: center;
+}
+
+#roleNameContainer {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 990px) {
+  .cardColumns {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+
+@media only screen and (max-width: 620px) {
+  .cardColumns {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .cardContainer {
+    width: 100%;
   }
 }

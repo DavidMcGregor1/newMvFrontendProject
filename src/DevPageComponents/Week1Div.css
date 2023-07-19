@@ -1,0 +1,211 @@
+p {
+    color: white;
+}
+
+
+#week1MainContainer {
+    width: 70vw;
+    height: 80vh;
+    background-color: white;
+    padding: 1.8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #week2MainContainer {
+    width: 70vw;
+    height: 80vh;
+    background-color: white;
+    padding: 1.8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #week3MainContainer {
+    width: 70vw;
+    height: 80vh;
+    background-color: rgb(126, 14, 14);
+    padding: 1.8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+#mainHeader {
+    text-align: center;
+    color: white;
+}
+
+
+
+/* ---------- BASIC SET UP ---------- */
+
+
+.basicSetUp {
+    height: 37vh;
+    width: 21.5vw;
+    background-color: #3D8DE3;
+    grid-row: 1;
+    grid-column: 1;
+    overflow: auto;
+    border-radius: 20px;
+    padding-left: 1.5%;
+}
+
+.setUpLabel {
+    font-size: 18px;
+}
+
+.basicSetUpTaskItem {
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: 400;
+}
+
+/* ---------- RESOURCES ---------- */
+
+.resources {
+    height: 35vh;
+    width: 45vw;
+    background-color: #3D8DE3;
+    grid-row: 1;
+    grid-column: 2 / 4;
+    border-radius: 20px;
+    padding-left: 1%;
+    overflow: auto;
+    text-align: center;
+  }
+
+.resourceAnchor {
+    color: black;
+}
+
+.resourceItem {
+    margin-top: 2%;
+    padding: 0%;
+    font-size: large;
+    font-weight: 400;
+}
+
+.sectionItems {
+    margin-top: 2%;
+}
+
+.mainResourceDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* ---------- GET COMPLIANT ---------- */
+
+
+.getCompliant {
+    height: 37vh;
+    width: 33.5vw;
+    background-color: #3D8DE3;
+    grid-row: 2;
+    grid-column: 1 / 3;
+    overflow: auto;
+    border-radius: 20px;
+    padding-left: 1.5%;
+}
+
+#getCompliantHeader {
+    padding-bottom: 1%;
+}
+
+.getCompliantTaskItem {
+    margin-bottom: 10px;
+}
+
+.getCompliantTaskItem {
+    padding-top: 1%;
+    font-size: large;
+    font-weight: 400;
+}
+
+/* ---------- PEOPLE TO MEET ---------- */
+
+.peopleToMeet {
+    height: 37vh;
+    width: 13vw;
+    background-color: #3D8DE3;
+    grid-row: 2;
+    grid-column: 2 / 4;
+    text-align: left;
+    margin-left: 30%;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+#peopleToMeetHeader {
+    padding-bottom: 5%;
+}
+
+.peopleToMeetItem {
+    padding-left: 10%;
+    margin-top: 5%;
+    font-size: large;
+    font-weight: 400;
+}
+
+
+/* ---------- Add Task ---------- */
+
+
+.addTask {
+    height: 37vh;
+    width: 13vw;
+    background-color: #154360;
+    color: white;
+    grid-row: 2;
+    grid-column: 3;
+    margin-left: 23%;
+    border-radius: 20px;
+    overflow: auto;
+
+}
+
+
+#addTaskHeader {
+    margin-bottom: 10%;
+}
+
+
+#addTaskInputBox {
+    height: 40px;
+    width: 80%;
+}
+
+.addTaskInputDiv {
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+.addTaskButtonDiv {
+    text-align: center;
+}
+
+#addTaskButton {
+    width: 130px;
+    height: 40px;
+    background-color: #01DEB2;
+    border-radius: 40px;
+}
+
+.sectionOptions {
+    text-align: center;
+    margin-bottom: 4%;
+}
