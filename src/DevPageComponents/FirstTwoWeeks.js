@@ -196,9 +196,9 @@ const FirstTwoWeeks = () => {
         </h3>
 
         <div className="addReflectionPointInputDiv">
-          <input
+          <textarea
             id="addReflectionPointInputBox"
-            type="input"
+            type="text"
             value={newReflectionPoint}
             onChange={(e) => setNewReflectionPoint(e.target.value)}
           />

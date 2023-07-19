@@ -11,22 +11,15 @@ const FirstMonth = () => {
   ] = useState([""]);
 
   const [generalTasks, setGeneralTasks] = useState([
-    "General task 1",
-    "General task 2",
-    "General task 3",
-    "General task 4",
-    "General task 5",
+    "Keep getting involved in group discussions",
+    "Complete a ticket independently",
+    "Fill out reflection points on any areas that could be improved.",
+    "Set up regular catch ups with your manager and buddy",
+    "Have a think about what you want to spend your training budget on",
+    "Attend a social event!",
   ]);
 
   const [firstResourcesList, setFirstResourcelist] = useState([
-    {
-      text: "New Starter Knowledge Base",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/ID/pages/551256793/New+Starter+Knowledge+Base",
-    },
-    {
-      text: "Get Started In Digital",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/ID/pages/564134589/Getting+started+in+Digital",
-    },
     {
       text: "Contextual Org Chart",
       link: "https://miro.com/app/board/uXjVOQHpSz8=/?share_link_id=903609960752",
@@ -51,18 +44,6 @@ const FirstMonth = () => {
 
   const [secondResourcesList, setSecondResourcesList] = useState([
     {
-      text: "Quick Start Guide",
-      link: "https://tinyurl.com/mr4c6s6p",
-    },
-    {
-      text: "GitLab Access Guide",
-      link: "https://tinyurl.com/y4ebnwsc",
-    },
-    {
-      text: "Jenkins",
-      link: "https://jenkins-savings.hargreaveslansdown.co.uk/",
-    },
-    {
       text: "Coding Standards Miro",
       link: "https://miro.com/app/board/uXjVPOIesoM=/",
     },
@@ -71,16 +52,10 @@ const FirstMonth = () => {
       link: "https://sonarqube.hargreaveslansdown.co.uk/sessions/new?return_to=%2Flogin",
     },
     {
-      text: "Workday",
-      link: "https://wd3.myworkday.com/hargreaveslansdown/",
-    },
-    {
       text: "Savings Cheat Sheet",
       link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494518362/Savings+Cheat+Sheet",
     },
   ]);
-
-  const sections = ["General Tasks"];
 
   const [newTask, setNewTask] = React.useState("");
 
@@ -104,12 +79,12 @@ const FirstMonth = () => {
         ...firstMonthReflectionPointsCollection,
       ];
       updatedfirstMonthReflectionPointsCollection.push(newReflectionPoint);
+      console.log(
+        "Reflection Collection:  -> " +
+          updatedfirstMonthReflectionPointsCollection
+      );
       setfirstMonthReflectionPointsCollection(
         updatedfirstMonthReflectionPointsCollection
-      );
-      console.log(
-        "Current Reflection Collection:  -> " +
-          firstMonthReflectionPointsCollection
       );
     }
 
@@ -119,10 +94,10 @@ const FirstMonth = () => {
   return (
     <div id="FirstMonthMainContainer">
       <div className="generalTasks">
-        <h3 className="sectionHeader" id="getUpToSpeedHeader">
-          Get up to Speed
+        <h3 className="sectionHeader" id="generalTasksHeader">
+          General Tasks
         </h3>
-        <div className="getUpToSpeedTasksList">
+        <div className="generalTasksList">
           {generalTasks.map((task, index) => (
             <div key={index} className="generalTasksItem">
               <input type="checkbox" id={`task-${index}`} />
@@ -193,22 +168,8 @@ const FirstMonth = () => {
           />
         </div>
 
-        <div className="sectionOptions">
-          {sections.map((section, index) => (
-            <div key={index} className="sectionItems">
-              <input
-                type="radio"
-                id={`section-${index}`}
-                name="section"
-                value={section}
-              />
-              <label htmlFor={`section-${index}`}>{section}</label>
-            </div>
-          ))}
-        </div>
-
-        <div className="addTaskButtonDiv">
-          <button id="addTaskButton" onClick={handleAddTask}>
+        <div className="FirstMonthAddTaskButtonDiv">
+          <button id="FirstMonthAddTaskButton" onClick={handleAddTask}>
             Add Task
           </button>
         </div>

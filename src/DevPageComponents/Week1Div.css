@@ -16,36 +16,21 @@ p {
     margin-right: auto;
   }
 
-  #week2MainContainer {
-    width: 70vw;
-    height: 80vh;
-    background-color: white;
-    padding: 1.8%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #week3MainContainer {
-    width: 70vw;
-    height: 80vh;
-    background-color: rgb(126, 14, 14);
-    padding: 1.8%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+ 
 
   
 #mainHeader {
     text-align: center;
     color: white;
+}
+
+.FirstWeekSectionHeader {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 
@@ -93,7 +78,7 @@ p {
 }
 
 .resourceItem {
-    margin-top: 2%;
+    margin-top: 3.7%;
     padding: 0%;
     font-size: large;
     font-weight: 400;
@@ -162,6 +147,8 @@ p {
 }
 
 
+
+
 /* ---------- Add Task ---------- */
 
 
@@ -209,3 +196,44 @@ p {
     text-align: center;
     margin-bottom: 4%;
 }
+
+@media only screen and (max-width: 1193px) {
+    .resourceItem {
+        margin-top: 4%;
+        padding: 0%;
+        font-size: large;
+        font-weight: 400;
+    }
+
+    
+    .FirstWeekSectionHeader {
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+  }
+
+  @media only screen and (max-width: 780px) {
+    .resourceItem {
+        margin-top: 2.5%;
+        padding: 0%;
+        font-size: large;
+        font-weight: 400;
+    }
+
+    
+    .FirstWeekSectionHeader {
+        text-align: center;
+        font-weight: 700;
+        font-size: 22px;
+        margin: 0%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    
+    }
+  }
+

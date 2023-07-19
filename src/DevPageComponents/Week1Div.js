@@ -44,6 +44,7 @@ const Week1Div = () => {
 
   const [basicSetUpTasks, setBasicSetUpTasks] = useState([
     "Check access to systems",
+    "Go through the Development Setup guide",
     "Check permissions are set up correctly within core systems - you're in the right channels, meetings, able to access spaces etc",
     "Download any required software - you can do this either via the Software center (Windows 10) or Company Portal (Windows11)",
     "(Contractors and Consultants only) Agree lines of communication / points of escalation from your manager / sponsor. If you are an MVP laptop user only (so no ServiceNow) agree who will work as the admin to raise issues on your behalf",
@@ -75,20 +76,16 @@ const Week1Div = () => {
       link: "https://tinyurl.com/bdh8wntf",
     },
     {
-      text: "Introduction and Useful Info",
-      link: "https://tinyurl.com/3m292v48",
-    },
-    {
-      text: "Development Setup Guide",
-      link: "https://tinyurl.com/mr4c6s6p",
-    },
-    {
-      text: "Overview of Active Savings Architecture",
+      text: "Overview of Savings Architecture",
       link: "https://tinyurl.com/2c8xw43j",
     },
     {
-      text: "DSApp Code Layers",
-      link: "https://tinyurl.com/5a3db2uu",
+      text: "Workday",
+      link: "https://wd3.myworkday.com/hargreaveslansdown/",
+    },
+    {
+      text: "Jenkins",
+      link: "https://jenkins-savings.hargreaveslansdown.co.uk/",
     },
   ]);
 
@@ -98,28 +95,25 @@ const Week1Div = () => {
       link: "https://tinyurl.com/mr4c6s6p",
     },
     {
+      text: "Development Setup Guide",
+      link: "https://tinyurl.com/mr4c6s6p",
+    },
+    {
       text: "GitLab Access Guide",
       link: "https://tinyurl.com/y4ebnwsc",
     },
     {
-      text: "Jenkins",
-      link: "https://jenkins-savings.hargreaveslansdown.co.uk/",
+      text: "Introduction and Useful Info",
+      link: "https://tinyurl.com/3m292v48",
     },
-    {
-      text: "Coding Standards Miro",
-      link: "https://miro.com/app/board/uXjVPOIesoM=/",
-    },
-    {
-      text: "SonarQube",
-      link: "https://sonarqube.hargreaveslansdown.co.uk/sessions/new?return_to=%2Flogin",
-    },
-    {
-      text: "Workday",
-      link: "https://wd3.myworkday.com/hargreaveslansdown/",
-    },
+
     {
       text: "Savings Cheat Sheet",
       link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494518362/Savings+Cheat+Sheet",
+    },
+    {
+      text: "All about the code",
+      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494503134/All+about+the+code",
     },
   ]);
 
@@ -170,7 +164,7 @@ const Week1Div = () => {
   return (
     <div id="week1MainContainer">
       <div className="basicSetUp">
-        <h3 className="sectionHeader" id="basicSetUpHeader">
+        <h3 className="FirstWeekSectionHeader" id="basicSetUpHeader">
           Basic Set up
         </h3>
         <div className="basicSetUpTaskList">
@@ -183,7 +177,7 @@ const Week1Div = () => {
         </div>
       </div>
       <div className="resources">
-        <h3 className="sectionHeader" id="resourcesHeader">
+        <h3 className="FirstWeekSectionHeader" id="resourcesHeader">
           Resources
         </h3>
         <div className="mainResourceDiv">
@@ -208,7 +202,7 @@ const Week1Div = () => {
         </div>
       </div>
       <div className="getCompliant">
-        <h3 className="sectionHeader" id="getCompliantHeader">
+        <h3 className="FirstWeekSectionHeader" id="getCompliantHeader">
           Get Compliant
         </h3>
         <div className="getCompliantTaskList">
@@ -221,7 +215,7 @@ const Week1Div = () => {
         </div>
       </div>
       <div className="peopleToMeet">
-        <h3 className="sectionHeader" id="peopleToMeetHeader">
+        <h3 className="FirstWeekSectionHeader" id="peopleToMeetHeader">
           People to meet
         </h3>
         <div className="peopleToMeetList">
@@ -234,7 +228,7 @@ const Week1Div = () => {
         </div>
       </div>
       <div className="addTask">
-        <h3 className="sectionHeader" id="addTaskHeader">
+        <h3 className="FirstWeekSectionHeader" id="addTaskHeader">
           Add Task
         </h3>
         <div className="addTaskInputDiv">

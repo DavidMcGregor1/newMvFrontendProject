@@ -101,13 +101,13 @@
     margin-bottom: 7%;
 }
 
-.addTaskButtonDiv {
+.FirstMonthAddTaskButtonDiv {
     text-align: center;
 }
 
-#addTaskButton {
-    width: 130px;
-    height: 40px;
+#FirstMonthAddTaskButton {
+    width: 140px;
+    height: 50px;
     background-color: #01DEB2;
     border-radius: 40px;
 }
@@ -117,10 +117,13 @@
     margin-bottom: 4%;
 }
 
-/* ---------- GET UP TO SPEED ---------- */
+/* ---------- GENERAL TASKS ---------- */
 
+#generalTasksHeader {
+    padding-bottom: 2%;
+}
 
-.getUpToSpeedTaskItem {
+.generalTasksItem {
     padding-bottom: 2%;
     line-height: 1.5;
     font-size: large;
