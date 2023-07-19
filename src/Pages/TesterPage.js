@@ -38,6 +38,20 @@ function TesterPage() {
     setActiveDiv(`div${nextIndex + 1}`);
   };
 
+  const goBackward = () => {
+    const currentDiv = divRefs.current.find(
+      (ref) => ref.style.display !== "none"
+    );
+    const currentIndex = divRefs.current.indexOf(currentDiv);
+    const previousIndex =
+      currentIndex === 0 ? divRefs.current.length - 1 : currentIndex - 1;
+
+    currentDiv.style.display = "none";
+    divRefs.current[previousIndex].style.display = "block";
+
+    setActiveDiv(`div${previousIndex + 1}`);
+  };
+
   return (
     <div className="TesterPage">
       <h1 id="mainHeaderTester">Tester Page</h1>
