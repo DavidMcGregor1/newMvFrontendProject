@@ -42,24 +42,24 @@ function Week1() {
       : automatesSquadPeopleToMeet
   );
 
-  const [firstTesterTasksSection, setFirstTesterTasksSection] = useState([
-    "tester task here",
-    "tester task here",
-    "tester task here",
-    "tester task here",
-    "tester task here",
-    "tester task here",
+  const [testerBasicSetUp, setTesterBasicSetUp] = useState([
+    "Check access to systems",
+    "Go through the New Tester Guide",
+    "Go throught the Quick Start Guide",
+    "Check permissions are set up correctly within core systems - you're in the right channels, meetings, able to access spaces etc",
+    "Download any required software - you can do this either via the Software center (Windows 10) or Company Portal (Windows11)",
+    "(Contractors and Consultants only) Agree lines of communication / points of escalation from your manager / sponsor. If you are an MVP laptop user only (so no ServiceNow) agree who will work as the admin to raise issues on your behalf",
     "tester task here",
   ]);
 
-  const [secondTesterTasksSection, setSecondTesterTasksSection] = useState([
-    "tester task here",
-    "tester task here",
-    "tester task here",
-    "tester task here",
-    "tester task here",
-    "tester task here",
-    "tester task here",
+  const [testerGetCompliant, setTesterGetCompliant] = useState([
+    "(Perm and Contractors) Workday Learning modules",
+    "(Perm and Contractors) Attend Essentials induction (including Infosec training) - running at 14:30 on your first day",
+    "(All personas) Review policies in meta-compliance",
+    "Complete personal details in Workday - Found in your inbox",
+    "Complete emergency contacts in Workday - Found in your inbox",
+    "Complete pay details in Workday - found in pay > payment elections",
+    "Complete payroll form (sent via email) and send to (replace with real email)",
   ]);
 
   const [firstTesterResoucesList, setFirstTesterResoucesList] = useState([
@@ -72,10 +72,6 @@ function Week1() {
       link: "https://tinyurl.com/bdh8wntf",
     },
     {
-      text: "Software install request",
-      link: "https://tinyurl.com/bdh8wntf",
-    },
-    {
       text: "Overview of Savings Architecture",
       link: "https://tinyurl.com/2c8xw43j",
     },
@@ -86,41 +82,42 @@ function Week1() {
     {
       text: "Jenkins",
       link: "https://jenkins-savings.hargreaveslansdown.co.uk/",
+    },
+    {
+      text: "Sonar Qube",
+      link: "https://sonarqube.hargreaveslansdown.co.uk/projects",
     },
   ]);
 
   const [secondTesterResoucesList, setSecondTesterResoucesList] = useState([
     {
-      text: "Active Savings Confluence Page",
-      link: "https://tinyurl.com/bdebdtfv",
+      text: "New Tester Guide",
+      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494511028/New+QA+Tester",
     },
     {
-      text: "Software to install",
-      link: "https://tinyurl.com/bdh8wntf",
+      text: "Quick Start Guide",
+      link: "https://tinyurl.com/mr4c6s6p",
+    },
+
+    {
+      text: "GitLab Access Guide",
+      link: "https://tinyurl.com/y4ebnwsc",
     },
     {
-      text: "Software install request",
-      link: "https://tinyurl.com/bdh8wntf",
+      text: "Introduction and Useful Info",
+      link: "https://tinyurl.com/3m292v48",
     },
     {
-      text: "Overview of Savings Architecture",
-      link: "https://tinyurl.com/2c8xw43j",
+      text: "Savings Cheat Sheet",
+      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494518362/Savings+Cheat+Sheet",
     },
     {
-      text: "Workday",
-      link: "https://wd3.myworkday.com/hargreaveslansdown/",
-    },
-    {
-      text: "Jenkins",
-      link: "https://jenkins-savings.hargreaveslansdown.co.uk/",
+      text: "All about the code",
+      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494503134/All+about+the+code",
     },
   ]);
 
-  const sections = [
-    "First Tester Tasks",
-    "Second Tester Tasks",
-    "People to meet",
-  ];
+  const sections = ["Basic Setup", "Get Compliant", "People to meet"];
 
   const [newTask, setNewTask] = React.useState("");
 
@@ -130,19 +127,19 @@ function Week1() {
     ).value;
 
     if (newTask.trim() !== "") {
-      let updatedFirstTesterTasks = [...firstTesterTasksSection];
-      let updatedSecondTesterTasks = [...secondTesterTasksSection];
+      let updatedtesterBasicSetUp = [...testerBasicSetUp];
+      let updatedTesterGetCompliant = [...testerGetCompliant];
       let updatedPeopleToMeet = [...chosenArray];
 
       switch (selectedSection) {
-        case "First Tester Tasks":
-          updatedFirstTesterTasks.push(newTask);
-          setFirstTesterTasksSection(updatedFirstTesterTasks);
+        case "Basic Setup":
+          updatedtesterBasicSetUp.push(newTask);
+          setTesterBasicSetUp(updatedtesterBasicSetUp);
           break;
-        case "Second Tester Tasks":
+        case "Get Compliant":
           console.log("Hit second tester tasks");
-          updatedSecondTesterTasks.push(newTask);
-          setSecondTesterTasksSection(updatedSecondTesterTasks);
+          updatedTesterGetCompliant.push(newTask);
+          setTesterGetCompliant(updatedTesterGetCompliant);
           break;
         case "People to meet":
           updatedPeopleToMeet.push(newTask);
@@ -170,11 +167,11 @@ function Week1() {
     <div id="week1MainContainer">
       <div className="basicSetUp">
         <h3 className="FirstWeekSectionHeader" id="basicSetUpHeader">
-          Tester First Section
+          Basic Setup
         </h3>
         <div className="basicSetUpTaskList">
-          {firstTesterTasksSection.map((task, index) => (
-            <div key={index} className="firstTesterTasksSectionItem">
+          {testerBasicSetUp.map((task, index) => (
+            <div key={index} className="testerBasicSetUpItem">
               <input type="checkbox" id={`task-${index}`} />
               <label htmlFor={`task-${index}`}>{task}</label>
             </div>
@@ -214,11 +211,11 @@ function Week1() {
       </div>
       <div className="getCompliant">
         <h3 className="FirstWeekSectionHeader" id="getCompliantHeader">
-          Tester Second Section
+          Get Compliant
         </h3>
         <div className="getCompliantTaskList">
-          {secondTesterTasksSection.map((task, index) => (
-            <div key={index} className="firstTesterTasksSectionItem">
+          {testerGetCompliant.map((task, index) => (
+            <div key={index} className="testerGetCompliantItem">
               <input type="checkbox" id={`task-${index}`}></input>
               <label htmlFor={`task-${index}`}>{task}</label>
             </div>

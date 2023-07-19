@@ -78,7 +78,7 @@ const FirstTwoWeeks = () => {
     },
     {
       text: "SonarQube",
-      link: "https://sonarqube.hargreaveslansdown.co.uk/sessions/new?return_to=%2Flogin",
+      link: "https://sonarqube.hargreaveslansdown.co.uk/projects",
     },
     {
       text: "Workday",

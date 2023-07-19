@@ -66,10 +66,6 @@ const Week1Div = () => {
       link: "https://tinyurl.com/bdebdtfv",
     },
     {
-      text: "Software to install",
-      link: "https://tinyurl.com/bdh8wntf",
-    },
-    {
       text: "Software install request",
       link: "https://tinyurl.com/bdh8wntf",
     },
@@ -115,7 +111,7 @@ const Week1Div = () => {
     },
   ]);
 
-  const sections = ["Basic Set Up", "Get Compliant", , "People to meet"];
+  const sections = ["Basic Set Up", "Get Compliant", "People to meet"];
   const [newTask, setNewTask] = React.useState("");
 
   const handleAddTask = () => {
