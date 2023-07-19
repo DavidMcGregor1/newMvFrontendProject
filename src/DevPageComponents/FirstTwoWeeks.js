@@ -210,8 +210,10 @@ const FirstTwoWeeks = () => {
           />
         </div>
 
-        <div className="addTaskButtonDiv">
-          <button id="addTaskButton" onClick={handleAddReflectionPoint}>
+        <div className="FirstTwoWeeksSubmitReflectionButtonDiv">
+          <button
+            id="FirstTwoWeeksSubmitReflectionButton"
+            onClick={handleAddReflectionPoint}>
             Sumbit
           </button>
         </div>
@@ -245,8 +247,8 @@ const FirstTwoWeeks = () => {
           ))}
         </div>
 
-        <div className="addTaskButtonDiv">
-          <button id="addTaskButton" onClick={handleAddTask}>
+        <div className="FirstTwoWeeksAddTaskButtonDiv">
+          <button id="FirstTwoWeeksAddTaskButton" onClick={handleAddTask}>
             Add Task
           </button>
         </div>

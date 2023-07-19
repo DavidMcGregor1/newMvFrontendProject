@@ -153,8 +153,10 @@ const FirstMonth = () => {
           />
         </div>
 
-        <div className="addTaskButtonDiv">
-          <button id="addTaskButton" onClick={handleAddReflectionPoint}>
+        <div className="FirstMonthSubmitReflectionButtonDiv">
+          <button
+            id="FirstMonthSubmitReflectionButton"
+            onClick={handleAddReflectionPoint}>
             Sumbit
           </button>
         </div>

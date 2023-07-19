@@ -1,3 +1,4 @@
+/* ---------- MAIN ---------- */
 
 
 .sectionHeader {
@@ -39,9 +40,17 @@
     border-radius: 20px;
     padding-left: 1.5%;
 }
+/* ---------- RESOURCES ---------- */
+
+
+.FirstTwoWeeksResourceItem {
+    margin-top: 3%;
+    padding: 0%;
+    font-size: large;
+    font-weight: 400;
+}
 
 /* ---------- REFLECTION POINTS ---------- */
-
 
 .ReflectionPoints {
     height: 37vh;
@@ -60,9 +69,18 @@
     color: white;
 }
 
+#addReflectionPointInputBox {
+    height: 100px;
+    width: 80%;
+}
+
+.addReflectionPointInputDiv {
+    text-align: center;
+    margin-bottom: 7%;
+}
+
 
 /* ---------- Add Task ---------- */
-
 
 .addTask {
     height: 37vh;
@@ -74,14 +92,11 @@
     margin-left: 23%;
     border-radius: 20px;
     overflow: auto;
-
 }
-
 
 #addTaskHeader {
     margin-bottom: 10%;
 }
-
 
 #addTaskInputBox {
     height: 40px;
@@ -93,15 +108,28 @@
     margin-bottom: 7%;
 }
 
-.addTaskButtonDiv {
+.FirstTwoWeeksAddTaskButtonDiv {
     text-align: center;
 }
 
-#addTaskButton {
+#FirstTwoWeeksAddTaskButton {
     width: 130px;
     height: 40px;
     background-color: #01DEB2;
     border-radius: 40px;
+    border: #02b893 solid 2px;
+}
+
+.FirstTwoWeeksSubmitReflectionButtonDiv {
+    text-align: center;
+}
+
+#FirstTwoWeeksSubmitReflectionButton {
+    width: 130px;
+    height: 40px;
+    background-color: #01DEB2;
+    border-radius: 40px;
+    border: #02b893 solid 2px;
 }
 
 .sectionOptions {
@@ -121,23 +149,3 @@
 
 
 
-#addReflectionPointInputBox {
-    height: 100px;
-    width: 80%;
-}
-
-.addReflectionPointInputDiv {
-    text-align: center;
-    margin-bottom: 7%;
-}
-
-
-
-
-
-.FirstTwoWeeksResourceItem {
-    margin-top: 3%;
-    padding: 0%;
-    font-size: large;
-    font-weight: 400;
-}

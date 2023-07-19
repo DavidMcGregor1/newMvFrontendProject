@@ -1,7 +1,9 @@
+/* ---------- MAIN ---------- */
+
+
 p {
     color: white;
 }
-
 
 #week1MainContainer {
     width: 70vw;
@@ -16,9 +18,6 @@ p {
     margin-right: auto;
   }
 
- 
-
-  
 #mainHeader {
     text-align: center;
     color: white;
@@ -33,10 +32,7 @@ p {
     margin-bottom: 1%;
 }
 
-
-
 /* ---------- BASIC SET UP ---------- */
-
 
 .basicSetUp {
     height: 37vh;
@@ -95,7 +91,6 @@ p {
 
 /* ---------- GET COMPLIANT ---------- */
 
-
 .getCompliant {
     height: 37vh;
     width: 33.5vw;
@@ -146,11 +141,7 @@ p {
     font-weight: 400;
 }
 
-
-
-
 /* ---------- Add Task ---------- */
-
 
 .addTask {
     height: 37vh;
@@ -162,14 +153,11 @@ p {
     margin-left: 23%;
     border-radius: 20px;
     overflow: auto;
-
 }
-
 
 #addTaskHeader {
     margin-bottom: 10%;
 }
-
 
 #addTaskInputBox {
     height: 40px;
@@ -181,21 +169,25 @@ p {
     margin-bottom: 7%;
 }
 
-.addTaskButtonDiv {
+.FirstWeekAddTaskButtonDiv {
     text-align: center;
 }
 
-#addTaskButton {
+#FirstWeekAddTaskButton {
     width: 130px;
     height: 40px;
     background-color: #01DEB2;
     border-radius: 40px;
+    border: #02b893 solid 2px;
 }
 
 .sectionOptions {
     text-align: center;
     margin-bottom: 4%;
 }
+
+/* ---------- MEDIA QUERIES ---------- */
+
 
 @media only screen and (max-width: 1193px) {
     .resourceItem {
@@ -204,8 +196,6 @@ p {
         font-size: large;
         font-weight: 400;
     }
-
-    
     .FirstWeekSectionHeader {
     text-align: center;
     font-weight: 700;
@@ -213,7 +203,6 @@ p {
     margin: 0%;
     margin-top: 1%;
     margin-bottom: 1%;
-
 }
   }
 
@@ -224,8 +213,6 @@ p {
         font-size: large;
         font-weight: 400;
     }
-
-    
     .FirstWeekSectionHeader {
         text-align: center;
         font-weight: 700;
@@ -233,7 +220,6 @@ p {
         margin: 0%;
         margin-top: 1%;
         margin-bottom: 1%;
-    
     }
   }
 

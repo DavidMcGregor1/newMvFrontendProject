@@ -258,8 +258,8 @@ const Week1Div = () => {
             </div>
           ))}
         </div>
-        <div className="addTaskButtonDiv">
-          <button id="addTaskButton" onClick={handleAddTask}>
+        <div className="FirstWeekAddTaskButtonDiv">
+          <button id="FirstWeekAddTaskButton" onClick={handleAddTask}>
             Add Task
           </button>
         </div>
