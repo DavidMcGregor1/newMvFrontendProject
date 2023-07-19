@@ -92,6 +92,33 @@ function FirstTwoWeeks() {
 
   const sections = ["Get Up To Speed", "Savings Specific Tasks"];
 
+  const [newTask, setNewTask] = React.useState("");
+
+  const handleAddTask = () => {
+    const selectedSection = document.querySelector(
+      'input[name="section"]:checked'
+    ).value;
+
+    if (newTask.trim() !== "") {
+      console.log("Inside if statement");
+      let updatedGetUpToSpeedList = [...getUpToSpeedList];
+      let updatedSavingsSpecificTaskList = [...savingsSpecificTasksList];
+
+      if (selectedSection === "Get Up To Speed") {
+        console.log("Selected get up to speed");
+        updatedGetUpToSpeedList.push(newTask);
+        setGetUpToSpeedList(updatedGetUpToSpeedList);
+      } else if (selectedSection === "Savings Specific Tasks") {
+        console.log("Selected savings specific tasks");
+        updatedSavingsSpecificTaskList.push(newTask);
+        setSavingsSpecificTasksList(updatedGetUpToSpeedList);
+      }
+    }
+
+    setNewTask("");
+    console.log("Working");
+  };
+
   return (
     <div className="FirstTwoWeeks">
       <h1>FirstTwoWeeks</h1>
