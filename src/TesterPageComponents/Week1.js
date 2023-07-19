@@ -1,4 +1,8 @@
 import React from "react";
+import "./Week1.css";
+import { useState } from "react";
+import { useRef } from "react";
+import { useEffect } from "react";
 
 function Week1() {
   const zeusSquatPeopleToMeet = [
@@ -37,6 +41,80 @@ function Week1() {
       ? prosperitySquatPeopleToMeet
       : automatesSquadPeopleToMeet
   );
+
+  const [firstTesterTasksSection, setFirstTesterTasksSection] = useState([
+    "tester task here",
+    "tester task here",
+    "tester task here",
+    "tester task here",
+    "tester task here",
+    "tester task here",
+    "tester task here",
+  ]);
+
+  const [secondTesterTasksSection, setSecondTesterTasksSection] = useState([
+    "tester task here",
+    "tester task here",
+    "tester task here",
+    "tester task here",
+    "tester task here",
+    "tester task here",
+    "tester task here",
+  ]);
+
+  const [firstTesterResoucesList, setFirstTesterResoucesList] = useState([
+    {
+      text: "Active Savings Confluence Page",
+      link: "https://tinyurl.com/bdebdtfv",
+    },
+    {
+      text: "Software to install",
+      link: "https://tinyurl.com/bdh8wntf",
+    },
+    {
+      text: "Software install request",
+      link: "https://tinyurl.com/bdh8wntf",
+    },
+    {
+      text: "Overview of Savings Architecture",
+      link: "https://tinyurl.com/2c8xw43j",
+    },
+    {
+      text: "Workday",
+      link: "https://wd3.myworkday.com/hargreaveslansdown/",
+    },
+    {
+      text: "Jenkins",
+      link: "https://jenkins-savings.hargreaveslansdown.co.uk/",
+    },
+  ]);
+
+  const [secondTesterResoucesList, setSecondTesterResoucesList] = useState([
+    {
+      text: "Active Savings Confluence Page",
+      link: "https://tinyurl.com/bdebdtfv",
+    },
+    {
+      text: "Software to install",
+      link: "https://tinyurl.com/bdh8wntf",
+    },
+    {
+      text: "Software install request",
+      link: "https://tinyurl.com/bdh8wntf",
+    },
+    {
+      text: "Overview of Savings Architecture",
+      link: "https://tinyurl.com/2c8xw43j",
+    },
+    {
+      text: "Workday",
+      link: "https://wd3.myworkday.com/hargreaveslansdown/",
+    },
+    {
+      text: "Jenkins",
+      link: "https://jenkins-savings.hargreaveslansdown.co.uk/",
+    },
+  ]);
 
   return (
     <div className="Week1">
