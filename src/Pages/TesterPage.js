@@ -22,6 +22,22 @@ function TesterPage() {
     }
   }, [activeDiv]);
 
+  const goForward = () => {
+    const currentDiv = divRefs.current.find(
+      (ref) => ref.style.display !== "none"
+    );
+    const currentIndex = divRefs.current.indexOf(currentDiv);
+    const nextIndex = (currentIndex + 1) % divRefs.current.length;
+
+    console.log("CurrentIndex  ->  " + currentIndex);
+    console.log("nextIndex  ->  " + nextIndex);
+
+    currentDiv.style.display = "none";
+    divRefs.current[nextIndex].style.display = "block";
+
+    setActiveDiv(`div${nextIndex + 1}`);
+  };
+
   return (
     <div className="TesterPage">
       <h1 id="mainHeaderTester">Tester Page</h1>
