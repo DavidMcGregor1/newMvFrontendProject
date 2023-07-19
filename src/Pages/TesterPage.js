@@ -53,8 +53,42 @@ function TesterPage() {
   };
 
   return (
-    <div className="TesterPage">
-      <h1 id="mainHeaderTester">Tester Page</h1>
+    <div className="mainDiv">
+      <h1 id="mainHeaderTester">Week 1</h1>
+
+      <div className="flexDiv">
+        <div className="arrowDivColumn">
+          <div className="leftArrowContainer">
+            <p className="arrow" onClick={goBackward}>
+              &lt;
+            </p>
+          </div>
+        </div>
+
+        <div ref={(el) => (divRefs.current[0] = el)}>
+          <Week1Div />
+        </div>
+
+        <div
+          ref={(el) => (divRefs.current[1] = el)}
+          style={{ display: "none" }}>
+          <FirstTwoWeeks />
+        </div>
+
+        <div
+          ref={(el) => (divRefs.current[2] = el)}
+          style={{ display: "none" }}>
+          <FirstMonth />
+        </div>
+
+        <div className="arrowDivColumnR">
+          <div className="rightArrowContainer">
+            <p className="arrow" onClick={goForward}>
+              &gt;
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
