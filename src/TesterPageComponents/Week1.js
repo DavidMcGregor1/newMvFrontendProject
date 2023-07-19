@@ -116,9 +116,159 @@ function Week1() {
     },
   ]);
 
+  const sections = [
+    "First Tester Tasks",
+    "Second Tester Tasks",
+    "People to meet",
+  ];
+
+  const [newTask, setNewTask] = React.useState("");
+
+  const handleAddTask = () => {
+    const selectedSection = document.querySelector(
+      'input[name="section"]:checked'
+    ).value;
+
+    if (newTask.trim() !== "") {
+      let updatedFirstTesterTasks = [...firstTesterTasksSection];
+      let updatedSecondTesterTasks = [...secondTesterTasksSection];
+      let updatedPeopleToMeet = [...chosenArray];
+
+      switch (selectedSection) {
+        case "First Tester Tasks":
+          updatedFirstTesterTasks.push(newTask);
+          setFirstTesterTasksSection(updatedFirstTesterTasks);
+          break;
+        case "Second Tester Tasks":
+          console.log("Hit second tester tasks");
+          updatedSecondTesterTasks.push(newTask);
+          setSecondTesterTasksSection(updatedSecondTesterTasks);
+          break;
+        case "People to meet":
+          updatedPeopleToMeet.push(newTask);
+          setChosenArray(updatedPeopleToMeet);
+        default:
+          break;
+      }
+
+      setNewTask("");
+
+      switch (selectedSection) {
+        case "People to meet":
+          console.log("inside case People to meet");
+          console.log("Current value of chsoe array => " + chosenArray);
+          chosenArray.push(newTask);
+          console.log("Current value of chsoe array => " + chosenArray);
+          break;
+        default:
+          break;
+      }
+    }
+  };
+
   return (
-    <div className="Week1">
-      <h1>Week1</h1>
+    <div id="week1MainContainer">
+      <div className="basicSetUp">
+        <h3 className="FirstWeekSectionHeader" id="basicSetUpHeader">
+          Tester First Section
+        </h3>
+        <div className="basicSetUpTaskList">
+          {firstTesterTasksSection.map((task, index) => (
+            <div key={index} className="firstTesterTasksSectionItem">
+              <input type="checkbox" id={`task-${index}`} />
+              <label htmlFor={`task-${index}`}>{task}</label>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="resources">
+        <h3 className="FirstWeekSectionHeader" id="resourcesHeader">
+          Resources
+        </h3>
+        <div className="mainResourceDiv">
+          <div className="resourcesList">
+            {firstTesterResoucesList.map((object) => (
+              <div className="resourceItem">
+                <a
+                  className="resourceAnchor"
+                  href={object.link}
+                  target="_blank">
+                  {object.text}
+                </a>
+              </div>
+            ))}
+          </div>
+          <div className="secondResourcesList">
+            {secondTesterResoucesList.map((object) => (
+              <div className="resourceItem">
+                <a
+                  className="resourceAnchor"
+                  href={object.link}
+                  target="_blank">
+                  {object.text}
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="getCompliant">
+        <h3 className="FirstWeekSectionHeader" id="getCompliantHeader">
+          Tester Second Section
+        </h3>
+        <div className="getCompliantTaskList">
+          {secondTesterTasksSection.map((task, index) => (
+            <div key={index} className="firstTesterTasksSectionItem">
+              <input type="checkbox" id={`task-${index}`}></input>
+              <label htmlFor={`task-${index}`}>{task}</label>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="peopleToMeet">
+        <h3 className="FirstWeekSectionHeader" id="peopleToMeetHeader">
+          People to meet
+        </h3>
+        <div className="peopleToMeetList">
+          {chosenArray.map((task, index) => (
+            <div key={index} className="peopleToMeetItem">
+              <input type="checkbox" id={`task-${index}`}></input>
+              <label htmlFor={`task-${index}`}>{task}</label>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="addTask">
+        <h3 className="FirstWeekSectionHeader" id="addTaskHeader">
+          Add Task
+        </h3>
+        <div className="addTaskInputDiv">
+          <input
+            id="addTaskInputBox"
+            type="input"
+            value={newTask}
+            onChange={(e) => setNewTask(e.target.value)}
+          />
+        </div>
+        <div className="sectionOptions">
+          {sections.map((section, index) => (
+            <div key={index} className="sectionItems">
+              <input
+                type="radio"
+                id={`section-${index}`}
+                name="section"
+                value={section}
+              />
+              <label htmlFor={`section-${index}`}>{section}</label>
+            </div>
+          ))}
+        </div>
+        <div className="FirstWeekAddTaskButtonDiv">
+          <button id="FirstWeekAddTaskButton" onClick={handleAddTask}>
+            Add Task
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
