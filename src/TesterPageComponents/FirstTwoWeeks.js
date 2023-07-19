@@ -28,6 +28,70 @@ function FirstTwoWeeks() {
     "Pair with another developer - work on a ticket with another developer in the squad to learn more about how we work",
   ]);
 
+  const [firstResourcesList, setFirstResourcelist] = useState([
+    {
+      text: "New Starter Knowledge Base",
+      link: "https://hlam-collab.atlassian.net/wiki/spaces/ID/pages/551256793/New+Starter+Knowledge+Base",
+    },
+    {
+      text: "Get Started In Digital",
+      link: "https://hlam-collab.atlassian.net/wiki/spaces/ID/pages/564134589/Getting+started+in+Digital",
+    },
+    {
+      text: "Contextual Org Chart",
+      link: "https://miro.com/app/board/uXjVOQHpSz8=/?share_link_id=903609960752",
+    },
+    {
+      text: "Village Halls",
+      link: "https://hlam-collab.atlassian.net/wiki/spaces/ID/pages/530057952/Village+halls",
+    },
+    {
+      text: "Active Savings Confluence Space",
+      link: "https://confluence.hargreaveslansdown.co.uk/display/AS/Active+Savings",
+    },
+    {
+      text: "HL Savings Digital Library",
+      link: "https://tinyurl.com/2c8xw43j",
+    },
+    {
+      text: "DSApp Code Layers",
+      link: "https://tinyurl.com/5a3db2uu",
+    },
+  ]);
+
+  const [secondResourcesList, setSecondResourcesList] = useState([
+    {
+      text: "Quick Start Guide",
+      link: "https://tinyurl.com/mr4c6s6p",
+    },
+    {
+      text: "GitLab Access Guide",
+      link: "https://tinyurl.com/y4ebnwsc",
+    },
+    {
+      text: "Jenkins",
+      link: "https://jenkins-savings.hargreaveslansdown.co.uk/",
+    },
+    {
+      text: "Coding Standards Miro",
+      link: "https://miro.com/app/board/uXjVPOIesoM=/",
+    },
+    {
+      text: "SonarQube",
+      link: "https://sonarqube.hargreaveslansdown.co.uk/projects",
+    },
+    {
+      text: "Workday",
+      link: "https://wd3.myworkday.com/hargreaveslansdown/",
+    },
+    {
+      text: "Savings Cheat Sheet",
+      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494518362/Savings+Cheat+Sheet",
+    },
+  ]);
+
+  const sections = ["Get Up To Speed", "Savings Specific Tasks"];
+
   return (
     <div className="FirstTwoWeeks">
       <h1>FirstTwoWeeks</h1>
