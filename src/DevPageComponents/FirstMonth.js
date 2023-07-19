@@ -80,7 +80,7 @@ const FirstMonth = () => {
       ];
       updatedfirstMonthReflectionPointsCollection.push(newReflectionPoint);
       console.log(
-        "Reflection Collection:  -> " +
+        "First Month Reflection Collection:  -> " +
           updatedfirstMonthReflectionPointsCollection
       );
       setfirstMonthReflectionPointsCollection(

@@ -125,10 +125,11 @@ const FirstTwoWeeks = () => {
     if (newReflectionPoint.trim() !== "") {
       let updatedReflectionPointsCollection = [...reflectionPointsCollection];
       updatedReflectionPointsCollection.push(newReflectionPoint);
-      setReflectionPointsCollection(updatedReflectionPointsCollection);
       console.log(
-        "Current Reflection Collection:  -> " + reflectionPointsCollection
+        "First Two Weeks Reflection Collection  ->  " +
+          updatedReflectionPointsCollection
       );
+      setReflectionPointsCollection(updatedReflectionPointsCollection);
     }
 
     setNewReflectionPoint("");

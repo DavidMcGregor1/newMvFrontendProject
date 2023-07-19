@@ -58,8 +58,6 @@ const Week1Div = () => {
     "Complete emergency contacts in Workday - Found in your inbox",
     "Complete pay details in Workday - found in pay > payment elections",
     "Complete payroll form (sent via email) and send to (replace with real email)",
-    "more",
-    "more",
   ]);
 
   const [firstResourcesList, setFirstResourcelist] = useState([
@@ -117,7 +115,7 @@ const Week1Div = () => {
     },
   ]);
 
-  const sections = ["Basic Set Up", "People to meet", "Get Compliant"];
+  const sections = ["Basic Set Up", "Get Compliant", , "People to meet"];
   const [newTask, setNewTask] = React.useState("");
 
   const handleAddTask = () => {
