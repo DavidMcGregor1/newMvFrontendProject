@@ -179,9 +179,6 @@ const FirstMonth = () => {
         </div>
 
         <div className="FirstMonthAddTaskButtonDiv">
-          {/* <button id="FirstMonthAddTaskButton" onClick={handleAddTask}>
-            Add Task
-          </button> */}
           <Button label="Add Task" />
         </div>
       </div>
