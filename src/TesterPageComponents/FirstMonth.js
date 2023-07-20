@@ -20,44 +20,42 @@ const FirstMonth = () => {
     "Attend a social event!",
   ]);
 
-  const [firstResourcesList, setFirstResourcelist] = useState([
-    {
-      text: "Active Savings Confluence Space",
-      link: "https://confluence.hargreaveslansdown.co.uk/display/AS/Active+Savings",
-    },
-    {
-      text: "Contextual Org Chart",
-      link: "https://miro.com/app/board/uXjVOQHpSz8=/?share_link_id=903609960752",
-    },
-    {
-      text: "Village Halls",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/ID/pages/530057952/Village+halls",
-    },
+  const [testerFirstMonthAllResources, setTesterFirstMonthAllResources] =
+    useState([
+      {
+        text: "Active Savings Confluence Space",
+        link: "https://confluence.hargreaveslansdown.co.uk/display/AS/Active+Savings",
+      },
+      {
+        text: "Contextual Org Chart",
+        link: "https://miro.com/app/board/uXjVOQHpSz8=/?share_link_id=903609960752",
+      },
+      {
+        text: "Village Halls",
+        link: "https://hlam-collab.atlassian.net/wiki/spaces/ID/pages/530057952/Village+halls",
+      },
 
-    {
-      text: "HL Savings Digital Library",
-      link: "https://tinyurl.com/2c8xw43j",
-    },
-    {
-      text: "DSApp Code Layers",
-      link: "https://tinyurl.com/5a3db2uu",
-    },
-  ]);
-
-  const [secondResourcesList, setSecondResourcesList] = useState([
-    {
-      text: "Coding Standards Miro",
-      link: "https://miro.com/app/board/uXjVPOIesoM=/",
-    },
-    {
-      text: "SonarQube",
-      link: "https://sonarqube.hargreaveslansdown.co.uk/sessions/new?return_to=%2Flogin",
-    },
-    {
-      text: "Savings Cheat Sheet",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494518362/Savings+Cheat+Sheet",
-    },
-  ]);
+      {
+        text: "HL Savings Digital Library",
+        link: "https://tinyurl.com/2c8xw43j",
+      },
+      {
+        text: "DSApp Code Layers",
+        link: "https://tinyurl.com/5a3db2uu",
+      },
+      {
+        text: "Coding Standards Miro",
+        link: "https://miro.com/app/board/uXjVPOIesoM=/",
+      },
+      {
+        text: "SonarQube",
+        link: "https://sonarqube.hargreaveslansdown.co.uk/sessions/new?return_to=%2Flogin",
+      },
+      {
+        text: "Savings Cheat Sheet",
+        link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494518362/Savings+Cheat+Sheet",
+      },
+    ]);
 
   const [newTask, setNewTask] = React.useState("");
 
@@ -94,14 +92,14 @@ const FirstMonth = () => {
   };
 
   return (
-    <div id="FirstMonthMainContainer">
-      <div className="generalTasks">
+    <div id="TesterFirstMonthMainContainer">
+      <div className="testerGeneralTasks">
         <h3 className="sectionHeader" id="generalTasksHeader">
           General Tasks
         </h3>
         <div className="generalTasksList">
           {generalTasks.map((task, index) => (
-            <div key={index} className="generalTasksItem">
+            <div key={index} className="testerGeneralTasksItem">
               <input type="checkbox" id={`task-${index}`} />
               <label htmlFor={`task-${index}`}>{task}</label>
             </div>
@@ -109,26 +107,14 @@ const FirstMonth = () => {
         </div>
       </div>
 
-      <div className="resources">
+      <div className="testerFirstMonthResources">
         <h3 className="sectionHeader" id="resourcesHeader">
           Resources
         </h3>
-        <div className="mainResourceDiv">
+        <div className="TesterFirstMonthMainResourceDiv">
           <div className="resourcesList">
-            {firstResourcesList.map((object) => (
-              <div className="resourceItem">
-                <a
-                  className="resourceAnchor"
-                  href={object.link}
-                  target="_blank">
-                  {object.text}
-                </a>
-              </div>
-            ))}
-          </div>
-          <div className="secondResourcesList">
-            {secondResourcesList.map((object) => (
-              <div className="resourceItem">
+            {testerFirstMonthAllResources.map((object) => (
+              <div className="TesterFirstMonthResourceItem">
                 <a
                   className="resourceAnchor"
                   href={object.link}
@@ -141,7 +127,7 @@ const FirstMonth = () => {
         </div>
       </div>
 
-      <div className="FirstMonthReflectionPoints">
+      <div className="TesterFirstMonthReflectionPoints">
         <h3 className="sectionHeader" id="reflectionPointsHeader">
           Reflection Points
         </h3>
@@ -164,14 +150,14 @@ const FirstMonth = () => {
         </div>
       </div>
 
-      <div className="addTask">
+      <div className="TesterFirstMonthAddTask">
         <h3 className="sectionHeader" id="addTaskHeader">
           Add Task
         </h3>
 
         <div className="addTaskInputDiv">
           <input
-            id="addTaskInputBox"
+            id="testerFirstMonthAddTaskInputBox"
             type="input"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
@@ -179,7 +165,7 @@ const FirstMonth = () => {
         </div>
 
         <div className="FirstMonthAddTaskButtonDiv">
-          <Button label="Add Task" />
+          <Button label="Add Task" onClick={handleAddTask} />
         </div>
       </div>
     </div>
