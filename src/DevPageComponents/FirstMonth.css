@@ -173,11 +173,12 @@
     padding-bottom: 2%;
 }
 
-.generalTasksItem {
+.devGeneralTasksItem {
     padding-bottom: 2%;
     line-height: 1.5;
     font-size: large;
     font-weight: 400;
+    margin-top: 4%;
 }
 
 

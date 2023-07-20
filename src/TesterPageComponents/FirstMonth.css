@@ -123,6 +123,7 @@
     overflow: auto;
     border-radius: 20px;
     padding-left: 1.5%;
+    
 }
 
 .setUpLabel {
@@ -130,7 +131,10 @@
 }
 
 .testerGeneralTasksItem {
-    margin-bottom: 10px;
+    padding-bottom: 2%;
+    line-height: 1.5;
     font-size: large;
     font-weight: 400;
+    margin-top: 4%;
+
 }

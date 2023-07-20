@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
 import BigNames from "../UniversalComponents/BigNames";
+import Button from "../UniversalComponents/Button";
 
 const FirstMonth = () => {
   const [
@@ -20,7 +21,7 @@ const FirstMonth = () => {
     "Attend a social event!",
   ]);
 
-  const [firstResourcesList, setFirstResourcelist] = useState([
+  const [devFirstMonthAllResources, setDevFirstMonthAllResources] = useState([
     {
       text: "Contextual Org Chart",
       link: "https://miro.com/app/board/uXjVOQHpSz8=/?share_link_id=903609960752",
@@ -37,9 +38,6 @@ const FirstMonth = () => {
       text: "HL Savings Digital Library",
       link: "https://tinyurl.com/2c8xw43j",
     },
-  ]);
-
-  const [secondResourcesList, setSecondResourcesList] = useState([
     {
       text: "Coding Standards Miro",
       link: "https://miro.com/app/board/uXjVPOIesoM=/",
@@ -93,14 +91,14 @@ const FirstMonth = () => {
   };
 
   return (
-    <div id="FirstMonthMainContainer">
-      <div className="generalTasks">
+    <div id="TesterFirstMonthMainContainer">
+      <div className="testerGeneralTasks">
         <h3 className="sectionHeader" id="generalTasksHeader">
           General Tasks
         </h3>
         <div className="generalTasksList">
           {generalTasks.map((task, index) => (
-            <div key={index} className="generalTasksItem">
+            <div key={index} className="devGeneralTasksItem">
               <input type="checkbox" id={`task-${index}`} />
               <label htmlFor={`task-${index}`}>{task}</label>
             </div>
@@ -108,28 +106,14 @@ const FirstMonth = () => {
         </div>
       </div>
 
-      <BigNames />
-
-      <div className="FirstMonthDevResources">
+      <div className="testerFirstMonthResources">
         <h3 className="sectionHeader" id="resourcesHeader">
           Resources
         </h3>
-        <div className="mainResourceDiv">
+        <div className="TesterFirstMonthMainResourceDiv">
           <div className="resourcesList">
-            {firstResourcesList.map((object) => (
-              <div className="resourceItem">
-                <a
-                  className="resourceAnchor"
-                  href={object.link}
-                  target="_blank">
-                  {object.text}
-                </a>
-              </div>
-            ))}
-          </div>
-          <div className="secondResourcesList">
-            {secondResourcesList.map((object) => (
-              <div className="resourceItem">
+            {devFirstMonthAllResources.map((object) => (
+              <div className="TesterFirstMonthResourceItem">
                 <a
                   className="resourceAnchor"
                   href={object.link}
@@ -142,7 +126,7 @@ const FirstMonth = () => {
         </div>
       </div>
 
-      <div className="FirstMonthReflectionPoints">
+      <div className="TesterFirstMonthReflectionPoints">
         <h3 className="sectionHeader" id="reflectionPointsHeader">
           Reflection Points
         </h3>
@@ -157,22 +141,18 @@ const FirstMonth = () => {
         </div>
 
         <div className="FirstMonthSubmitReflectionButtonDiv">
-          <button
-            id="FirstMonthSubmitReflectionButton"
-            onClick={handleAddReflectionPoint}>
-            Sumbit
-          </button>
+          <Button label="Submit" onClick={handleAddTask} />
         </div>
       </div>
 
-      <div className="FirstMonthDevAddTask">
+      <div className="TesterFirstMonthAddTask">
         <h3 className="sectionHeader" id="addTaskHeader">
           Add Task
         </h3>
 
         <div className="addTaskInputDiv">
           <input
-            id="addTaskInputBox"
+            id="testerFirstMonthAddTaskInputBox"
             type="input"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
@@ -180,9 +160,7 @@ const FirstMonth = () => {
         </div>
 
         <div className="FirstMonthAddTaskButtonDiv">
-          <button id="FirstMonthAddTaskButton" onClick={handleAddTask}>
-            Add Task
-          </button>
+          <Button label="Add Task" onClick={handleAddTask} />
         </div>
       </div>
     </div>
