@@ -42,32 +42,53 @@
 }
 /* ---------- RESOURCES ---------- */
 
-#FirstTwoWeeksResourcesHeader {
-    margin-bottom: 0%;
+
+.devTwoWeeksResources {
+    height: 79vh;
+    width: 25vw;
+    background-color: #3D8DE3;
+    grid-row: 1 / 3;
+    grid-column: 3;
+    border-radius: 20px;
+    padding-left: 1%;
+    overflow: auto;
+    text-align: center;
+  }
+
+  .devTwoWeeksMainResourceDiv {
+    text-align: center;
+  }
+
+.resourceAnchor {
+    color: black;
 }
 
-.FirstTwoWeeksResourceItem {
-    margin-top: 3%;
+.devFirstTwoWeeksResourceItem {
+    margin-top: 4.5%;
     padding: 0%;
     font-size: large;
     font-weight: 400;
 }
 
+.sectionItems {
+    margin-top: 2%;
+}
+
 /* ---------- REFLECTION POINTS ---------- */
 
-.ReflectionPoints {
+.devTwoWeeksReflectionPoints {
     height: 37vh;
-    width: 18vw;
+    width: 20vw;
     background-color: #154360;
     grid-row: 2;
     grid-column: 2 / 4;
     text-align: left;
-    margin-left: 15%;
     border-radius: 20px;
     overflow: auto;
+    margin-left: 7.5%;
 }
 
-#reflectionPointsHeader {
+#devTwoWeeksReflectionPointsHeader {
     padding-bottom: 5%;
     color: white;
 }
@@ -87,11 +108,11 @@
 
 .DevTwoWeeksAddTask {
     height: 37vh;
-    width: 15vw;
+    width: 20vw;
     background-color: #154360;
     color: white;
-    grid-row: 2;
-    grid-column: 3;
+    grid-row: 1;
+    grid-column: 2;
     margin-left: 15%;
     border-radius: 20px;
     overflow: auto;

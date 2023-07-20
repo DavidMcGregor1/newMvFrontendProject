@@ -147,14 +147,14 @@ const FirstTwoWeeks = () => {
         </div>
       </div>
 
-      <div className="resources">
+      <div className="devTwoWeeksResources">
         <h3 className="sectionHeader" id="FirstTwoWeeksResourcesHeader">
           Resources
         </h3>
-        <div className="mainResourceDiv">
+        <div className="devTwoWeeksMainResourceDiv">
           <div className="resourcesList">
             {devTwoWeeksAllResources.map((object) => (
-              <div className="FirstTwoWeeksResourceItem">
+              <div className="devFirstTwoWeeksResourceItem">
                 <a
                   className="resourceAnchor"
                   href={object.link}
@@ -181,8 +181,8 @@ const FirstTwoWeeks = () => {
         </div>
       </div>
 
-      <div className="ReflectionPoints">
-        <h3 className="sectionHeader" id="reflectionPointsHeader">
+      <div className="devTwoWeeksReflectionPoints">
+        <h3 className="sectionHeader" id="devTwoWeeksReflectionPointsHeader">
           Reflection Points
         </h3>
 
