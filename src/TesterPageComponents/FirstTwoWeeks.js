@@ -182,11 +182,7 @@ function FirstTwoWeeks() {
         </div>
 
         <div className="FirstTwoWeeksSubmitReflectionButtonDiv">
-          <button
-            id="FirstTwoWeeksSubmitReflectionButton"
-            onClick={handleAddReflectionPoint}>
-            Sumbit
-          </button>
+          <Button label="Submit" onClick={handleAddTask} />
         </div>
       </div>
 
@@ -219,7 +215,7 @@ function FirstTwoWeeks() {
         </div>
 
         <div className="FirstTwoWeeksAddTaskButtonDiv">
-          <Button label="Add Task" />
+          <Button label="Add Task" onClick={handleAddTask} />
         </div>
       </div>
     </div>
