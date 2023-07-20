@@ -28,7 +28,7 @@ const FirstTwoWeeks = () => {
     "Pair with another developer - work on a ticket with another developer in the squad to learn more about how we work",
   ]);
 
-  const [firstResourcesList, setFirstResourcelist] = useState([
+  const [devTwoWeeksAllResources, setDevTwoWeeksAllResources] = useState([
     {
       text: "New Starter Knowledge Base",
       link: "https://hlam-collab.atlassian.net/wiki/spaces/ID/pages/551256793/New+Starter+Knowledge+Base",
@@ -57,9 +57,6 @@ const FirstTwoWeeks = () => {
       text: "DSApp Code Layers",
       link: "https://tinyurl.com/5a3db2uu",
     },
-  ]);
-
-  const [secondResourcesList, setSecondResourcesList] = useState([
     {
       text: "Quick Start Guide",
       link: "https://tinyurl.com/mr4c6s6p",
@@ -131,7 +128,6 @@ const FirstTwoWeeks = () => {
       );
       setReflectionPointsCollection(updatedReflectionPointsCollection);
     }
-
     setNewReflectionPoint("");
   };
 
@@ -157,19 +153,7 @@ const FirstTwoWeeks = () => {
         </h3>
         <div className="mainResourceDiv">
           <div className="resourcesList">
-            {firstResourcesList.map((object) => (
-              <div className="FirstTwoWeeksResourceItem">
-                <a
-                  className="resourceAnchor"
-                  href={object.link}
-                  target="_blank">
-                  {object.text}
-                </a>
-              </div>
-            ))}
-          </div>
-          <div className="secondResourcesList">
-            {secondResourcesList.map((object) => (
+            {devTwoWeeksAllResources.map((object) => (
               <div className="FirstTwoWeeksResourceItem">
                 <a
                   className="resourceAnchor"
