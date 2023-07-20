@@ -44,7 +44,7 @@ function HomePage() {
         </header>
       </div>
       <div className="cardColumnsContainer">
-        <div className="cardColumns">
+        <div className="cardColumns" data-testid="card-columns-div">
           {roleNames.map((role, index) => (
             <Link
               key={index}
