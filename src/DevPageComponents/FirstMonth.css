@@ -202,7 +202,7 @@
     .FirstMonthReflectionPoints {
         height: 37vh;
         width: 38vw;
-        background-color: purple;
+        background-color: #154360;
         grid-row: 2;
         grid-column: 3 / 5;
         text-align: left;

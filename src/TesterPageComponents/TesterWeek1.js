@@ -1,11 +1,11 @@
 import React from "react";
-import "./Week1.css";
+import "./TesterWeek1.css";
 import { useState } from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
 import Button from "../UniversalComponents/Button";
 
-function Week1() {
+function TesterWeek1() {
   const zeusSquatPeopleToMeet = [
     "Zeus Squad Member 1",
     "Zeus Squad Member 2",
@@ -236,7 +236,7 @@ function Week1() {
           ))}
         </div>
       </div>
-      <div className="addTask">
+      <div className="TesterWeek1AddTask">
         <h3 className="FirstWeekSectionHeader" id="addTaskHeader">
           Add Task
         </h3>
@@ -269,4 +269,4 @@ function Week1() {
   );
 }
 
-export default Week1;
+export default TesterWeek1;

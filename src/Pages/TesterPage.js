@@ -3,7 +3,7 @@ import "./TesterPage.css";
 import { useState } from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
-import Week1Div from "../TesterPageComponents/Week1";
+import TesterWeek1 from "../TesterPageComponents/TesterWeek1";
 import FirstTwoWeeks from "../TesterPageComponents/FirstTwoWeeks";
 import FirstMonth from "../TesterPageComponents/FirstMonth";
 
@@ -54,19 +54,20 @@ function TesterPage() {
 
   return (
     <div className="mainDiv">
-      <h1 id="mainHeaderTester">Week 1</h1>
+      <div id="header">
+        <p className="arrow" onClick={goBackward}>
+          &lt;
+        </p>
+        <h1 id="mainHeaderTester">Week 1</h1>
+
+        <p className="arrow" onClick={goForward}>
+          &gt;
+        </p>
+      </div>
 
       <div className="flexDiv">
-        <div className="arrowDivColumn">
-          <div className="leftArrowContainer">
-            <p className="arrow" onClick={goBackward}>
-              &lt;
-            </p>
-          </div>
-        </div>
-
         <div ref={(el) => (divRefs.current[0] = el)}>
-          <Week1Div />
+          <TesterWeek1 />
         </div>
 
         <div
@@ -79,14 +80,6 @@ function TesterPage() {
           ref={(el) => (divRefs.current[2] = el)}
           style={{ display: "none" }}>
           <FirstMonth />
-        </div>
-
-        <div className="arrowDivColumnR">
-          <div className="rightArrowContainer">
-            <p className="arrow" onClick={goForward}>
-              &gt;
-            </p>
-          </div>
         </div>
       </div>
     </div>
