@@ -61,7 +61,7 @@ const Week1Div = () => {
     "Complete payroll form (sent via email) and send to (replace with real email)",
   ]);
 
-  const [firstResourcesList, setFirstResourcelist] = useState([
+  const [devAllResources, setDevAllResources] = useState([
     {
       text: "Active Savings Confluence Page",
       link: "https://tinyurl.com/bdebdtfv",
@@ -82,9 +82,7 @@ const Week1Div = () => {
       text: "Jenkins",
       link: "https://jenkins-savings.hargreaveslansdown.co.uk/",
     },
-  ]);
 
-  const [secondResourcesList, setSecondResourcesList] = useState([
     {
       text: "Quick Start Guide",
       link: "https://tinyurl.com/mr4c6s6p",
@@ -171,26 +169,14 @@ const Week1Div = () => {
           ))}
         </div>
       </div>
-      <div className="resources">
+      <div className="devWeek1Resources">
         <h3 className="FirstWeekSectionHeader" id="resourcesHeader">
           Resources
         </h3>
-        <div className="mainResourceDiv">
+        <div className="devWeek1MainResourceDiv">
           <div className="resourcesList">
-            {firstResourcesList.map((object) => (
-              <div className="resourceItem">
-                <a
-                  className="resourceAnchor"
-                  href={object.link}
-                  target="_blank">
-                  {object.text}
-                </a>
-              </div>
-            ))}
-          </div>
-          <div className="secondResourcesList">
-            {secondResourcesList.map((object) => (
-              <div className="resourceItem">
+            {devAllResources.map((object) => (
+              <div className="devWeek1ResourceItem">
                 <a
                   className="resourceAnchor"
                   href={object.link}
@@ -215,13 +201,13 @@ const Week1Div = () => {
           ))}
         </div>
       </div>
-      <div className="peopleToMeet">
-        <h3 className="FirstWeekSectionHeader" id="peopleToMeetHeader">
+      <div className="devWeek1PeopleToMeet">
+        <h3 className="FirstWeekSectionHeader" id="devWeek1PeopleToMeetHeader">
           People to meet
         </h3>
         <div className="peopleToMeetList">
           {chosenArray.map((task, index) => (
-            <div key={index} className="peopleToMeetItem">
+            <div key={index} className="devWeek1PeopleToMeetItem">
               <input type="checkbox" id={`task-${index}`}></input>
               <label htmlFor={`task-${index}`}>{task}</label>
             </div>
