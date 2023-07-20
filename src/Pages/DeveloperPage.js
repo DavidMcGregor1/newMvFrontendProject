@@ -54,16 +54,25 @@ function DeveloperPage() {
 
   return (
     <div className="mainDiv">
-      <h1 id="mainHeader">Week 1</h1>
+      <div id="header">
+        <p className="arrow" onClick={goBackward}>
+          &lt;
+        </p>
+        <h1 id="mainHeader">Week 1</h1>
+
+        <p className="arrow" onClick={goForward}>
+          &gt;
+        </p>
+      </div>
 
       <div className="flexDiv">
-        <div className="arrowDivColumn">
+        {/* <div className="arrowDivColumn">
           <div className="leftArrowContainer">
             <p className="arrow" onClick={goBackward}>
               &lt;
             </p>
           </div>
-        </div>
+        </div> */}
 
         <div ref={(el) => (divRefs.current[0] = el)}>
           <Week1Div />
@@ -82,11 +91,11 @@ function DeveloperPage() {
         </div>
 
         <div className="arrowDivColumnR">
-          <div className="rightArrowContainer">
+          {/* <div className="rightArrowContainer">
             <p className="arrow" onClick={goForward}>
               &gt;
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

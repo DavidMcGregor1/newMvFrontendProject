@@ -9,7 +9,7 @@ test('renders "cardColumns" div', () => {
   expect(cardColumnsDiv).toBeInTheDocument();
 });
 
-test('renders "card-container" div', async () => {
+test('renders individual "card-container" div', async () => {
   render(<App />);
 
   await waitFor(() => {

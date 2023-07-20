@@ -227,7 +227,7 @@ const Week1Div = () => {
           ))}
         </div>
       </div>
-      <div className="addTask">
+      <div className="DevWeek1AddTask">
         <h3 className="FirstWeekSectionHeader" id="addTaskHeader">
           Add Task
         </h3>

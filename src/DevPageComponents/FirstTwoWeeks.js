@@ -152,7 +152,7 @@ const FirstTwoWeeks = () => {
       </div>
 
       <div className="resources">
-        <h3 className="sectionHeader" id="resourcesHeader">
+        <h3 className="sectionHeader" id="FirstTwoWeeksResourcesHeader">
           Resources
         </h3>
         <div className="mainResourceDiv">
@@ -220,7 +220,7 @@ const FirstTwoWeeks = () => {
         </div>
       </div>
 
-      <div className="addTask">
+      <div className="DevTwoWeeksAddTask">
         <h3 className="sectionHeader" id="addTaskHeader">
           Add Task
         </h3>

@@ -3,26 +3,37 @@
     height: 100vh;
     /* display: flex;
     flex-direction: row; */
+    overflow: hidden;
+}
+
+html {
+    overflow: hidden;
+}
+
+* {
+    border: red dashed 1px
 }
 
 .flexDiv {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+align-items: center;
+    justify-content:center;
+
 }
 
   .leftArrowContainer {
-    margin-left: 2%;
+    /* margin-left: 2%; */
+    align-items: center;
   }
 
   .rightArrowContainer {
     align-items: center;
-    margin-right: 2%;
+    /* margin-right: 2%; */
 }
 
 .arrow {
-    font-size: 100px;
-    color: white;
+    font-size: 70px;
 }
 
 .arrow:hover {
@@ -30,21 +41,7 @@
 }
 
 
-.arrowDivColumn {
-    margin-left: 4%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Set the height of the column to full viewport height */
-  }
 
-  .arrowDivColumnR {
-    margin-right: 4%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Set the height of the column to full viewport height */
-  }
 
   /* ---------- MEDIA QUERIES ---------- */
 

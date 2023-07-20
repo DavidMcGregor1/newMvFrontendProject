@@ -3,6 +3,7 @@ import "./FirstMonth.css";
 import { useState } from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
+import BigNames from "../UniversalComponents/BigNames";
 
 const FirstMonth = () => {
   const [
@@ -36,10 +37,6 @@ const FirstMonth = () => {
       text: "HL Savings Digital Library",
       link: "https://tinyurl.com/2c8xw43j",
     },
-    {
-      text: "DSApp Code Layers",
-      link: "https://tinyurl.com/5a3db2uu",
-    },
   ]);
 
   const [secondResourcesList, setSecondResourcesList] = useState([
@@ -54,6 +51,10 @@ const FirstMonth = () => {
     {
       text: "Savings Cheat Sheet",
       link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494518362/Savings+Cheat+Sheet",
+    },
+    {
+      text: "DSApp Code Layers",
+      link: "https://tinyurl.com/5a3db2uu",
     },
   ]);
 
@@ -107,7 +108,9 @@ const FirstMonth = () => {
         </div>
       </div>
 
-      <div className="resources">
+      <BigNames />
+
+      <div className="FirstMonthDevResources">
         <h3 className="sectionHeader" id="resourcesHeader">
           Resources
         </h3>
@@ -162,7 +165,7 @@ const FirstMonth = () => {
         </div>
       </div>
 
-      <div className="addTask">
+      <div className="FirstMonthDevAddTask">
         <h3 className="sectionHeader" id="addTaskHeader">
           Add Task
         </h3>
