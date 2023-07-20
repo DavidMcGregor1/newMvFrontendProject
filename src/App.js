@@ -49,7 +49,8 @@ function HomePage() {
             <Link
               key={index}
               to={`/welcome/${role.toLowerCase().replace(/\s+/g, "-")}`}
-              className="cardContainer">
+              className="cardContainer"
+              data-testid="card-container">
               <h2 id="iconContainer">{roleIcons[role]}</h2>
               <p id="roleNameContainer">{role}</p>
             </Link>
