@@ -79,8 +79,8 @@
     color: black;
 }
 
-.resourceItem {
-    margin-top: 3.7%;
+.TesterWeek1ResourceItem {
+    margin-top: 7%;
     padding: 0%;
     font-size: large;
     font-weight: 400;
@@ -95,7 +95,7 @@
 .testerWeek1PeopleToMeet {
     height: 37vh;
     width: 20vw;
-    background-color: orange;
+    background-color: #3D8DE3;
     grid-row: 1;
     grid-column: 2;
     text-align: left;

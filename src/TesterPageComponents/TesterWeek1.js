@@ -183,7 +183,7 @@ function TesterWeek1() {
         <div className="TesterWeek1MainResourceDiv">
           <div className="TesterWeek1ResourcesList">
             {testerAllResourcesList.map((object) => (
-              <div className="resourceItem">
+              <div className="TesterWeek1ResourceItem">
                 <a
                   className="resourceAnchor"
                   href={object.link}
@@ -247,7 +247,7 @@ function TesterWeek1() {
           ))}
         </div>
         <div className="FirstWeekAddTaskButtonDiv">
-          <Button label="Add Task" />
+          <Button label="Add Task" onClick={handleAddTask} />
         </div>
       </div>
     </div>
