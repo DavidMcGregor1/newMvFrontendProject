@@ -29,7 +29,7 @@ function FirstTwoWeeks() {
     "Pair with another developer - work on a ticket with another developer in the squad to learn more about how we work",
   ]);
 
-  const [firstResourcesList, setFirstResourcelist] = useState([
+  const [testerTwoWeeksAllResources, setTesterTwoWeeksAllResources] = useState([
     {
       text: "New Starter Knowledge Base",
       link: "https://hlam-collab.atlassian.net/wiki/spaces/ID/pages/551256793/New+Starter+Knowledge+Base",
@@ -50,9 +50,6 @@ function FirstTwoWeeks() {
       text: "Quick Start Guide",
       link: "https://tinyurl.com/mr4c6s6p",
     },
-  ]);
-
-  const [secondResourcesList, setSecondResourcesList] = useState([
     {
       text: "GitLab Access Guide",
       link: "https://tinyurl.com/y4ebnwsc",
@@ -136,25 +133,13 @@ function FirstTwoWeeks() {
         </div>
       </div>
 
-      <div className="resources">
+      <div className="TesterTwoWeeksResources">
         <h3 className="sectionHeader" id="resourcesHeader">
           Resources
         </h3>
-        <div className="mainResourceDiv">
-          <div className="resourcesList">
-            {firstResourcesList.map((object) => (
-              <div className="TesterFirstTwoWeeksResourceItem">
-                <a
-                  className="resourceAnchor"
-                  href={object.link}
-                  target="_blank">
-                  {object.text}
-                </a>
-              </div>
-            ))}
-          </div>
-          <div className="secondResourcesList">
-            {secondResourcesList.map((object) => (
+        <div className="TesterTwoWeeksMainResourceDiv">
+          <div className="TesterTwoWeekResourcesList">
+            {testerTwoWeeksAllResources.map((object) => (
               <div className="TesterFirstTwoWeeksResourceItem">
                 <a
                   className="resourceAnchor"
@@ -182,7 +167,7 @@ function FirstTwoWeeks() {
         </div>
       </div>
 
-      <div className="ReflectionPoints">
+      <div className="TesterTwoWeeksReflectionPoints">
         <h3 className="sectionHeader" id="reflectionPointsHeader">
           Reflection Points
         </h3>
@@ -205,7 +190,7 @@ function FirstTwoWeeks() {
         </div>
       </div>
 
-      <div className="addTask">
+      <div className="TesterTwoWeeksAddTask">
         <h3 className="sectionHeader" id="addTaskHeader">
           Add Task
         </h3>
