@@ -63,7 +63,7 @@ function TesterWeek1() {
     "Complete payroll form (sent via email) and send to (replace with real email)",
   ]);
 
-  const [firstTesterResoucesList, setFirstTesterResoucesList] = useState([
+  const [testerAllResourcesList, setTesterAllResourcesList] = useState([
     {
       text: "Active Savings Confluence Page",
       link: "https://tinyurl.com/bdebdtfv",
@@ -88,9 +88,6 @@ function TesterWeek1() {
       text: "Sonar Qube",
       link: "https://sonarqube.hargreaveslansdown.co.uk/projects",
     },
-  ]);
-
-  const [secondTesterResoucesList, setSecondTesterResoucesList] = useState([
     {
       text: "New Tester Guide",
       link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494511028/New+QA+Tester",
@@ -179,25 +176,13 @@ function TesterWeek1() {
           ))}
         </div>
       </div>
-      <div className="resources">
+      <div className="TesterWeek1Resources">
         <h3 className="FirstWeekSectionHeader" id="resourcesHeader">
           Resources
         </h3>
-        <div className="mainResourceDiv">
-          <div className="resourcesList">
-            {firstTesterResoucesList.map((object) => (
-              <div className="resourceItem">
-                <a
-                  className="resourceAnchor"
-                  href={object.link}
-                  target="_blank">
-                  {object.text}
-                </a>
-              </div>
-            ))}
-          </div>
-          <div className="secondResourcesList">
-            {secondTesterResoucesList.map((object) => (
+        <div className="TesterWeek1MainResourceDiv">
+          <div className="TesterWeek1ResourcesList">
+            {testerAllResourcesList.map((object) => (
               <div className="resourceItem">
                 <a
                   className="resourceAnchor"
@@ -223,7 +208,7 @@ function TesterWeek1() {
           ))}
         </div>
       </div>
-      <div className="peopleToMeet">
+      <div className="testerWeek1PeopleToMeet">
         <h3 className="FirstWeekSectionHeader" id="peopleToMeetHeader">
           People to meet
         </h3>
