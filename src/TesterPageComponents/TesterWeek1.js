@@ -164,6 +164,8 @@ function TesterWeek1() {
 
   return (
     <div id="week1MainContainer">
+      {/* ---------- BASIC SET UP ---------- */}
+
       <div className="basicSetUp">
         <h3 className="FirstWeekSectionHeader" id="basicSetUpHeader">
           Basic Setup
@@ -177,25 +179,8 @@ function TesterWeek1() {
           ))}
         </div>
       </div>
-      {/* <div className="TesterWeek1Resources">
-        <h3 className="FirstWeekSectionHeader" id="resourcesHeader">
-          Resources
-        </h3>
-        <div className="TesterWeek1MainResourceDiv">
-          <div className="TesterWeek1ResourcesList">
-            {testerAllResourcesList.map((object) => (
-              <div className="TesterWeek1ResourceItem">
-                <a
-                  className="resourceAnchor"
-                  href={object.link}
-                  target="_blank">
-                  {object.text}
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div> */}
+
+      {/* ---------- RESOURCES ---------- */}
 
       <ResourcesComponent
         resources={testerAllResourcesList}
@@ -203,6 +188,9 @@ function TesterWeek1() {
         mainDiv="testerWeek1ResourcesList"
         resourceItem="testerWeek1ResourceItem"
       />
+
+      {/* ---------- GET COMPLIANT ---------- */}
+
       <div className="getCompliant">
         <h3 className="FirstWeekSectionHeader" id="getCompliantHeader">
           Get Compliant
@@ -216,6 +204,9 @@ function TesterWeek1() {
           ))}
         </div>
       </div>
+
+      {/* ---------- PEOPLE TO MEET ---------- */}
+
       <div className="testerWeek1PeopleToMeet">
         <h3 className="FirstWeekSectionHeader" id="peopleToMeetHeader">
           People to meet
@@ -229,6 +220,9 @@ function TesterWeek1() {
           ))}
         </div>
       </div>
+
+      {/* ---------- ADD TASK ---------- */}
+
       <div className="TesterWeek1AddTask">
         <h3 className="FirstWeekSectionHeader" id="addTaskHeader">
           Add Task

@@ -94,6 +94,8 @@ const FirstMonth = () => {
 
   return (
     <div id="TesterFirstMonthMainContainer">
+      {/* ---------- GENERAL TASKS ---------- */}
+
       <div className="testerGeneralTasks">
         <h3 className="sectionHeader" id="generalTasksHeader">
           General Tasks
@@ -108,12 +110,16 @@ const FirstMonth = () => {
         </div>
       </div>
 
+      {/* ---------- RESOURCES ---------- */}
+
       <ResourcesComponent
         resources={testerFirstMonthAllResources}
         varient="testerFirstMonthResources"
         mainDiv="testerFirstMonthMainResourceDiv"
         resourceItem="testerFirstMonthResourceItem"
       />
+
+      {/* ---------- REFLECTION POINTS ---------- */}
 
       <div className="TesterFirstMonthReflectionPoints">
         <h3 className="sectionHeader" id="reflectionPointsHeader">
@@ -133,6 +139,8 @@ const FirstMonth = () => {
           <Button label="Submit" onClick={handleAddTask} />
         </div>
       </div>
+
+      {/* ---------- ADD TASKS ---------- */}
 
       <div className="TesterFirstMonthAddTask">
         <h3 className="sectionHeader" id="addTaskHeader">

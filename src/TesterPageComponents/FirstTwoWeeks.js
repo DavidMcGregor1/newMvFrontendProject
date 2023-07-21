@@ -120,6 +120,8 @@ function FirstTwoWeeks() {
 
   return (
     <div id="week1MainContainer">
+      {/* ---------- BASIC SET UP ---------- */}
+
       <div className="basicSetUp">
         <h3 className="sectionHeader" id="getUpToSpeedHeader">
           Get up to Speed
@@ -134,12 +136,16 @@ function FirstTwoWeeks() {
         </div>
       </div>
 
+      {/* ---------- RESOURCES ---------- */}
+
       <ResourcesComponent
         resources={testerTwoWeeksAllResources}
         varient="testerFirstTwoWeeksResources"
         mainDiv="testerTwoWeeksMainResourceDiv"
         resourceItem="testerFirstTwoWeeksResourceItem"
       />
+
+      {/* ---------- SAVINGS SPECIFIC TASKS ---------- */}
 
       <div className="savingsSpecificTasks">
         <h3 className="sectionHeader" id="savingsSpecificTasksHeader">
@@ -154,6 +160,8 @@ function FirstTwoWeeks() {
           ))}
         </div>
       </div>
+
+      {/* ---------- REFLECTION POINTS ---------- */}
 
       <div className="TesterTwoWeeksReflectionPoints">
         <h3 className="sectionHeader" id="reflectionPointsHeader">
@@ -173,6 +181,8 @@ function FirstTwoWeeks() {
           <Button label="Submit" onClick={handleAddTask} />
         </div>
       </div>
+
+      {/* ---------- ADD TASK ---------- */}
 
       <div className="TesterTwoWeeksAddTask">
         <h3 className="sectionHeader" id="addTaskHeader">
