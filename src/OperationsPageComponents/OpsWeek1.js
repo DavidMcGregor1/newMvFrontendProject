@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Button from "../UniversalComponents/Button";
+import ResourcesComponent from "../UniversalComponents/ResourcesComponent";
 import "./OpsWeek1.css";
 
 function OpsWeek1() {
@@ -132,7 +133,7 @@ function OpsWeek1() {
           ))}
         </div>
       </div>
-      <div className="devWeek1Resources">
+      {/* <div className="devWeek1Resources">
         <h3 className="FirstWeekSectionHeader" id="resourcesHeader">
           Resources
         </h3>
@@ -150,7 +151,15 @@ function OpsWeek1() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <ResourcesComponent
+        resources={opsAllResources}
+        varient="opsWeek1Resources"
+        mainDiv="opsWeek1MainResourceDiv"
+        resourceItem="opsWeek1ResourceItem"
+      />
+
       <div className="getCompliant">
         <h3 className="FirstWeekSectionHeader" id="getCompliantHeader">
           Get Compliant

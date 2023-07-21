@@ -374,7 +374,6 @@
         padding: 0%;
         font-size: large;
         font-weight: 400;
-
     }
   }
   
@@ -384,9 +383,6 @@
         padding: 0%;
         font-size: large;
         font-weight: 400;
-
-  
-  
     }
   }
   
@@ -396,8 +392,67 @@
         padding: 0%;
         font-size: large;
         font-weight: 400;
-
-  
-  
     }
   }
+
+
+    /* ---------- OPS WEEK 1 ---------- */
+
+  .universal-opsWeek1Resources {
+    height: 79vh;
+    width: 25vw;
+    background-color: #3D8DE3;
+    grid-row: 1 / 3;
+    grid-column: 3;
+    border-radius: 20px;
+    padding-left: 1%;
+    overflow: auto;
+    text-align: center;
+  }
+
+  .universal-opsWeek1MainResourceDiv {
+    text-align: center;
+}
+
+.universal-opsWeek1ResourceItem {
+  margin-top: 8.5%;
+  padding: 0%;
+  font-size: large;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1500px) {
+  .universal-opsWeek1ResourceItem {
+      margin-top: 10%;
+      padding: 0%;
+      font-size: large;
+      font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .universal-opsWeek1ResourceItem {
+      margin-top: 12%;
+      padding: 0%;
+      font-size: large;
+      font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .universal-opsWeek1ResourceItem {
+      margin-top: 15%;
+      padding: 0%;
+      font-size: large;
+      font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .universal-opsWeek1ResourceItem {
+      margin-top: 18%;
+      padding: 0%;
+      font-size: large;
+      font-weight: 400;
+  }
+}
