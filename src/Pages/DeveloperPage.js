@@ -6,7 +6,6 @@ import { useEffect } from "react";
 import Week1Div from "../DevPageComponents/Week1Div";
 import FirstTwoWeeks from "../DevPageComponents/FirstTwoWeeks";
 import FirstMonth from "../DevPageComponents/FirstMonth";
-// import { act } from "react-dom/test-utils";
 
 function DeveloperPage() {
   const [activeDiv, setActiveDiv] = useState("div1");
