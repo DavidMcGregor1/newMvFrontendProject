@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
 import Button from "../UniversalComponents/Button";
+import ResourcesComponent from "../UniversalComponents/ResourcesComponent";
 
 function TesterWeek1() {
   const zeusSquatPeopleToMeet = [
@@ -176,7 +177,7 @@ function TesterWeek1() {
           ))}
         </div>
       </div>
-      <div className="TesterWeek1Resources">
+      {/* <div className="TesterWeek1Resources">
         <h3 className="FirstWeekSectionHeader" id="resourcesHeader">
           Resources
         </h3>
@@ -194,7 +195,14 @@ function TesterWeek1() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <ResourcesComponent
+        resources={testerAllResourcesList}
+        varient="testerWeek1Resources"
+        mainDiv="testerWeek1ResourcesList"
+        resourceItem="testerWeek1ResourceItem"
+      />
       <div className="getCompliant">
         <h3 className="FirstWeekSectionHeader" id="getCompliantHeader">
           Get Compliant
