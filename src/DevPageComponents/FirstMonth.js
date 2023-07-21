@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import BigNames from "../UniversalComponents/BigNames";
 import Button from "../UniversalComponents/Button";
+import ResourcesComponent from "../UniversalComponents/ResourcesComponent";
 
 const FirstMonth = () => {
   const [
@@ -106,7 +107,7 @@ const FirstMonth = () => {
         </div>
       </div>
 
-      <div className="testerFirstMonthResources">
+      {/* <div className="testerFirstMonthResources">
         <h3 className="sectionHeader" id="resourcesHeader">
           Resources
         </h3>
@@ -124,7 +125,14 @@ const FirstMonth = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <ResourcesComponent
+        resources={devFirstMonthAllResources}
+        varient="FirstMonthDevResources"
+        mainDiv="DevFirstMonthMainResourceDiv"
+        resourceItem="DevFirstMonthResourceItem"
+      />
 
       <div className="TesterFirstMonthReflectionPoints">
         <h3 className="sectionHeader" id="reflectionPointsHeader">

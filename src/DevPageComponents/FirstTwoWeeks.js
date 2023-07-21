@@ -3,6 +3,7 @@ import "./FirstTwoWeeks.css";
 import { useState } from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
+import ResourcesComponent from "../UniversalComponents/ResourcesComponent";
 
 const FirstTwoWeeks = () => {
   const [reflectionPointsCollection, setReflectionPointsCollection] = useState([
@@ -147,7 +148,7 @@ const FirstTwoWeeks = () => {
         </div>
       </div>
 
-      <div className="devTwoWeeksResources">
+      {/* <div className="devTwoWeeksResources">
         <h3 className="sectionHeader" id="FirstTwoWeeksResourcesHeader">
           Resources
         </h3>
@@ -165,7 +166,14 @@ const FirstTwoWeeks = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <ResourcesComponent
+        resources={devTwoWeeksAllResources}
+        varient="devTwoWeeksResources"
+        mainDiv="DevFirstTwoWeeksMainResourceDiv"
+        resourceItem="DevFirstTwoWeeksResourceItem"
+      />
 
       <div className="savingsSpecificTasks">
         <h3 className="sectionHeader" id="savingsSpecificTasksHeader">

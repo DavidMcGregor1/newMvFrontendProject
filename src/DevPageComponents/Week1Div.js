@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
 import Button from "../UniversalComponents/Button";
+import ResourcesComponent from "../UniversalComponents/ResourcesComponent";
 
 const Week1Div = () => {
   const zeusSquatPeopleToMeet = [
@@ -169,7 +170,7 @@ const Week1Div = () => {
           ))}
         </div>
       </div>
-      <div className="devWeek1Resources">
+      {/* <div className="devWeek1Resources">
         <h3 className="FirstWeekSectionHeader" id="resourcesHeader">
           Resources
         </h3>
@@ -187,7 +188,9 @@ const Week1Div = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
+      <ResourcesComponent resources={devAllResources} />
+
       <div className="getCompliant">
         <h3 className="FirstWeekSectionHeader" id="getCompliantHeader">
           Get Compliant

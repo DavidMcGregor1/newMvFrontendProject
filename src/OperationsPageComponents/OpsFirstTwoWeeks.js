@@ -117,8 +117,112 @@ function OpsFirstTwoWeeks() {
   };
 
   return (
-    <div className="OpsFirstTwoWeeks">
-      <h1>OpsFirstTwoWeeks</h1>
+    <div id="week1MainContainer">
+      <div className="basicSetUp">
+        <h3 className="sectionHeader" id="getUpToSpeedHeader">
+          Get up to Speed
+        </h3>
+        <div className="getUpToSpeedTasksList">
+          {opsGetUpToSpeedList.map((task, index) => (
+            <div key={index} className="getUpToSpeedTaskItem">
+              <input type="checkbox" id={`task-${index}`} />
+              <label htmlFor={`task-${index}`}>{task}</label>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="devTwoWeeksResources">
+        <h3 className="sectionHeader" id="FirstTwoWeeksResourcesHeader">
+          Resources
+        </h3>
+        <div className="devTwoWeeksMainResourceDiv">
+          <div className="resourcesList">
+            {opsTwoWeeksAllResources.map((object) => (
+              <div className="devFirstTwoWeeksResourceItem">
+                <a
+                  className="resourceAnchor"
+                  href={object.link}
+                  target="_blank">
+                  {object.text}
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="savingsSpecificTasks">
+        <h3 className="sectionHeader" id="savingsSpecificTasksHeader">
+          Savings Specific Tasks
+        </h3>
+        <div className="savingsSpecificTasksList">
+          {opsSavingsSpecificTasksList.map((task, index) => (
+            <div key={index} className="savingsSpecificTaskListItem">
+              <input type="checkbox" id={`task-${index}`} />
+              <label htmlFor={`task-${index}`}>{task}</label>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="devTwoWeeksReflectionPoints">
+        <h3 className="sectionHeader" id="devTwoWeeksReflectionPointsHeader">
+          Reflection Points
+        </h3>
+
+        <div className="addReflectionPointInputDiv">
+          <textarea
+            id="addReflectionPointInputBox"
+            type="text"
+            value={newReflectionPoint}
+            onChange={(e) => setNewReflectionPoint(e.target.value)}
+          />
+        </div>
+
+        <div className="FirstTwoWeeksSubmitReflectionButtonDiv">
+          <button
+            id="FirstTwoWeeksSubmitReflectionButton"
+            onClick={handleAddReflectionPoint}>
+            Sumbit
+          </button>
+        </div>
+      </div>
+
+      <div className="DevTwoWeeksAddTask">
+        <h3 className="sectionHeader" id="addTaskHeader">
+          Add Task
+        </h3>
+
+        <div className="addTaskInputDiv">
+          <input
+            id="addTaskInputBox"
+            type="input"
+            value={newTask}
+            onChange={(e) => setNewTask(e.target.value)}
+          />
+        </div>
+
+        <div className="sectionOptions">
+          {sections.map((section, index) => (
+            <div key={index} className="sectionItems">
+              <input
+                type="radio"
+                id={`section-${index}`}
+                name="section"
+                value={section}
+              />
+              <label htmlFor={`section-${index}`}>{section}</label>
+            </div>
+          ))}
+        </div>
+
+        <div className="FirstTwoWeeksAddTaskButtonDiv">
+          <button id="FirstTwoWeeksAddTaskButton" onClick={handleAddTask}>
+            Add Task
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
