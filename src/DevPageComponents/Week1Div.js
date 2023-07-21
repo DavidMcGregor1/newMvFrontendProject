@@ -157,6 +157,8 @@ const Week1Div = () => {
 
   return (
     <div id="week1MainContainer">
+      {/* ---------- BASIC SET UP ---------- */}
+
       <div className="basicSetUp">
         <h3 className="FirstWeekSectionHeader" id="basicSetUpHeader">
           Basic Set up
@@ -170,12 +172,17 @@ const Week1Div = () => {
           ))}
         </div>
       </div>
+
+      {/* ---------- RESOURCES ---------- */}
+
       <ResourcesComponent
         resources={devAllResources}
         varient="devWeek1Resources"
         mainDiv="devWeek1MainResourceDiv"
         resourceItem="devWeek1ResourceItem"
       />
+
+      {/* ---------- GET COMPLIANT ---------- */}
 
       <div className="getCompliant">
         <h3 className="FirstWeekSectionHeader" id="getCompliantHeader">
@@ -190,6 +197,9 @@ const Week1Div = () => {
           ))}
         </div>
       </div>
+
+      {/* ---------- PEOPLE TO MEET ---------- */}
+
       <div className="devWeek1PeopleToMeet">
         <h3 className="FirstWeekSectionHeader" id="devWeek1PeopleToMeetHeader">
           People to meet
@@ -203,6 +213,9 @@ const Week1Div = () => {
           ))}
         </div>
       </div>
+
+      {/* ---------- ADD TASK ---------- */}
+
       <div className="DevWeek1AddTask">
         <h3 className="FirstWeekSectionHeader" id="addTaskHeader">
           Add Task

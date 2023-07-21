@@ -134,6 +134,8 @@ const FirstTwoWeeks = () => {
 
   return (
     <div id="week1MainContainer">
+      {/* ---------- BASIC SET UP ---------- */}
+
       <div className="basicSetUp">
         <h3 className="sectionHeader" id="getUpToSpeedHeader">
           Get up to Speed
@@ -148,12 +150,16 @@ const FirstTwoWeeks = () => {
         </div>
       </div>
 
+      {/* ---------- RESOURCES ---------- */}
+
       <ResourcesComponent
         resources={devTwoWeeksAllResources}
         varient="devTwoWeeksResources"
         mainDiv="DevFirstTwoWeeksMainResourceDiv"
         resourceItem="DevFirstTwoWeeksResourceItem"
       />
+
+      {/* ---------- SAVINGS SPECIFIC TASKS ---------- */}
 
       <div className="savingsSpecificTasks">
         <h3 className="sectionHeader" id="savingsSpecificTasksHeader">
@@ -168,6 +174,8 @@ const FirstTwoWeeks = () => {
           ))}
         </div>
       </div>
+
+      {/* ---------- REFLECTION POINTS ---------- */}
 
       <div className="devTwoWeeksReflectionPoints">
         <h3 className="sectionHeader" id="devTwoWeeksReflectionPointsHeader">
@@ -191,6 +199,8 @@ const FirstTwoWeeks = () => {
           </button>
         </div>
       </div>
+
+      {/* ---------- ADD TASK ---------- */}
 
       <div className="DevTwoWeeksAddTask">
         <h3 className="sectionHeader" id="addTaskHeader">
