@@ -101,6 +101,21 @@ function OpsFirstTwoWeeks() {
     console.log("Working");
   };
 
+  const [newReflectionPoint, setNewReflectionPoint] = React.useState("");
+
+  const handleAddReflectionPoint = () => {
+    if (newReflectionPoint.trim() !== "") {
+      let updatedReflectionPointsCollection = [...reflectionPointsCollection];
+      updatedReflectionPointsCollection.push(newReflectionPoint);
+      console.log(
+        "First Two Weeks Reflection Collection  ->  " +
+          updatedReflectionPointsCollection
+      );
+      setReflectionPointsCollection(updatedReflectionPointsCollection);
+    }
+    setNewReflectionPoint("");
+  };
+
   return (
     <div className="OpsFirstTwoWeeks">
       <h1>OpsFirstTwoWeeks</h1>
