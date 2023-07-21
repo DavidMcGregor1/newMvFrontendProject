@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
 import Button from "../UniversalComponents/Button";
+import ResourcesComponent from "../UniversalComponents/ResourcesComponent";
 
 function FirstTwoWeeks() {
   const [reflectionPointsCollection, setReflectionPointsCollection] = useState([
@@ -133,25 +134,12 @@ function FirstTwoWeeks() {
         </div>
       </div>
 
-      <div className="TesterTwoWeeksResources">
-        <h3 className="sectionHeader" id="resourcesHeader">
-          Resources
-        </h3>
-        <div className="TesterTwoWeeksMainResourceDiv">
-          <div className="TesterTwoWeekResourcesList">
-            {testerTwoWeeksAllResources.map((object) => (
-              <div className="TesterFirstTwoWeeksResourceItem">
-                <a
-                  className="resourceAnchor"
-                  href={object.link}
-                  target="_blank">
-                  {object.text}
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      <ResourcesComponent
+        resources={testerTwoWeeksAllResources}
+        varient="testerFirstTwoWeeksResources"
+        mainDiv="testerTwoWeeksMainResourceDiv"
+        resourceItem="testerFirstTwoWeeksResourceItem"
+      />
 
       <div className="savingsSpecificTasks">
         <h3 className="sectionHeader" id="savingsSpecificTasksHeader">

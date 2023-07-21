@@ -170,25 +170,6 @@ const Week1Div = () => {
           ))}
         </div>
       </div>
-      {/* <div className="devWeek1Resources">
-        <h3 className="FirstWeekSectionHeader" id="resourcesHeader">
-          Resources
-        </h3>
-        <div className="devWeek1MainResourceDiv">
-          <div className="resourcesList">
-            {devAllResources.map((object) => (
-              <div className="devWeek1ResourceItem">
-                <a
-                  className="resourceAnchor"
-                  href={object.link}
-                  target="_blank">
-                  {object.text}
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div> */}
       <ResourcesComponent
         resources={devAllResources}
         varient="devWeek1Resources"

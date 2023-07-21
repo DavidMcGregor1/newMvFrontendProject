@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
 import Button from "../UniversalComponents/Button";
+import ResourcesComponent from "../UniversalComponents/ResourcesComponent";
 
 const FirstMonth = () => {
   const [
@@ -107,25 +108,12 @@ const FirstMonth = () => {
         </div>
       </div>
 
-      <div className="testerFirstMonthResources">
-        <h3 className="sectionHeader" id="resourcesHeader">
-          Resources
-        </h3>
-        <div className="TesterFirstMonthMainResourceDiv">
-          <div className="resourcesList">
-            {testerFirstMonthAllResources.map((object) => (
-              <div className="TesterFirstMonthResourceItem">
-                <a
-                  className="resourceAnchor"
-                  href={object.link}
-                  target="_blank">
-                  {object.text}
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      <ResourcesComponent
+        resources={testerFirstMonthAllResources}
+        varient="testerFirstMonthResources"
+        mainDiv="testerFirstMonthMainResourceDiv"
+        resourceItem="testerFirstMonthResourceItem"
+      />
 
       <div className="TesterFirstMonthReflectionPoints">
         <h3 className="sectionHeader" id="reflectionPointsHeader">

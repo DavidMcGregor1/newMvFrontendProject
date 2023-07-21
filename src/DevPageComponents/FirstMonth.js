@@ -107,26 +107,6 @@ const FirstMonth = () => {
         </div>
       </div>
 
-      {/* <div className="testerFirstMonthResources">
-        <h3 className="sectionHeader" id="resourcesHeader">
-          Resources
-        </h3>
-        <div className="TesterFirstMonthMainResourceDiv">
-          <div className="resourcesList">
-            {devFirstMonthAllResources.map((object) => (
-              <div className="TesterFirstMonthResourceItem">
-                <a
-                  className="resourceAnchor"
-                  href={object.link}
-                  target="_blank">
-                  {object.text}
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div> */}
-
       <ResourcesComponent
         resources={devFirstMonthAllResources}
         varient="FirstMonthDevResources"
