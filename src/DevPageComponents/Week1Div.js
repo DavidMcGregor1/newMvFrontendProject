@@ -189,7 +189,12 @@ const Week1Div = () => {
           </div>
         </div>
       </div> */}
-      <ResourcesComponent resources={devAllResources} />
+      <ResourcesComponent
+        resources={devAllResources}
+        varient="devWeek1Resources"
+        mainDiv="devWeek1MainResourceDiv"
+        resourceItem="devWeek1ResourceItem"
+      />
 
       <div className="getCompliant">
         <h3 className="FirstWeekSectionHeader" id="getCompliantHeader">

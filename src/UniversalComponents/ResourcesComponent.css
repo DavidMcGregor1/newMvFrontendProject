@@ -50,7 +50,7 @@
   }
 
   .universal-DevFirstMonthResourceItem {
-    margin-top: 13%;
+    margin-top: 11%;
     padding: 0%;
     font-size: large;
     font-weight: 400;
@@ -97,6 +97,55 @@
     overflow: auto;
     text-align: center;
   }
+
+  .universal-devWeek1MainResourceDiv {
+    text-align: center;
+}
+
+.universal-devWeek1ResourceItem {
+    margin-top: 7%;
+    padding: 0%;
+    font-size: large;
+    font-weight: 400;
+}
+@media only screen and (max-width: 1580px) {
+    .universal-devWeek1ResourceItem {
+        margin-top: 8%;
+        padding: 0%;
+        font-size: large;
+        font-weight: 400;
+    }
+  }
+
+@media only screen and (max-width: 1400px) {
+    .universal-devWeek1ResourceItem {
+        margin-top: 10%;
+        padding: 0%;
+        font-size: large;
+        font-weight: 400;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .universal-devWeek1ResourceItem {
+        margin-top: 12%;
+        padding: 0%;
+        font-size: large;
+        font-weight: 400;
+
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .universal-devWeek1ResourceItem {
+        margin-top: 14%;
+        padding: 0%;
+        font-size: large;
+        font-weight: 400;
+
+    }
+  }
+
 
     /* ---------- DEV 2 WEEKS ---------- */
 
