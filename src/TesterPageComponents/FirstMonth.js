@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import Button from "../UniversalComponents/Button";
 import ResourcesComponent from "../UniversalComponents/ResourcesComponent";
+import GeneralTasksSection from "../UniversalComponents/GeneralTasksSection";
 
 const FirstMonth = () => {
   const [
@@ -96,19 +97,7 @@ const FirstMonth = () => {
     <div id="TesterFirstMonthMainContainer">
       {/* ---------- GENERAL TASKS ---------- */}
 
-      <div className="testerGeneralTasks">
-        <h3 className="sectionHeader" id="generalTasksHeader">
-          General Tasks
-        </h3>
-        <div className="generalTasksList">
-          {generalTasks.map((task, index) => (
-            <div key={index} className="testerGeneralTasksItem">
-              <input type="checkbox" id={`task-${index}`} />
-              <label htmlFor={`task-${index}`}>{task}</label>
-            </div>
-          ))}
-        </div>
-      </div>
+      <GeneralTasksSection generalTasks={generalTasks} />
 
       {/* ---------- RESOURCES ---------- */}
 
