@@ -3,6 +3,9 @@ import { useState } from "react";
 import Button from "../UniversalComponents/Button";
 import ResourcesComponent from "../UniversalComponents/ResourcesComponent";
 import "./OpsWeek1.css";
+import BasicSetUpSection from "../UniversalComponents/BasicSetUpSection";
+import GetCompliantSection from "../UniversalComponents/GetCompliantSection";
+import PeopleToMeetSection from "../UniversalComponents/PeopleToMeetSection";
 
 function OpsWeek1() {
   const [opsPeopleToMeet, setOpsPeopleToMeet] = useState([
@@ -120,38 +123,11 @@ function OpsWeek1() {
 
   return (
     <div id="week1MainContainer">
-      <div className="basicSetUp">
-        <h3 className="FirstWeekSectionHeader" id="basicSetUpHeader">
-          Basic Set up
-        </h3>
-        <div className="basicSetUpTaskList">
-          {opsBasicSetUpTasks.map((task, index) => (
-            <div key={index} className="basicSetUpTaskItem">
-              <input type="checkbox" id={`task-${index}`} />
-              <label htmlFor={`task-${index}`}>{task}</label>
-            </div>
-          ))}
-        </div>
-      </div>
-      {/* <div className="devWeek1Resources">
-        <h3 className="FirstWeekSectionHeader" id="resourcesHeader">
-          Resources
-        </h3>
-        <div className="opsWeek1MainResourceDiv">
-          <div className="resourcesList">
-            {opsAllResources.map((object) => (
-              <div className="opsWeek1ResourceItem">
-                <a
-                  className="resourceAnchor"
-                  href={object.link}
-                  target="_blank">
-                  {object.text}
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div> */}
+      {/* ---------- BASIC SET UP ----------  */}
+
+      <BasicSetUpSection basicSetUpTasks={opsBasicSetUpTasks} />
+
+      {/* ---------- RESOURCES ----------  */}
 
       <ResourcesComponent
         resources={opsAllResources}
@@ -160,32 +136,16 @@ function OpsWeek1() {
         resourceItem="opsWeek1ResourceItem"
       />
 
-      <div className="getCompliant">
-        <h3 className="FirstWeekSectionHeader" id="getCompliantHeader">
-          Get Compliant
-        </h3>
-        <div className="getCompliantTaskList">
-          {opsGetCompliantTasks.map((task, index) => (
-            <div key={index} className="getCompliantTaskItem">
-              <input type="checkbox" id={`task-${index}`}></input>
-              <label htmlFor={`task-${index}`}>{task}</label>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="devWeek1PeopleToMeet">
-        <h3 className="FirstWeekSectionHeader" id="devWeek1PeopleToMeetHeader">
-          People to meet
-        </h3>
-        <div className="peopleToMeetList">
-          {opsPeopleToMeet.map((task, index) => (
-            <div key={index} className="devWeek1PeopleToMeetItem">
-              <input type="checkbox" id={`task-${index}`}></input>
-              <label htmlFor={`task-${index}`}>{task}</label>
-            </div>
-          ))}
-        </div>
-      </div>
+      {/* ---------- GET COMPLIANT ----------  */}
+
+      <GetCompliantSection getCompliantTasks={opsGetCompliantTasks} />
+
+      {/* ---------- PEOPLE TO MEET ----------  */}
+
+      <PeopleToMeetSection chosenArray={opsPeopleToMeet} />
+
+      {/* ---------- ADD TASK ----------  */}
+
       <div className="DevWeek1AddTask">
         <h3 className="FirstWeekSectionHeader" id="addTaskHeader">
           Add Task
