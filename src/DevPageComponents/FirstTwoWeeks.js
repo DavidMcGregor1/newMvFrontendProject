@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
 import ResourcesComponent from "../UniversalComponents/ResourcesComponent";
+import SavingsSpecificTasksSections from "../UniversalComponents/SavingsSpecificTasksSections";
 
 const FirstTwoWeeks = () => {
   const [reflectionPointsCollection, setReflectionPointsCollection] = useState([
@@ -109,7 +110,7 @@ const FirstTwoWeeks = () => {
       } else if (selectedSection === "Savings Specific Tasks") {
         console.log("Selected savings specific tasks");
         updatedSavingsSpecificTaskList.push(newTask);
-        setSavingsSpecificTasksList(updatedGetUpToSpeedList);
+        setSavingsSpecificTasksList(updatedSavingsSpecificTaskList);
       }
     }
 
@@ -161,7 +162,7 @@ const FirstTwoWeeks = () => {
 
       {/* ---------- SAVINGS SPECIFIC TASKS ---------- */}
 
-      <div className="savingsSpecificTasks">
+      {/* <div className="savingsSpecificTasks">
         <h3 className="sectionHeader" id="savingsSpecificTasksHeader">
           Savings Specific Tasks
         </h3>
@@ -173,7 +174,11 @@ const FirstTwoWeeks = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
+
+      <SavingsSpecificTasksSections
+        savingsSpecificTasksList={savingsSpecificTasksList}
+      />
 
       {/* ---------- REFLECTION POINTS ---------- */}
 
