@@ -11,12 +11,21 @@ function OpsFirstTwoWeeks() {
     "",
   ]);
 
-  const [opsGetUpToSpeedList, setOpsGetUpToSpeedList] = useState(["", "", ""]);
+  const [opsGetUpToSpeedList, setOpsGetUpToSpeedList] = useState([
+    "Take a look at some of the confluence pages for operations",
+    "Take a look at the Savings Cheat Sheet",
+    "Familiarise yourself with the savings ordanisation and roles responsibilities of different functions",
+    "Get a feel of what's going on in digital by watching the most recent Village Halls.",
+  ]);
 
   const [opsSavingsSpecificTasksList, setOpsSavingsSpecificTasksList] =
-    useState(["Bookmark the confluence area for Active Savings", "", ""]);
+    useState([
+      "Bookmark the confluence area for Active Savings",
+      "Take part in a Business Q&A session",
+      "Come along to a Savings Day!",
+    ]);
 
-  const [opsTwoWeeksAllResources, setopsTwoWeeksAllResources] = useState([
+  const [opsTwoWeeksAllResources, setOpsTwoWeeksAllResources] = useState([
     {
       text: "Active Savings Confluence Space",
       link: "https://confluence.hargreaveslansdown.co.uk/display/AS/Active+Savings",
