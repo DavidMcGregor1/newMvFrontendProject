@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import Button from "../UniversalComponents/Button";
 import ResourcesComponent from "../UniversalComponents/ResourcesComponent";
 import BasicSetUpSection from "../UniversalComponents/BasicSetUpSection";
+import GetCompliantSection from "../UniversalComponents/GetCompliantSection";
 
 const Week1Div = () => {
   const zeusSquatPeopleToMeet = [
@@ -160,20 +161,6 @@ const Week1Div = () => {
     <div id="week1MainContainer">
       {/* ---------- BASIC SET UP ---------- */}
 
-      {/* <div className="basicSetUp">
-        <h3 className="FirstWeekSectionHeader" id="basicSetUpHeader">
-          Basic Set up
-        </h3>
-        <div className="basicSetUpTaskList">
-          {basicSetUpTasks.map((task, index) => (
-            <div key={index} className="basicSetUpTaskItem">
-              <input type="checkbox" id={`task-${index}`} />
-              <label htmlFor={`task-${index}`}>{task}</label>
-            </div>
-          ))}
-        </div>
-      </div> */}
-
       <BasicSetUpSection basicSetUpTasks={basicSetUpTasks} />
 
       {/* ---------- RESOURCES ---------- */}
@@ -187,19 +174,7 @@ const Week1Div = () => {
 
       {/* ---------- GET COMPLIANT ---------- */}
 
-      <div className="getCompliant">
-        <h3 className="FirstWeekSectionHeader" id="getCompliantHeader">
-          Get Compliant
-        </h3>
-        <div className="getCompliantTaskList">
-          {getCompliantTasks.map((task, index) => (
-            <div key={index} className="getCompliantTaskItem">
-              <input type="checkbox" id={`task-${index}`}></input>
-              <label htmlFor={`task-${index}`}>{task}</label>
-            </div>
-          ))}
-        </div>
-      </div>
+      <GetCompliantSection getCompliantTasks={getCompliantTasks} />
 
       {/* ---------- PEOPLE TO MEET ---------- */}
 
