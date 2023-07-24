@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import "./OpsFirstTwoWeeks.css";
 import SavingsSpecificTasksSections from "../UniversalComponents/SavingsSpecificTasksSections";
 import GetUpToSpeedSection from "../UniversalComponents/GetUpToSpeedSection";
-
+import ResourcesComponent from "../UniversalComponents/ResourcesComponent";
 function OpsFirstTwoWeeks() {
   const [reflectionPointsCollection, setReflectionPointsCollection] = useState([
     "",
@@ -18,60 +18,33 @@ function OpsFirstTwoWeeks() {
 
   const [opsTwoWeeksAllResources, setopsTwoWeeksAllResources] = useState([
     {
-      text: "New Starter Knowledge Base",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/ID/pages/551256793/New+Starter+Knowledge+Base",
-    },
-    {
-      text: "Get Started In Digital",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/ID/pages/564134589/Getting+started+in+Digital",
-    },
-    {
-      text: "Contextual Org Chart",
-      link: "https://miro.com/app/board/uXjVOQHpSz8=/?share_link_id=903609960752",
-    },
-    {
-      text: "Village Halls",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/ID/pages/530057952/Village+halls",
-    },
-    {
       text: "Active Savings Confluence Space",
       link: "https://confluence.hargreaveslansdown.co.uk/display/AS/Active+Savings",
     },
     {
-      text: "HL Savings Digital Library",
-      link: "https://tinyurl.com/2c8xw43j",
-    },
-    {
-      text: "DSApp Code Layers",
-      link: "https://tinyurl.com/5a3db2uu",
-    },
-    {
-      text: "Quick Start Guide",
-      link: "https://tinyurl.com/mr4c6s6p",
-    },
-    {
-      text: "GitLab Access Guide",
-      link: "https://tinyurl.com/y4ebnwsc",
-    },
-    {
-      text: "Jenkins",
-      link: "https://jenkins-savings.hargreaveslansdown.co.uk/",
-    },
-    {
-      text: "Coding Standards Miro",
-      link: "https://miro.com/app/board/uXjVPOIesoM=/",
-    },
-    {
-      text: "SonarQube",
-      link: "https://sonarqube.hargreaveslansdown.co.uk/projects",
-    },
-    {
-      text: "Workday",
-      link: "https://wd3.myworkday.com/hargreaveslansdown/",
-    },
-    {
       text: "Savings Cheat Sheet",
       link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494518362/Savings+Cheat+Sheet",
+    },
+    {
+      text: "Savings MI Procedure Guides",
+      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494507201/Savings+MI+Procedure+Guides",
+    },
+    {
+      text: "Operational Tasks",
+      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494518642/Operational+Tasks",
+    },
+
+    {
+      text: "Partner Banks",
+      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494515099/Partner+Banks",
+    },
+    {
+      text: "Procedure Guides",
+      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494509997/Procedure+Guides",
+    },
+    {
+      text: "Account & Product Statuses",
+      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494504464/Account+Product+Statuses",
     },
   ]);
 
@@ -126,25 +99,12 @@ function OpsFirstTwoWeeks() {
 
       {/* ---------- RESOURCES ----------  */}
 
-      <div className="devTwoWeeksResources">
-        <h3 className="sectionHeader" id="FirstTwoWeeksResourcesHeader">
-          Resources
-        </h3>
-        <div className="devTwoWeeksMainResourceDiv">
-          <div className="resourcesList">
-            {opsTwoWeeksAllResources.map((object) => (
-              <div className="devFirstTwoWeeksResourceItem">
-                <a
-                  className="resourceAnchor"
-                  href={object.link}
-                  target="_blank">
-                  {object.text}
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      <ResourcesComponent
+        resources={opsTwoWeeksAllResources}
+        varient="opsFirstTwoWeeksResources"
+        mainDiv="opsFirstTwoWeeksMainResourceDiv"
+        resourceItem="opsFirstTwoWeeksResourceItem"
+      />
 
       {/* ---------- SAVINGS SPECIFIC TASKS ----------  */}
 
