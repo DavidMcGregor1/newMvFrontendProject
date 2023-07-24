@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import Button from "../UniversalComponents/Button";
 import ResourcesComponent from "../UniversalComponents/ResourcesComponent";
+import BasicSetUpSection from "../UniversalComponents/BasicSetUpSection";
 
 const Week1Div = () => {
   const zeusSquatPeopleToMeet = [
@@ -65,49 +66,49 @@ const Week1Div = () => {
   const [devAllResources, setDevAllResources] = useState([
     {
       text: "Active Savings Confluence Page",
-      link: "https://tinyurl.com/bdebdtfv",
+      link: "fakeLink",
     },
     {
       text: "Software install request",
-      link: "https://tinyurl.com/bdh8wntf",
+      link: "fakeLink",
     },
     {
       text: "Overview of Savings Architecture",
-      link: "https://tinyurl.com/2c8xw43j",
+      link: "fakeLink",
     },
     {
       text: "Workday",
-      link: "https://wd3.myworkday.com/hargreaveslansdown/",
+      link: "fakeLink",
     },
     {
       text: "Jenkins",
-      link: "https://jenkins-savings.hargreaveslansdown.co.uk/",
+      link: "fakeLink",
     },
 
     {
       text: "Quick Start Guide",
-      link: "https://tinyurl.com/mr4c6s6p",
+      link: "fakeLink",
     },
     {
       text: "Development Setup Guide",
-      link: "https://tinyurl.com/mr4c6s6p",
+      link: "fakeLink",
     },
     {
       text: "GitLab Access Guide",
-      link: "https://tinyurl.com/y4ebnwsc",
+      link: "fakeLink",
     },
     {
       text: "Introduction and Useful Info",
-      link: "https://tinyurl.com/3m292v48",
+      link: "fakeLink",
     },
 
     {
       text: "Savings Cheat Sheet",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494518362/Savings+Cheat+Sheet",
+      link: "fakeLink",
     },
     {
       text: "All about the code",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494503134/All+about+the+code",
+      link: "fakeLink",
     },
   ]);
 
@@ -159,7 +160,7 @@ const Week1Div = () => {
     <div id="week1MainContainer">
       {/* ---------- BASIC SET UP ---------- */}
 
-      <div className="basicSetUp">
+      {/* <div className="basicSetUp">
         <h3 className="FirstWeekSectionHeader" id="basicSetUpHeader">
           Basic Set up
         </h3>
@@ -171,7 +172,9 @@ const Week1Div = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
+
+      <BasicSetUpSection basicSetUpTasks={basicSetUpTasks} />
 
       {/* ---------- RESOURCES ---------- */}
 
@@ -243,7 +246,7 @@ const Week1Div = () => {
         </div>
         <div className="FirstWeekAddTaskButtonDiv">
           <div className="FirstWeekAddTaskButtonDiv">
-            <Button label="Add Task" />
+            <Button label="Add Task" onClick={handleAddTask} />
           </div>
         </div>
       </div>
