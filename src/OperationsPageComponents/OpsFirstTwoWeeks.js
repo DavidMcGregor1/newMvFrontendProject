@@ -3,6 +3,8 @@ import { useState } from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
 import "./OpsFirstTwoWeeks.css";
+import SavingsSpecificTasksSections from "../UniversalComponents/SavingsSpecificTasksSections";
+import GetUpToSpeedSection from "../UniversalComponents/GetUpToSpeedSection";
 
 function OpsFirstTwoWeeks() {
   const [reflectionPointsCollection, setReflectionPointsCollection] = useState([
@@ -12,7 +14,7 @@ function OpsFirstTwoWeeks() {
   const [opsGetUpToSpeedList, setOpsGetUpToSpeedList] = useState(["", "", ""]);
 
   const [opsSavingsSpecificTasksList, setOpsSavingsSpecificTasksList] =
-    useState(["", "", ""]);
+    useState(["Bookmark the confluence area for Active Savings", "", ""]);
 
   const [opsTwoWeeksAllResources, setopsTwoWeeksAllResources] = useState([
     {
@@ -118,19 +120,11 @@ function OpsFirstTwoWeeks() {
 
   return (
     <div id="week1MainContainer">
-      <div className="basicSetUp">
-        <h3 className="sectionHeader" id="getUpToSpeedHeader">
-          Get up to Speed
-        </h3>
-        <div className="getUpToSpeedTasksList">
-          {opsGetUpToSpeedList.map((task, index) => (
-            <div key={index} className="getUpToSpeedTaskItem">
-              <input type="checkbox" id={`task-${index}`} />
-              <label htmlFor={`task-${index}`}>{task}</label>
-            </div>
-          ))}
-        </div>
-      </div>
+      {/* ---------- GET UP TO SPEED ----------  */}
+
+      <GetUpToSpeedSection getUpToSpeedList={opsGetUpToSpeedList} />
+
+      {/* ---------- RESOURCES ----------  */}
 
       <div className="devTwoWeeksResources">
         <h3 className="sectionHeader" id="FirstTwoWeeksResourcesHeader">
@@ -152,19 +146,13 @@ function OpsFirstTwoWeeks() {
         </div>
       </div>
 
-      <div className="savingsSpecificTasks">
-        <h3 className="sectionHeader" id="savingsSpecificTasksHeader">
-          Savings Specific Tasks
-        </h3>
-        <div className="savingsSpecificTasksList">
-          {opsSavingsSpecificTasksList.map((task, index) => (
-            <div key={index} className="savingsSpecificTaskListItem">
-              <input type="checkbox" id={`task-${index}`} />
-              <label htmlFor={`task-${index}`}>{task}</label>
-            </div>
-          ))}
-        </div>
-      </div>
+      {/* ---------- SAVINGS SPECIFIC TASKS ----------  */}
+
+      <SavingsSpecificTasksSections
+        savingsSpecificTasksList={opsSavingsSpecificTasksList}
+      />
+
+      {/* ---------- REFLECTION POINTS ----------  */}
 
       <div className="devTwoWeeksReflectionPoints">
         <h3 className="sectionHeader" id="devTwoWeeksReflectionPointsHeader">
@@ -188,6 +176,8 @@ function OpsFirstTwoWeeks() {
           </button>
         </div>
       </div>
+
+      {/* ---------- ADD TASKS ----------  */}
 
       <div className="DevTwoWeeksAddTask">
         <h3 className="sectionHeader" id="addTaskHeader">

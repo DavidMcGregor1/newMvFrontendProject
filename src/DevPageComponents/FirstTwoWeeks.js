@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import ResourcesComponent from "../UniversalComponents/ResourcesComponent";
 import SavingsSpecificTasksSections from "../UniversalComponents/SavingsSpecificTasksSections";
+import GetUpToSpeedSection from "../UniversalComponents/GetUpToSpeedSection";
 
 const FirstTwoWeeks = () => {
   const [reflectionPointsCollection, setReflectionPointsCollection] = useState([
@@ -135,21 +136,9 @@ const FirstTwoWeeks = () => {
 
   return (
     <div id="week1MainContainer">
-      {/* ---------- BASIC SET UP ---------- */}
+      {/* ---------- GET UP TO SPEED ---------- */}
 
-      <div className="basicSetUp">
-        <h3 className="sectionHeader" id="getUpToSpeedHeader">
-          Get up to Speed
-        </h3>
-        <div className="getUpToSpeedTasksList">
-          {getUpToSpeedList.map((task, index) => (
-            <div key={index} className="getUpToSpeedTaskItem">
-              <input type="checkbox" id={`task-${index}`} />
-              <label htmlFor={`task-${index}`}>{task}</label>
-            </div>
-          ))}
-        </div>
-      </div>
+      <GetUpToSpeedSection getUpToSpeedList={getUpToSpeedList} />
 
       {/* ---------- RESOURCES ---------- */}
 
@@ -161,20 +150,6 @@ const FirstTwoWeeks = () => {
       />
 
       {/* ---------- SAVINGS SPECIFIC TASKS ---------- */}
-
-      {/* <div className="savingsSpecificTasks">
-        <h3 className="sectionHeader" id="savingsSpecificTasksHeader">
-          Savings Specific Tasks
-        </h3>
-        <div className="savingsSpecificTasksList">
-          {savingsSpecificTasksList.map((task, index) => (
-            <div key={index} className="savingsSpecificTaskListItem">
-              <input type="checkbox" id={`task-${index}`} />
-              <label htmlFor={`task-${index}`}>{task}</label>
-            </div>
-          ))}
-        </div>
-      </div> */}
 
       <SavingsSpecificTasksSections
         savingsSpecificTasksList={savingsSpecificTasksList}

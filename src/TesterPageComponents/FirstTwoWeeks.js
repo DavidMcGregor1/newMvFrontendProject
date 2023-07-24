@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import Button from "../UniversalComponents/Button";
 import ResourcesComponent from "../UniversalComponents/ResourcesComponent";
 import SavingsSpecificTasksSections from "../UniversalComponents/SavingsSpecificTasksSections";
+import GetUpToSpeedSection from "../UniversalComponents/GetUpToSpeedSection";
 
 function FirstTwoWeeks() {
   const [reflectionPointsCollection, setReflectionPointsCollection] = useState([
@@ -126,19 +127,7 @@ function FirstTwoWeeks() {
     <div id="week1MainContainer">
       {/* ---------- BASIC SET UP ---------- */}
 
-      <div className="basicSetUp">
-        <h3 className="sectionHeader" id="getUpToSpeedHeader">
-          Get up to Speed
-        </h3>
-        <div className="getUpToSpeedTasksList">
-          {getUpToSpeedList.map((task, index) => (
-            <div key={index} className="getUpToSpeedTaskItem">
-              <input type="checkbox" id={`task-${index}`} />
-              <label htmlFor={`task-${index}`}>{task}</label>
-            </div>
-          ))}
-        </div>
-      </div>
+      <GetUpToSpeedSection getUpToSpeedList={getUpToSpeedList} />
 
       {/* ---------- RESOURCES ---------- */}
 
