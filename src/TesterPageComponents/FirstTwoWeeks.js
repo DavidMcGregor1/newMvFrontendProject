@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import Button from "../UniversalComponents/Button";
 import ResourcesComponent from "../UniversalComponents/ResourcesComponent";
+import SavingsSpecificTasksSections from "../UniversalComponents/SavingsSpecificTasksSections";
 
 function FirstTwoWeeks() {
   const [reflectionPointsCollection, setReflectionPointsCollection] = useState([
@@ -78,6 +79,8 @@ function FirstTwoWeeks() {
   const [newTask, setNewTask] = React.useState("");
 
   const handleAddTask = () => {
+    console.log("Called handleADdTask");
+
     const selectedSection = document.querySelector(
       'input[name="section"]:checked'
     ).value;
@@ -94,7 +97,8 @@ function FirstTwoWeeks() {
       } else if (selectedSection === "Savings Specific Tasks") {
         console.log("Selected savings specific tasks");
         updatedSavingsSpecificTaskList.push(newTask);
-        setSavingsSpecificTasksList(updatedGetUpToSpeedList);
+        setSavingsSpecificTasksList(updatedSavingsSpecificTaskList);
+        console.log("Array --> " + updatedSavingsSpecificTaskList);
       }
     }
 
@@ -160,6 +164,10 @@ function FirstTwoWeeks() {
           ))}
         </div>
       </div>
+
+      {/* <SavingsSpecificTasksSections
+        savingsSpecificTasksList={savingsSpecificTasksList}
+      /> */}
 
       {/* ---------- REFLECTION POINTS ---------- */}
 
