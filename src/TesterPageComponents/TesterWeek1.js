@@ -5,6 +5,9 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import Button from "../UniversalComponents/Button";
 import ResourcesComponent from "../UniversalComponents/ResourcesComponent";
+import BasicSetUpSection from "../UniversalComponents/BasicSetUpSection";
+import GetCompliantSection from "../UniversalComponents/GetCompliantSection";
+import PeopleToMeetSection from "../UniversalComponents/PeopleToMeetSection";
 
 function TesterWeek1() {
   const zeusSquatPeopleToMeet = [
@@ -166,19 +169,7 @@ function TesterWeek1() {
     <div id="week1MainContainer">
       {/* ---------- BASIC SET UP ---------- */}
 
-      <div className="basicSetUp">
-        <h3 className="FirstWeekSectionHeader" id="basicSetUpHeader">
-          Basic Setup
-        </h3>
-        <div className="basicSetUpTaskList">
-          {testerBasicSetUp.map((task, index) => (
-            <div key={index} className="testerBasicSetUpItem">
-              <input type="checkbox" id={`task-${index}`} />
-              <label htmlFor={`task-${index}`}>{task}</label>
-            </div>
-          ))}
-        </div>
-      </div>
+      <BasicSetUpSection basicSetUpTasks={testerBasicSetUp} />
 
       {/* ---------- RESOURCES ---------- */}
 
@@ -191,35 +182,11 @@ function TesterWeek1() {
 
       {/* ---------- GET COMPLIANT ---------- */}
 
-      <div className="getCompliant">
-        <h3 className="FirstWeekSectionHeader" id="getCompliantHeader">
-          Get Compliant
-        </h3>
-        <div className="getCompliantTaskList">
-          {testerGetCompliant.map((task, index) => (
-            <div key={index} className="testerGetCompliantItem">
-              <input type="checkbox" id={`task-${index}`}></input>
-              <label htmlFor={`task-${index}`}>{task}</label>
-            </div>
-          ))}
-        </div>
-      </div>
+      <GetCompliantSection getCompliantTasks={testerGetCompliant} />
 
       {/* ---------- PEOPLE TO MEET ---------- */}
 
-      <div className="testerWeek1PeopleToMeet">
-        <h3 className="FirstWeekSectionHeader" id="peopleToMeetHeader">
-          People to meet
-        </h3>
-        <div className="peopleToMeetList">
-          {chosenArray.map((task, index) => (
-            <div key={index} className="peopleToMeetItem">
-              <input type="checkbox" id={`task-${index}`}></input>
-              <label htmlFor={`task-${index}`}>{task}</label>
-            </div>
-          ))}
-        </div>
-      </div>
+      <PeopleToMeetSection chosenArray={chosenArray} />
 
       {/* ---------- ADD TASK ---------- */}
 
