@@ -91,6 +91,7 @@ const FirstMonth = () => {
     }
 
     setNewReflectionPoint("");
+    alert("Submitted Reflection Point");
   };
 
   return (
@@ -125,7 +126,7 @@ const FirstMonth = () => {
         </div>
 
         <div className="FirstMonthSubmitReflectionButtonDiv">
-          <Button label="Submit" onClick={handleAddTask} />
+          <Button label="Submit" onClick={handleAddReflectionPoint} />
         </div>
       </div>
 

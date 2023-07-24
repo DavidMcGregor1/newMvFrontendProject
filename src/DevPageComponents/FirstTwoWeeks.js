@@ -132,6 +132,7 @@ const FirstTwoWeeks = () => {
       setReflectionPointsCollection(updatedReflectionPointsCollection);
     }
     setNewReflectionPoint("");
+    alert("Submitted Reflection Point");
   };
 
   return (

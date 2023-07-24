@@ -121,6 +121,7 @@ function FirstTwoWeeks() {
     }
 
     setNewReflectionPoint("");
+    alert("Submitted Reflection Point");
   };
 
   return (
@@ -161,7 +162,7 @@ function FirstTwoWeeks() {
         </div>
 
         <div className="FirstTwoWeeksSubmitReflectionButtonDiv">
-          <Button label="Submit" onClick={handleAddTask} />
+          <Button label="Submit" onClick={handleAddReflectionPoint} />
         </div>
       </div>
 

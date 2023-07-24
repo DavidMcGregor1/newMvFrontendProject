@@ -90,6 +90,7 @@ const FirstMonth = () => {
     }
 
     setNewReflectionPoint("");
+    alert("Submitted Reflection Point");
   };
 
   return (
