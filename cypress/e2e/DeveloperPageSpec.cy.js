@@ -39,3 +39,20 @@ describe("Adding a task to Basic Set Up section", () => {
     cy.get(".basicSetUpTaskList").should("contain", "New task to be added");
   });
 });
+
+describe("Adding a task to Get Compliant section", () => {
+  it("should add a task to the Get Compliant section", () => {
+    cy.visit("localhost:3000/welcome/developer");
+
+    cy.get("#addTaskInputBox").type("New get compliant task to be added");
+
+    cy.get('input[name="section"]').check("Get Compliant");
+
+    cy.contains("Add Task").parent().find("button").click();
+
+    cy.get(".getCompliantTaskList").should(
+      "contain",
+      "New get compliant task to be added"
+    );
+  });
+});
