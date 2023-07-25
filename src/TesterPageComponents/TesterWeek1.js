@@ -119,7 +119,7 @@ function TesterWeek1() {
     },
   ]);
 
-  const sections = ["Basic Setup", "Get Compliant", "People to meet"];
+  const sections = ["Basic Set Up", "Get Compliant", "People to meet"];
 
   const [newTask, setNewTask] = React.useState("");
 
@@ -134,7 +134,7 @@ function TesterWeek1() {
       let updatedPeopleToMeet = [...chosenArray];
 
       switch (selectedSection) {
-        case "Basic Setup":
+        case "Basic Set Up":
           updatedtesterBasicSetUp.push(newTask);
           setTesterBasicSetUp(updatedtesterBasicSetUp);
           break;
@@ -196,7 +196,7 @@ function TesterWeek1() {
         </h3>
         <div className="addTaskInputDiv">
           <input
-            id="addTaskInputBox"
+            id="testerWeek1AddTaskInputBox"
             type="input"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
