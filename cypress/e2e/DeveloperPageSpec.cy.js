@@ -56,3 +56,17 @@ describe("Adding a task to Get Compliant section", () => {
     );
   });
 });
+
+describe("Adding a task to People to meet", () => {
+  it("should add a task to the people to meet section", () => {
+    cy.visit("localhost:3000/welcome/developer");
+
+    cy.get("#addTaskInputBox").type("New person to be added");
+
+    cy.get('input[name="section"]').check("People to meet");
+
+    cy.contains("Add Task").parent().find("button").click();
+
+    cy.get(".peopleToMeetList").should("contain", "New person to be added");
+  });
+});
