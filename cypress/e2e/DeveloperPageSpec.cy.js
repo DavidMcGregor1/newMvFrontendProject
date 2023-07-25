@@ -25,3 +25,17 @@ describe("Arrows work", () => {
     cy.contains("h1", "First two weeks").should("be.visible");
   });
 });
+
+describe("Adding a task to Basic Set Up section", () => {
+  it("should add a task to the Basic Set Up section", () => {
+    cy.visit("localhost:3000/welcome/developer");
+
+    cy.get("#addTaskInputBox").type("New task to be added");
+
+    cy.get('input[name="section"]').check("Basic Set Up");
+
+    cy.contains("Add Task").parent().find("button").click();
+
+    cy.get(".basicSetUpTaskList").should("contain", "New task to be added");
+  });
+});
