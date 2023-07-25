@@ -1,0 +1,17 @@
+#marketingFirstTwoWeeksAddTaskInputBox {
+    height: 40px;
+    width: 80%;
+}
+
+.marketingFirstTwoWeeksAddTaskButtonDiv {
+    text-align: center;
+}
+
+#marketingFirstTwoWeeksAddReflectionPointInputBox {
+    height: 100px;
+    width: 80%;
+}
+
+.marketingFirstTwoWeeksSubmitReflectionButtonDiv {
+    text-align: center;
+}

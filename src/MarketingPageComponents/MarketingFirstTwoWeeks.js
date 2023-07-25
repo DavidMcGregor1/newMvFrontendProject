@@ -116,16 +116,16 @@ const MarketingFirstTwoWeeks = () => {
 
         <div className="addReflectionPointInputDiv">
           <textarea
-            id="addReflectionPointInputBox"
+            id="marketingFirstTwoWeeksAddReflectionPointInputBox"
             type="text"
             value={newReflectionPoint}
             onChange={(e) => setNewReflectionPoint(e.target.value)}
           />
         </div>
 
-        <div className="FirstTwoWeeksSubmitReflectionButtonDiv">
+        <div className="marketingFirstTwoWeeksSubmitReflectionButtonDiv">
           <button
-            id="FirstTwoWeeksSubmitReflectionButton"
+            id="marketingFirstTwoWeeksSubmitReflectionButton"
             onClick={handleAddReflectionPoint}>
             Sumbit
           </button>
@@ -141,7 +141,7 @@ const MarketingFirstTwoWeeks = () => {
 
         <div className="addTaskInputDiv">
           <input
-            id="addTaskInputBox"
+            id="marketingFirstTwoWeeksAddTaskInputBox"
             type="input"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
@@ -162,7 +162,7 @@ const MarketingFirstTwoWeeks = () => {
           ))}
         </div>
 
-        <div className="FirstTwoWeeksAddTaskButtonDiv">
+        <div className="marketingFirstTwoWeeksAddTaskButtonDiv">
           <button id="FirstTwoWeeksAddTaskButton" onClick={handleAddTask}>
             Add Task
           </button>
