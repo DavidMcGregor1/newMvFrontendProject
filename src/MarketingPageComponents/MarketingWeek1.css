@@ -1,0 +1,238 @@
+/* ---------- MAIN ---------- */
+
+
+p {
+    color: white;
+}
+
+#week1MainContainer {
+    width: 90vw;
+    height: 80vh;
+    padding: 1%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    border-radius: 10px;
+    gap: 20px;
+  }
+
+  #header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    height: 10vh;
+  }
+
+#mainHeader {
+    text-align: center;
+    color: white;
+    padding-bottom: 0%;
+    
+}
+
+.arrow {
+    margin: 0;
+    padding: 0%;
+}
+
+.FirstWeekSectionHeader {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/* ---------- BASIC SET UP ---------- */
+
+.basicSetUp {
+    height: 37vh;
+    width: 34vw;
+    /* width: 100%; */
+    background-color: #3D8DE3;
+    grid-row: 1;
+    grid-column: 1;
+    overflow: auto;
+    border-radius: 20px;
+    padding-left: 1.5%;
+}
+
+.setUpLabel {
+    font-size: 18px;
+}
+
+.basicSetUpTaskItem {
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: 400;
+}
+
+/* ---------- RESOURCES ---------- */
+/* 
+.devWeek1Resources {
+    height: 79vh;
+    width: 25vw;
+    background-color: #3D8DE3;
+    grid-row: 1 / 3;
+    grid-column: 3;
+    border-radius: 20px;
+    padding-left: 1%;
+    overflow: auto;
+    text-align: center;
+  }
+
+.resourceAnchor {
+    color: black;
+}
+
+.devWeek1ResourceItem {
+    margin-top: 7%;
+    padding: 0%;
+    font-size: large;
+    font-weight: 400;
+}
+
+.sectionItems {
+    margin-top: 2%;
+}
+
+.devWeek1MainResourceDiv {
+    text-align: center;
+} */
+
+/* ---------- GET COMPLIANT ---------- */
+
+.getCompliant {
+    height: 37vh;
+    width: 33.5vw;
+    background-color: #3D8DE3;
+    grid-row: 2;
+    grid-column: 1 / 3;
+    overflow: auto;
+    border-radius: 20px;
+    padding-left: 1.5%;
+}
+
+#getCompliantHeader {
+    padding-bottom: 1%;
+}
+
+.getCompliantTaskItem {
+    margin-bottom: 10px;
+}
+
+.getCompliantTaskItem {
+    padding-top: 1%;
+    font-size: large;
+    font-weight: 400;
+}
+
+/* ---------- PEOPLE TO MEET ---------- */
+
+.devWeek1PeopleToMeet {
+    height: 37vh;
+    width: 20vw;
+    background-color: #3D8DE3;
+    grid-row: 1;
+    grid-column: 2;
+    text-align: left;
+    margin-left: 15%;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+#devWeek1PeopleToMeetHeader {
+    padding-bottom: 5%;
+}
+
+.devWeek1PeopleToMeetItem {
+    padding-left: 10%;
+    margin-top: 5%;
+    font-size: large;
+    font-weight: 400;
+}
+
+/* ---------- Add Task ---------- */
+
+.DevWeek1AddTask {
+    height: 37vh;
+    width: 20vw;
+    background-color: #154360;
+    color: white;
+    grid-row: 2;
+    grid-column: 2;
+    margin-left: 15%;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+#addTaskHeader {
+    margin-bottom: 10%;
+}
+
+#addTaskInputBox {
+    height: 40px;
+    width: 80%;
+}
+
+.addTaskInputDiv {
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+.FirstWeekAddTaskButtonDiv {
+    text-align: center;
+}
+
+#FirstWeekAddTaskButton {
+    width: 130px;
+    height: 40px;
+    background-color: #01DEB2;
+    border-radius: 40px;
+    border: #02b893 solid 2px;
+}
+
+.sectionOptions {
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+
+@media only screen and (max-width: 1193px) {
+    .resourceItem {
+        margin-top: 4%;
+        padding: 0%;
+        font-size: large;
+        font-weight: 400;
+    }
+    .FirstWeekSectionHeader {
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+  }
+
+  @media only screen and (max-width: 780px) {
+    .resourceItem {
+        margin-top: 2.5%;
+        padding: 0%;
+        font-size: large;
+        font-weight: 400;
+    }
+    .FirstWeekSectionHeader {
+        text-align: center;
+        font-weight: 700;
+        font-size: 22px;
+        margin: 0%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+  }
+
