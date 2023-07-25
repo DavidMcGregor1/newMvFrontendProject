@@ -54,12 +54,12 @@ function DeveloperPage() {
   return (
     <div className="mainDiv">
       <div id="header">
-        <p className="arrow" onClick={goBackward}>
+        <p className="arrow" data-testid="left-arrow" onClick={goBackward}>
           &lt;
         </p>
         <h1 id="mainHeader">Week 1</h1>
 
-        <p className="arrow" onClick={goForward}>
+        <p className="arrow" data-testid="right-arrow" onClick={goForward}>
           &gt;
         </p>
       </div>
