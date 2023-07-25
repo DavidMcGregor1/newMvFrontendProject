@@ -171,10 +171,8 @@ function OpsWeek1() {
             </div>
           ))}
         </div>
-        <div className="FirstWeekAddTaskButtonDiv">
-          <div className="FirstWeekAddTaskButtonDiv">
-            <Button label="Add Task" onClick={handleAddTask} />
-          </div>
+        <div className="OpsFirstWeekAddTaskButtonDiv">
+          <Button label="Add Task" onClick={handleAddTask} />
         </div>
       </div>
     </div>

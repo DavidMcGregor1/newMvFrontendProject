@@ -131,7 +131,7 @@ function OpsFirstTwoWeeks() {
 
         <div className="addReflectionPointInputDiv">
           <textarea
-            id="addReflectionPointInputBox"
+            id="opsFirstTwoWeeksAddReflectionPointInputBox"
             type="text"
             value={newReflectionPoint}
             onChange={(e) => setNewReflectionPoint(e.target.value)}
@@ -156,7 +156,7 @@ function OpsFirstTwoWeeks() {
 
         <div className="addTaskInputDiv">
           <input
-            id="addTaskInputBox"
+            id="opsFirstTwoWeeksAddTaskInputBox"
             type="input"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
@@ -177,7 +177,7 @@ function OpsFirstTwoWeeks() {
           ))}
         </div>
 
-        <div className="FirstTwoWeeksAddTaskButtonDiv">
+        <div className="opsFirstTwoWeeksAddTaskButtonDiv">
           <button id="FirstTwoWeeksAddTaskButton" onClick={handleAddTask}>
             Add Task
           </button>
