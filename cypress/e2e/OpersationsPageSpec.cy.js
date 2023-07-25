@@ -133,40 +133,40 @@ describe("Reflection Points alert is shown on submit", () => {
 
 // ---------- FIRST MONTH TESTS --------
 
-//   describe("Adding a task to General Tasks", () => {
-//     it("should add a task to the  General Tasks section", () => {
-//       cy.visit("localhost:3000/welcome/tester");
-//       cy.contains(">").click();
-//       cy.contains(">").click();
-//       cy.get("#testerFirstMonthAddTaskInputBox").type(
-//         "New general task to be added"
-//       );
+describe("Adding a task to General Tasks", () => {
+  it("should add a task to the  General Tasks section", () => {
+    cy.visit("localhost:3000/welcome/operations");
+    cy.contains(">").click();
+    cy.contains(">").click();
+    cy.get("#opsFirstMonthAddTaskInputBox").type(
+      "New general task to be added"
+    );
 
-//       cy.get(".FirstMonthAddTaskButtonDiv").click();
+    cy.get(".opsFirstMonthAddTaskButtonDiv").click();
 
-//       cy.get(".generalTasksList").should(
-//         "contain",
-//         "New general task to be added"
-//       );
-//     });
-//   });
+    cy.get(".generalTasksList").should(
+      "contain",
+      "New general task to be added"
+    );
+  });
+});
 
-//   describe("Reflection Points alert is shown on submit", () => {
-//     it("should show the alert when the submit button is clicked", () => {
-//       cy.visit("localhost:3000/welcome/tester");
+describe("Reflection Points alert is shown on submit", () => {
+  it("should show the alert when the submit button is clicked", () => {
+    cy.visit("localhost:3000/welcome/operations");
 
-//       cy.window().then((win) => {
-//         cy.spy(win, "alert").as("alert");
-//       });
-//       cy.contains(">").click();
-//       cy.contains(">").click();
-//       cy.get("#TesterFirstMonthAddReflectionPointInputBox").type(
-//         "New reflection point to be added"
-//       );
-//       cy.get(".TesterFirstMonthSubmitReflectionButtonDiv").click();
-//       cy.get("@alert").should(
-//         "have.been.calledWith",
-//         "Submitted Reflection Point"
-//       );
-//     });
-//   });
+    cy.window().then((win) => {
+      cy.spy(win, "alert").as("alert");
+    });
+    cy.contains(">").click();
+    cy.contains(">").click();
+    cy.get("#opsFirstMonthAddReflectionPointInputBox").type(
+      "New reflection point to be added"
+    );
+    cy.get(".opsFirstMonthSubmitReflectionButtonDiv").click();
+    cy.get("@alert").should(
+      "have.been.calledWith",
+      "Submitted Reflection Point"
+    );
+  });
+});

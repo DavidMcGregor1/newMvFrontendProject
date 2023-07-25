@@ -64,7 +64,7 @@
     color: white;
 }
 
-#FirstMonthAddReflectionPointInputBox {
+#opsFirstMonthAddReflectionPointInputBox {
     height: 150px;
     width: 80%;
 }
@@ -72,6 +72,10 @@
 .addReflectionPointInputDiv {
     text-align: center;
     margin-bottom: 5%;
+}
+
+.opsFirstMonthSubmitReflectionButtonDiv {
+    text-align: center;
 }
 
 
@@ -128,7 +132,7 @@
     margin-bottom: 10%;
 }
 
-#addTaskInputBox {
+#opsFirstMonthAddTaskInputBox {
     height: 40px;
     width: 80%;
 }
@@ -138,7 +142,7 @@
     margin-bottom: 7%;
 }
 
-.FirstMonthAddTaskButtonDiv {
+.opsFirstMonthAddTaskButtonDiv {
     text-align: center;
 }
 

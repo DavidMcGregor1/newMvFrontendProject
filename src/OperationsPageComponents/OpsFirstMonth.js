@@ -113,14 +113,14 @@ const OpsFirstMonth = () => {
 
         <div className="addReflectionPointInputDiv">
           <textarea
-            id="FirstMonthAddReflectionPointInputBox"
+            id="opsFirstMonthAddReflectionPointInputBox"
             type="text"
             value={newReflectionPoint}
             onChange={(e) => setNewReflectionPoint(e.target.value)}
           />
         </div>
 
-        <div className="FirstMonthSubmitReflectionButtonDiv">
+        <div className="opsFirstMonthSubmitReflectionButtonDiv">
           <Button label="Submit" onClick={handleAddReflectionPoint} />
         </div>
       </div>
@@ -134,14 +134,14 @@ const OpsFirstMonth = () => {
 
         <div className="addTaskInputDiv">
           <input
-            id="testerFirstMonthAddTaskInputBox"
+            id="opsFirstMonthAddTaskInputBox"
             type="input"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
           />
         </div>
 
-        <div className="FirstMonthAddTaskButtonDiv">
+        <div className="opsFirstMonthAddTaskButtonDiv">
           <Button label="Add Task" onClick={handleAddTask} />
         </div>
       </div>
