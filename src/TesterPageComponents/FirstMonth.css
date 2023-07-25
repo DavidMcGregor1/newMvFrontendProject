@@ -25,6 +25,11 @@
     text-align: center;
 }
 
+#TesterFirstMonthAddReflectionPointInputBox {
+    height: 150px;
+    width: 80%;
+}
+
 .TesterFirstMonthMainResourceDiv {
     text-align: center;
   }

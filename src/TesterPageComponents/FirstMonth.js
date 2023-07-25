@@ -118,7 +118,7 @@ const FirstMonth = () => {
 
         <div className="addReflectionPointInputDiv">
           <textarea
-            id="FirstMonthAddReflectionPointInputBox"
+            id="TesterFirstMonthAddReflectionPointInputBox"
             type="text"
             value={newReflectionPoint}
             onChange={(e) => setNewReflectionPoint(e.target.value)}

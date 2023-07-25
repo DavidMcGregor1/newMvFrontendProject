@@ -74,3 +74,99 @@ describe("Adding a task to People to meet", () => {
     cy.get(".peopleToMeetList").should("contain", "New person to be added");
   });
 });
+
+// ---------- FIRST TWO WEEKS TESTS --------
+
+describe("Adding a task to get up to speed", () => {
+  it("should add a task to the get up to speed section", () => {
+    cy.visit("localhost:3000/welcome/tester");
+    cy.contains(">").click();
+    cy.get("#testerTwoWeeksAddTaskInputBox").type(
+      "New get up to speed task to be added"
+    );
+
+    cy.get('input[name="section"]').check("Get Up To Speed");
+
+    cy.get(".FirstTwoWeeksAddTaskButtonDiv").click();
+
+    cy.get(".getUpToSpeedTasksList").should(
+      "contain",
+      "New get up to speed task to be added"
+    );
+  });
+});
+
+describe("Adding a task to Savings Specific Tasks", () => {
+  it("should add a task to the savings specific tasks section", () => {
+    cy.visit("localhost:3000/welcome/tester");
+    cy.contains(">").click();
+    cy.get("#testerTwoWeeksAddTaskInputBox").type(
+      "New savings specific task to be added"
+    );
+    cy.get('input[name="section"]').check("Savings Specific Tasks");
+    cy.get(".FirstTwoWeeksAddTaskButtonDiv").click();
+    cy.get(".savingsSpecificTasksList").should(
+      "contain",
+      "New savings specific task to be added"
+    );
+  });
+});
+
+describe("Reflection Points alert is shown on submit", () => {
+  it("should show the alert when the submit button is clicked", () => {
+    cy.visit("localhost:3000/welcome/tester");
+
+    cy.window().then((win) => {
+      cy.spy(win, "alert").as("alert");
+    });
+    cy.contains(">").click();
+    cy.get("#testerTwoWeeksAddTaskInputBox").type(
+      "New reflection point to be added"
+    );
+    cy.get(".TesterFirstTwoWeeksSubmitReflectionButtonDiv").click();
+    cy.get("@alert").should(
+      "have.been.calledWith",
+      "Submitted Reflection Point"
+    );
+  });
+});
+
+// ---------- FIRST MONTH TESTS --------
+
+describe("Adding a task to General Tasks", () => {
+  it("should add a task to the  General Tasks section", () => {
+    cy.visit("localhost:3000/welcome/tester");
+    cy.contains(">").click();
+    cy.contains(">").click();
+    cy.get("#testerFirstMonthAddTaskInputBox").type(
+      "New general task to be added"
+    );
+
+    cy.get(".FirstMonthAddTaskButtonDiv").click();
+
+    cy.get(".generalTasksList").should(
+      "contain",
+      "New general task to be added"
+    );
+  });
+});
+
+describe("Reflection Points alert is shown on submit", () => {
+  it("should show the alert when the submit button is clicked", () => {
+    cy.visit("localhost:3000/welcome/tester");
+
+    cy.window().then((win) => {
+      cy.spy(win, "alert").as("alert");
+    });
+    cy.contains(">").click();
+    cy.contains(">").click();
+    cy.get("#TesterFirstMonthAddReflectionPointInputBox").type(
+      "New reflection point to be added"
+    );
+    cy.get(".TesterFirstMonthSubmitReflectionButtonDiv").click();
+    cy.get("@alert").should(
+      "have.been.calledWith",
+      "Submitted Reflection Point"
+    );
+  });
+});

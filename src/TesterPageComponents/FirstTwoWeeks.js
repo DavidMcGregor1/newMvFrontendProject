@@ -161,7 +161,7 @@ function FirstTwoWeeks() {
           />
         </div>
 
-        <div className="FirstTwoWeeksSubmitReflectionButtonDiv">
+        <div className="TesterFirstTwoWeeksSubmitReflectionButtonDiv">
           <Button label="Submit" onClick={handleAddReflectionPoint} />
         </div>
       </div>
@@ -175,7 +175,7 @@ function FirstTwoWeeks() {
 
         <div className="addTaskInputDiv">
           <input
-            id="addTaskInputBox"
+            id="testerTwoWeeksAddTaskInputBox"
             type="input"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
