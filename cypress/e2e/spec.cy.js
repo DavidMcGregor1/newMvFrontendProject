@@ -28,3 +28,21 @@ describe("Tester page loads on click", () => {
     cy.contains("h1", "Week 1").should("be.visible");
   });
 });
+
+describe("Operations page loads on click", () => {
+  it("should navigate to the Operations Page on Operations card click", () => {
+    cy.visit("localhost:3000/");
+    cy.contains("Operations").click();
+    cy.url().should("include", "/welcome/operations");
+    cy.contains("h1", "Week 1").should("be.visible");
+  });
+});
+
+describe("Marketing page loads on click", () => {
+  it("should navigate to the Marketing Page on Marketing card click", () => {
+    cy.visit("localhost:3000/");
+    cy.contains("Marketing").click();
+    cy.url().should("include", "/welcome/marketing");
+    cy.contains("h1", "Week 1").should("be.visible");
+  });
+});
