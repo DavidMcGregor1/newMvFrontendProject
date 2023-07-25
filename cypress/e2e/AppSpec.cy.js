@@ -1,3 +1,5 @@
+// npx cypress open
+
 describe("Main page loads and renders content", () => {
   it("passes", () => {
     cy.visit("localhost:3000");
