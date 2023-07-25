@@ -26,6 +26,8 @@ describe("Arrows work", () => {
   });
 });
 
+// ---------- WEEK 1 TESTS --------
+
 describe("Adding a task to Basic Set Up section", () => {
   it("should add a task to the Basic Set Up section", () => {
     cy.visit("localhost:3000/welcome/developer");
@@ -68,5 +70,26 @@ describe("Adding a task to People to meet", () => {
     cy.contains("Add Task").parent().find("button").click();
 
     cy.get(".peopleToMeetList").should("contain", "New person to be added");
+  });
+});
+
+// ---------- FIRST TWO WEEKS TESTS --------
+
+describe("Adding a task to get up to speed", () => {
+  it("should add a task to the get up to speed section", () => {
+    cy.visit("localhost:3000/welcome/developer");
+    cy.contains(">").click();
+    cy.get("#devTwoWeeksAddTaskInputBox").type(
+      "New get up to speed task to be added"
+    );
+
+    cy.get('input[name="section"]').check("Get Up To Speed");
+
+    cy.get("#FirstTwoWeeksAddTaskButton").click();
+
+    cy.get(".getUpToSpeedTasksList").should(
+      "contain",
+      "New get up to speed task to be added"
+    );
   });
 });
