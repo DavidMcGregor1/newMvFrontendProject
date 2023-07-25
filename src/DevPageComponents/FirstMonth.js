@@ -138,7 +138,7 @@ const FirstMonth = () => {
 
         <div className="addTaskInputDiv">
           <input
-            id="testerFirstMonthAddTaskInputBox"
+            id="devFirstMonthAddTaskInputBox"
             type="input"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
@@ -146,7 +146,11 @@ const FirstMonth = () => {
         </div>
 
         <div className="FirstMonthAddTaskButtonDiv">
-          <Button label="Add Task" onClick={handleAddTask} />
+          <Button
+            id="FirstMonthAddTaskButton"
+            label="Add Task"
+            onClick={handleAddTask}
+          />
         </div>
       </div>
     </div>

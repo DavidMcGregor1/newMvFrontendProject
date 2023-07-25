@@ -77,6 +77,13 @@
 
 /*--------------------------------------*/
 
+#devFirstMonthAddTaskInputBox {
+    height: 100px;
+    width: 80%;
+}
+
+
+
 .FirstMonthDevResources {
     margin-left: 6%;
     height: 35vh;
