@@ -21,7 +21,7 @@ const Week1Div = () => {
 
   const [basicSetUpTasks, setBasicSetUpTasks] = useState([
     "Check access to systems",
-    "Go through the Development Setup guide",
+    "Go through the SOME GUIDE HERE",
     "Check permissions are set up correctly within core systems - you're in the right channels, meetings, able to access spaces etc",
     "Download any required software - you can do this either via the Software center (Windows 10) or Company Portal (Windows11)",
     "(Contractors and Consultants only) Agree lines of communication / points of escalation from your manager / sponsor. If you are an MVP laptop user only (so no ServiceNow) agree who will work as the admin to raise issues on your behalf",
@@ -60,28 +60,12 @@ const Week1Div = () => {
     },
 
     {
-      text: "Quick Start Guide",
-      link: "fakeLink",
-    },
-    {
-      text: "Development Setup Guide",
-      link: "fakeLink",
-    },
-    {
-      text: "GitLab Access Guide",
-      link: "fakeLink",
-    },
-    {
       text: "Introduction and Useful Info",
       link: "fakeLink",
     },
 
     {
       text: "Savings Cheat Sheet",
-      link: "fakeLink",
-    },
-    {
-      text: "All about the code",
       link: "fakeLink",
     },
   ]);

@@ -1,0 +1,45 @@
+.mainDiv {
+    width: 100vw;
+    height: 100vh;
+    /* display: flex;
+    flex-direction: row; */
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+}
+
+html {
+    overflow: hidden;
+}
+
+* {
+    border: red dashed 1px
+}
+
+.flexDiv {
+    display: flex;
+    flex-direction: row;
+align-items: center;
+    justify-content:center;
+
+}
+
+  .leftArrowContainer {
+    /* margin-left: 2%; */
+    align-items: center;
+  }
+
+  .rightArrowContainer {
+    align-items: center;
+    /* margin-right: 2%; */
+}
+
+.arrow {
+    font-size: 70px;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
