@@ -14,9 +14,9 @@ html {
     overflow: hidden;
 }
 
-* {
+/* * {
     border: red dashed 1px
-}
+} */
 
 .flexDiv {
     display: flex;
