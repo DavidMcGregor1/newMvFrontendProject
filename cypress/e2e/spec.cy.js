@@ -19,3 +19,12 @@ describe("Developer page loads on click", () => {
     cy.contains("h1", "Week 1").should("be.visible");
   });
 });
+
+describe("Tester page loads on click", () => {
+  it("should navigate to the Tester Page on Tester card click", () => {
+    cy.visit("localhost:3000/");
+    cy.contains("Tester").click();
+    cy.url().should("include", "/welcome/tester");
+    cy.contains("h1", "Week 1").should("be.visible");
+  });
+});
