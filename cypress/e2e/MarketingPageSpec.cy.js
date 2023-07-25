@@ -12,3 +12,65 @@ describe("Main page loads and renders content", () => {
     cy.contains("h3", "Add Task").should("be.visible");
   });
 });
+
+describe("Arrows work", () => {
+  it("back arrow works", () => {
+    cy.visit("localhost:3000/welcome/marketing");
+    cy.contains("<").click();
+    cy.contains("h1", "First month").should("be.visible");
+  });
+  it("forward arrow works", () => {
+    cy.visit("localhost:3000/welcome/developer");
+    cy.contains(">").click();
+    cy.contains("h1", "First two weeks").should("be.visible");
+  });
+});
+
+// ---------- WEEK 1 TESTS --------
+
+describe("Adding a task to Basic Set Up section", () => {
+  it("should add a task to the Basic Set Up section", () => {
+    cy.visit("localhost:3000/welcome/marketing");
+
+    cy.get("#marketingWeek1AddTaskInputBox").type("New task to be added");
+
+    cy.get('input[name="section"]').check("Basic Set Up");
+
+    cy.contains("Add Task").parent().find("button").click();
+
+    cy.get(".basicSetUpTaskList").should("contain", "New task to be added");
+  });
+});
+
+describe("Adding a task to Get Compliant section", () => {
+  it("should add a task to the Get Compliant section", () => {
+    cy.visit("localhost:3000/welcome/marketing");
+
+    cy.get("#marketingWeek1AddTaskInputBox").type(
+      "New get compliant task to be added"
+    );
+
+    cy.get('input[name="section"]').check("Get Compliant");
+
+    cy.contains("Add Task").parent().find("button").click();
+
+    cy.get(".getCompliantTaskList").should(
+      "contain",
+      "New get compliant task to be added"
+    );
+  });
+});
+
+describe("Adding a task to People to meet", () => {
+  it("should add a task to the people to meet section", () => {
+    cy.visit("localhost:3000/welcome/marketing");
+
+    cy.get("#marketingWeek1AddTaskInputBox").type("New person to be added");
+
+    cy.get('input[name="section"]').check("People to meet");
+
+    cy.contains("Add Task").parent().find("button").click();
+
+    cy.get(".peopleToMeetList").should("contain", "New person to be added");
+  });
+});

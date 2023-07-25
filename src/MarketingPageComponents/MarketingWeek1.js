@@ -145,7 +145,7 @@ const Week1Div = () => {
         </h3>
         <div className="addTaskInputDiv">
           <input
-            id="addTaskInputBox"
+            id="marketingWeek1AddTaskInputBox"
             type="input"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
