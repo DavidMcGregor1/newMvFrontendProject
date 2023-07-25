@@ -93,3 +93,19 @@ describe("Adding a task to get up to speed", () => {
     );
   });
 });
+
+describe("Adding a task to Savings Specific Tasks", () => {
+  it("should add a task to the savings specific tasks section", () => {
+    cy.visit("localhost:3000/welcome/developer");
+    cy.contains(">").click();
+    cy.get("#devTwoWeeksAddTaskInputBox").type(
+      "New savings specific task to be added"
+    );
+    cy.get('input[name="section"]').check("Savings Specific Tasks");
+    cy.get("#FirstTwoWeeksAddTaskButton").click();
+    cy.get(".savingsSpecificTasksList").should(
+      "contain",
+      "New savings specific task to be added"
+    );
+  });
+});
