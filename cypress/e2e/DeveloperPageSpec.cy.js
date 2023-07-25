@@ -148,3 +148,23 @@ describe("Adding a task to General Tasks", () => {
     );
   });
 });
+
+describe("Reflection Points alert is shown on submit", () => {
+  it("should show the alert when the submit button is clicked", () => {
+    cy.visit("localhost:3000/welcome/developer");
+
+    cy.window().then((win) => {
+      cy.spy(win, "alert").as("alert");
+    });
+    cy.contains(">").click();
+    cy.contains(">").click();
+    cy.get("#FirstMonthAddReflectionPointInputBox").type(
+      "New reflection point to be added"
+    );
+    cy.get(".FirstMonthSubmitReflectionButtonDiv").click();
+    cy.get("@alert").should(
+      "have.been.calledWith",
+      "Submitted Reflection Point"
+    );
+  });
+});
