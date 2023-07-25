@@ -12,3 +12,16 @@ describe("Main page loads and renders content", () => {
     cy.contains("h3", "Add Task").should("be.visible");
   });
 });
+
+describe("Arrows work", () => {
+  it("back arrow works", () => {
+    cy.visit("localhost:3000/welcome/developer");
+    cy.contains("<").click();
+    cy.contains("h1", "First month").should("be.visible");
+  });
+  it("forward arrow works", () => {
+    cy.visit("localhost:3000/welcome/developer");
+    cy.contains(">").click();
+    cy.contains("h1", "First two weeks").should("be.visible");
+  });
+});
