@@ -41,3 +41,36 @@ describe("Adding a task to Basic Set Up section", () => {
     cy.get(".basicSetUpTaskList").should("contain", "New task to be added");
   });
 });
+
+describe("Adding a task to Get Compliant section", () => {
+  it("should add a task to the Get Compliant section", () => {
+    cy.visit("localhost:3000/welcome/tester");
+
+    cy.get("#testerWeek1AddTaskInputBox").type(
+      "New get compliant task to be added"
+    );
+
+    cy.get('input[name="section"]').check("Get Compliant");
+
+    cy.contains("Add Task").parent().find("button").click();
+
+    cy.get(".getCompliantTaskList").should(
+      "contain",
+      "New get compliant task to be added"
+    );
+  });
+});
+
+describe("Adding a task to People to meet", () => {
+  it("should add a task to the people to meet section", () => {
+    cy.visit("localhost:3000/welcome/tester");
+
+    cy.get("#testerWeek1AddTaskInputBox").type("New person to be added");
+
+    cy.get('input[name="section"]').check("People to meet");
+
+    cy.contains("Add Task").parent().find("button").click();
+
+    cy.get(".peopleToMeetList").should("contain", "New person to be added");
+  });
+});
