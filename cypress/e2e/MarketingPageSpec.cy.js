@@ -130,3 +130,23 @@ describe("Reflection Points alert is shown on submit", () => {
     );
   });
 });
+
+// ---------- FIRST MONTH TESTS --------
+
+describe("Adding a task to General Tasks", () => {
+  it("should add a task to the  General Tasks section", () => {
+    cy.visit("localhost:3000/welcome/developer");
+    cy.contains(">").click();
+    cy.contains(">").click();
+    cy.get("#devFirstMonthAddTaskInputBox").type(
+      "New general task to be added"
+    );
+
+    cy.get(".FirstMonthAddTaskButtonDiv").click();
+
+    cy.get(".generalTasksList").should(
+      "contain",
+      "New general task to be added"
+    );
+  });
+});

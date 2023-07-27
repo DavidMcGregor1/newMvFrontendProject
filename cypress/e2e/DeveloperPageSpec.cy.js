@@ -118,7 +118,7 @@ describe("Reflection Points alert is shown on submit", () => {
       cy.spy(win, "alert").as("alert");
     });
     cy.contains(">").click();
-    cy.get("#devTwoWeeksAddReflectionPointInputBox").type(
+    cy.get("#devTwoWeeksddReflectionPointInputBox").type(
       "New reflection point to be added"
     );
     cy.get("#FirstTwoWeeksSubmitReflectionButton").click();

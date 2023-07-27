@@ -37,25 +37,14 @@ const Week1Div = () => {
     "Complete payroll form (sent via email) and send to (replace with real email)",
   ]);
 
-  const [marketingDevAllResources, setMarketingDevAllResources] = useState([
+  const [marketingAllResources, setMarketingDevAllResources] = useState([
     {
       text: "Active Savings Confluence Page",
       link: "fakeLink",
     },
+
     {
       text: "Software install request",
-      link: "fakeLink",
-    },
-    {
-      text: "Overview of Savings Architecture",
-      link: "fakeLink",
-    },
-    {
-      text: "Workday",
-      link: "fakeLink",
-    },
-    {
-      text: "Jenkins",
       link: "fakeLink",
     },
 
@@ -63,9 +52,25 @@ const Week1Div = () => {
       text: "Introduction and Useful Info",
       link: "fakeLink",
     },
+    {
+      text: "Flare Design System",
+      link: "fakeLink",
+    },
+    {
+      text: "JIRA",
+      link: "fakeLink",
+    },
+    {
+      text: "Miro",
+      link: "fakeLink",
+    },
+    {
+      text: "Workday",
+      link: "fakeLink",
+    },
 
     {
-      text: "Savings Cheat Sheet",
+      text: "SEMrush",
       link: "fakeLink",
     },
   ]);
@@ -123,10 +128,10 @@ const Week1Div = () => {
       {/* ---------- RESOURCES ---------- */}
 
       <ResourcesComponent
-        resources={marketingDevAllResources}
-        varient="devWeek1Resources"
-        mainDiv="devWeek1MainResourceDiv"
-        resourceItem="devWeek1ResourceItem"
+        resources={marketingAllResources}
+        varient="markingWeek1Resources"
+        mainDiv="marketingWeek1ResourcesDiv"
+        resourceItem="marketingWeek1ResourceItem"
       />
 
       {/* ---------- GET COMPLIANT ---------- */}
