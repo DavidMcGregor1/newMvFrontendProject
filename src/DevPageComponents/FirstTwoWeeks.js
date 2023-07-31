@@ -15,7 +15,7 @@ const FirstTwoWeeks = () => {
   const [getUpToSpeedList, setGetUpToSpeedList] = useState([
     "Take a look at the New Starter Knowledge base",
     "Take a look at Getting Started In Digital",
-    "Familiarise yourself with the digital ordanisation and roles responsibilities of different functions by reviewing the Contextual Org Chart",
+    "Familiarise yourself with the digital organisation and roles responsibilities of different functions by reviewing the Contextual Org Chart",
     "Get a feel of what's going on in digital by watching the most recent Village Halls.",
     "Familiarise yourself with key 'need to know/be aware of' concepts such as: IT Development Framework, Software pipeline and SDLC, Architecture decision records (ADRs) - You will receive mandatory workday learning modules on each of these",
   ]);

@@ -15,10 +15,17 @@ const MarketingFirstTwoWeeks = () => {
   const [getUpToSpeedList, setGetUpToSpeedList] = useState([
     "Take a look at the New Starter Knowledge base",
     "Get a feel of what's going on in digital by watching the most recent Village Halls.",
+    "Familiarse yourself with how the different areas in savings work together",
+    "Check sharepoint regularly to keep up to speed",
   ]);
 
   const [savingsSpecificTasksList, setSavingsSpecificTasksList] = useState([
     "Bookmark the confluence area for Active Savings",
+    "Present in your first retro",
+    "Conduct your first test",
+    "Create an email",
+    "Create / Amend a webpage",
+    "Create an article",
   ]);
 
   const [marketingTwoWeeksAllResources, setMarketingTwoWeeksAllResources] =
@@ -100,9 +107,9 @@ const MarketingFirstTwoWeeks = () => {
 
       <ResourcesComponent
         resources={marketingTwoWeeksAllResources}
-        varient="devTwoWeeksResources"
-        mainDiv="DevFirstTwoWeeksMainResourceDiv"
-        resourceItem="DevFirstTwoWeeksResourceItem"
+        varient="marketingFirstTwoWeeksResources"
+        mainDiv="marketingFirstTwoWeeksResourcesDiv"
+        resourceItem="marketingFirstTwoWeeksResourceItem"
       />
 
       {/* ---------- SAVINGS SPECIFIC TASKS ---------- */}
