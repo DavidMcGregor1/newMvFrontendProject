@@ -1,0 +1,204 @@
+/* ---------- MAIN ---------- */
+
+.sectionHeader {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#FirstMonthMainContainer {
+    width: 90vw;
+    height: 80vh;
+    padding: 1%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    border-radius: 10px;
+    gap: 20px;
+  }
+
+/* ---------- GENERAL TASKS ---------- */
+
+.generalTasks {
+    height: 80vh;
+    width: 21.5vw;
+    /* background-color: #3D8DE3; */
+    background-color: #3D8DE3;
+    grid-row: 1 / 3;
+    grid-column: 1;
+    overflow: auto;
+    border-radius: 20px;
+    padding-left: 1.5%;
+}
+
+.setUpLabel {
+    font-size: 18px;
+}
+
+.generalTasksItem {
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: 400;
+}
+
+/* ---------- REFLECTION POINTS ---------- */
+
+.FirstMonthReflectionPoints {
+    height: 37vh;
+    width: 18vw;
+    background-color: #154360;
+    grid-row: 2;
+    grid-column: 3;
+    text-align: left;
+    border-radius: 20px;
+    overflow: auto;
+    margin-left: 12%;
+}
+
+#reflectionPointsHeader {
+    padding-bottom: 5%;
+    color: white;
+}
+
+#FirstMonthAddReflectionPointInputBox {
+    height: 150px;
+    width: 80%;
+}
+
+.addReflectionPointInputDiv {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+
+/*--------------------------------------*/
+
+#devFirstMonthAddTaskInputBox {
+    height: 100px;
+    width: 80%;
+}
+
+
+
+
+
+/* ---------- Add Task ---------- */
+
+.FirstMonthDevAddTask {
+    height: 37vh;
+    width: 16vw;
+    background-color: #154360;
+    color: white;
+    grid-row: 2;
+    grid-column: 4;
+    margin-left: 10%;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+#addTaskHeader {
+    margin-bottom: 10%;
+}
+
+#addTaskInputBox {
+    height: 40px;
+    width: 80%;
+}
+
+.addTaskInputDiv {
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+.FirstMonthAddTaskButtonDiv {
+    text-align: center;
+}
+
+#FirstMonthAddTaskButton {
+    width: 140px;
+    height: 50px;
+    background-color: #01DEB2;
+    border-radius: 40px;
+    border: #02b893 solid 2px;
+}
+
+.sectionOptions {
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.FirstMonthSubmitReflectionButtonDiv {
+    text-align: center;
+}
+
+#FirstMonthSubmitReflectionButton {
+    width: 130px;
+    height: 40px;
+    background-color: #01DEB2;
+    border-radius: 40px;
+    border: #02b893 solid 2px;
+}
+
+/* ---------- GENERAL TASKS ---------- */
+
+#generalTasksHeader {
+    padding-bottom: 2%;
+}
+
+.devGeneralTasksItem {
+    padding-bottom: 2%;
+    line-height: 1.5;
+    font-size: large;
+    font-weight: 400;
+    margin-top: 4%;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    
+   
+    .FirstMonthDevAddTask {
+        margin: 0%;
+        margin-left: 2%;
+        margin-top: 0%;
+        height: 37vh;
+        width: 20vw;
+        background-color: #154360;
+        color: white;
+        grid-row: 2;
+        grid-column: 2;
+        border-radius: 20px;
+        overflow: auto;
+    }
+
+    .FirstMonthReflectionPoints {
+        height: 37vh;
+        width: 38vw;
+        background-color: #154360;
+        grid-row: 2;
+        grid-column: 3 / 5;
+        text-align: left;
+        border-radius: 20px;
+        overflow: auto;
+        margin-left: 6%;
+        margin-top: 0%;
+    }
+
+    .FirstMonthDevResources {
+        margin-left: 6%;
+        height: 40vh;
+        width: 38vw;
+        background-color: #3D8DE3;
+        grid-row: 1;
+        grid-column: 3 / 5;
+        border-radius: 20px;
+        padding-left: 1%;
+        overflow: auto;
+        text-align: center;
+      }
+  }
