@@ -70,52 +70,52 @@ function TesterWeek1() {
   const [testerAllResourcesList, setTesterAllResourcesList] = useState([
     {
       text: "Active Savings Confluence Page",
-      link: "https://tinyurl.com/bdebdtfv",
+      link: "Fake Link",
     },
     {
       text: "Software to install",
-      link: "https://tinyurl.com/bdh8wntf",
+      link: "Fake Link",
     },
     {
       text: "Overview of Savings Architecture",
-      link: "https://tinyurl.com/2c8xw43j",
+      link: "Fake Link",
     },
     {
       text: "Workday",
-      link: "https://wd3.myworkday.com/hargreaveslansdown/",
+      link: "Fake Link",
     },
     {
       text: "Jenkins",
-      link: "https://jenkins-savings.hargreaveslansdown.co.uk/",
+      link: "Fake Link",
     },
     {
       text: "Sonar Qube",
-      link: "https://sonarqube.hargreaveslansdown.co.uk/projects",
+      link: "Fake Link",
     },
     {
       text: "New Tester Guide",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494511028/New+QA+Tester",
+      link: "Fake Link",
     },
     {
       text: "Quick Start Guide",
-      link: "https://tinyurl.com/mr4c6s6p",
+      link: "Fake Link",
     },
 
     {
       text: "GitLab Access Guide",
-      link: "https://tinyurl.com/y4ebnwsc",
+      link: "Fake Link",
     },
     {
       text: "Introduction and Useful Info",
-      link: "https://tinyurl.com/3m292v48",
+      link: "Fake Link",
     },
     {
       text: "Savings Cheat Sheet",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494518362/Savings+Cheat+Sheet",
+      link: "Fake Link",
     },
     {
       text: "All about the code",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494503134/All+about+the+code",
+      link: "Fake Link",
     },
   ]);
 

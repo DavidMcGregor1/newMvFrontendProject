@@ -35,43 +35,43 @@ function FirstTwoWeeks() {
   const [testerTwoWeeksAllResources, setTesterTwoWeeksAllResources] = useState([
     {
       text: "New Starter Knowledge Base",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/ID/pages/551256793/New+Starter+Knowledge+Base",
+      link: "Fake Link",
     },
     {
       text: "Get Started In Digital",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/ID/pages/564134589/Getting+started+in+Digital",
+      link: "Fake Link",
     },
     {
       text: "Contextual Org Chart",
-      link: "https://miro.com/app/board/uXjVOQHpSz8=/?share_link_id=903609960752",
+      link: "Fake Link",
     },
     {
       text: "Village Halls",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/ID/pages/530057952/Village+halls",
+      link: "Fake Link",
     },
     {
       text: "Quick Start Guide",
-      link: "https://tinyurl.com/mr4c6s6p",
+      link: "Fake Link",
     },
     {
       text: "GitLab Access Guide",
-      link: "https://tinyurl.com/y4ebnwsc",
+      link: "Fake Link",
     },
     {
       text: "Coding Standards Miro",
-      link: "https://miro.com/app/board/uXjVPOIesoM=/",
+      link: "Fake Link",
     },
     {
       text: "Active Savings Confluence Space",
-      link: "https://confluence.hargreaveslansdown.co.uk/display/AS/Active+Savings",
+      link: "Fake Link",
     },
     {
       text: "HL Savings Digital Library",
-      link: "https://tinyurl.com/2c8xw43j",
+      link: "Fake Link",
     },
     {
       text: "DSApp Code Layers",
-      link: "https://tinyurl.com/5a3db2uu",
+      link: "Fake Link",
     },
   ]);
 

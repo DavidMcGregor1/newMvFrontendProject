@@ -28,32 +28,32 @@ function OpsFirstTwoWeeks() {
   const [opsTwoWeeksAllResources, setOpsTwoWeeksAllResources] = useState([
     {
       text: "Active Savings Confluence Space",
-      link: "https://confluence.hargreaveslansdown.co.uk/display/AS/Active+Savings",
+      link: "Fake Link",
     },
     {
       text: "Savings Cheat Sheet",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494518362/Savings+Cheat+Sheet",
+      link: "Fake Link",
     },
     {
       text: "Savings MI Procedure Guides",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494507201/Savings+MI+Procedure+Guides",
+      link: "Fake Link",
     },
     {
       text: "Operational Tasks",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494518642/Operational+Tasks",
+      link: "Fake Link",
     },
 
     {
       text: "Partner Banks",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494515099/Partner+Banks",
+      link: "Fake Link",
     },
     {
       text: "Procedure Guides",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494509997/Procedure+Guides",
+      link: "Fake Link",
     },
     {
       text: "Account & Product Statuses",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494504464/Account+Product+Statuses",
+      link: "Fake Link",
     },
   ]);
 

@@ -32,11 +32,11 @@ const MarketingFirstTwoWeeks = () => {
     useState([
       {
         text: "Village Halls",
-        link: "https://hlam-collab.atlassian.net/wiki/spaces/ID/pages/530057952/Village+halls",
+        link: "Fake Link",
       },
       {
         text: "Active Savings Confluence Space",
-        link: "https://confluence.hargreaveslansdown.co.uk/display/AS/Active+Savings",
+        link: "Fake Link",
       },
       {
         text: "Overview of Savings Architecture",
@@ -44,11 +44,11 @@ const MarketingFirstTwoWeeks = () => {
       },
       {
         text: "Workday",
-        link: "https://wd3.myworkday.com/hargreaveslansdown/",
+        link: "Fake Link",
       },
       {
         text: "Savings Cheat Sheet",
-        link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494518362/Savings+Cheat+Sheet",
+        link: "Fake Link",
       },
     ]);
 

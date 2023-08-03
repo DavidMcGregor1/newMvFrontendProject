@@ -26,31 +26,31 @@ const OpsFirstMonth = () => {
   const [opsFirstMonthAllResources, setOpsFirstMonthAllResources] = useState([
     {
       text: "SAFE Roles & Permissions",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494505474/Roles+Permissions",
+      link: "Fake Link",
     },
     {
       text: "Easy Access Interest Rates and Changes",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494503444/Easy+Access+Interest+Rates+and+Changes",
+      link: "Fake Link",
     },
     {
       text: "Live Banks List",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494517340/Banks",
+      link: "Fake Link",
     },
     {
       text: "Debit Card Payments",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494507278/Debit+Card+Payments",
+      link: "Fake Link",
     },
     {
       text: "Deceased / Break Procedure",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494506976/Deceased+Break+Procedure",
+      link: "Fake Link",
     },
     {
       text: "Duplicate Clients Scenario",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/686948841/Duplicate+Clients",
+      link: "Fake Link",
     },
     {
       text: "HLSL Reporting",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494509526/HLSL+Reporting",
+      link: "Fake Link",
     },
   ]);
 

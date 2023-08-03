@@ -38,44 +38,44 @@ function OpsWeek1() {
   const [opsAllResources, setOpsAllResources] = useState([
     {
       text: "Active Savings Confluence Page",
-      link: "https://tinyurl.com/bdebdtfv",
+      link: "Fake Link",
     },
     {
       text: "Overview of Savings Architecture",
-      link: "https://tinyurl.com/2c8xw43j",
+      link: "Fake Link",
     },
     {
       text: "Operations Confluence Page",
-      link: "https://hlam-collab.atlassian.net/wiki/spaces/AS/pages/494512486/Savings+Operations",
+      link: "Fake Link",
     },
     {
       text: "Request K drive access",
-      link: "https://hlprod.service-now.com/sp?id=sc_cat_item&sys_id=9b77a1a81ba93c1099a58594e34bcb11&referrer=popular_items",
+      link: "Fake Link",
     },
     {
       text: "Introduction and Useful Info",
-      link: "https://tinyurl.com/3m292v48",
+      link: "Fake Link",
     },
     {
       text: "Atlas",
-      link: "https://atlas/client_search/client_search",
+      link: "Fake Link",
     },
     {
       text: "Stripe",
-      link: "https://dashboard.stripe.com/login",
+      link: "Fake Link",
     },
     {
       text: "SAFE",
-      link: "https://dsadminportal/admin/",
+      link: "Fake Link",
     },
 
     {
       text: "JIRA",
-      link: "https://hlam-collab.atlassian.net/jira/software/c/projects/AS/boards/199",
+      link: "Fake Link",
     },
     {
       text: "Workday",
-      link: "https://wd3.myworkday.com/hargreaveslansdown/",
+      link: "Fake Link",
     },
   ]);
 
