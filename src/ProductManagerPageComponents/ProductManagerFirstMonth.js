@@ -16,7 +16,6 @@ const FirstMonth = () => {
 
   const [generalTasks, setGeneralTasks] = useState([
     "Keep getting involved in group discussions",
-    "Complete a ticket independently",
     "Fill out reflection points on any areas that could be improved.",
     "Set up regular catch ups with your manager and buddy",
     "Have a think about what you want to spend your training budget on",

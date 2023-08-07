@@ -10,7 +10,7 @@ import GetCompliantSection from "../UniversalComponents/GetCompliantSection";
 import PeopleToMeetSection from "../UniversalComponents/PeopleToMeetSection";
 
 const Week1Div = () => {
-  const zeusSquatPeopleToMeet = [
+  const zeusSquadPeopleToMeet = [
     "Zeus Squad Member 1",
     "Zeus Squad Member 2",
     "Zeus Squad Member 3",
@@ -19,7 +19,7 @@ const Week1Div = () => {
     "Zeus Squad Member 6",
   ];
 
-  const prosperitySquatPeopleToMeet = [
+  const prosperitySquadPeopleToMeet = [
     "Prosperity Squad Member 1",
     "Prosperity Squad Member 2",
     "Prosperity Squad Member 3",
@@ -41,9 +41,9 @@ const Week1Div = () => {
 
   const [chosenArray, setChosenArray] = useState(
     developmentSquad === "Zeus"
-      ? zeusSquatPeopleToMeet
+      ? zeusSquadPeopleToMeet
       : developmentSquad === "Prosperity"
-      ? prosperitySquatPeopleToMeet
+      ? prosperitySquadPeopleToMeet
       : automatesSquadPeopleToMeet
   );
 

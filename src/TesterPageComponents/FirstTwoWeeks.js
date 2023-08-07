@@ -24,7 +24,7 @@ function FirstTwoWeeks() {
   const [savingsSpecificTasksList, setSavingsSpecificTasksList] = useState([
     "Bookmark the confluence area for Active Savings",
     "Take a look at the digital library - an index page into the active savings confluence space",
-    "Take part in a squat retro meeting. If you don't have an invite, contact your product manager.",
+    "Take part in a squad retro meeting. If you don't have an invite, contact your product manager.",
     "Take part in a squad planning meeting. If you don't have an invite, contact your product manager",
     "Review squad code in a merge request",
     "Get a feel for how we review code and what our code looks like. Make any comments you like on the code review",
