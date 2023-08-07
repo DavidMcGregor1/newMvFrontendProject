@@ -1,0 +1,175 @@
+/* ---------- MAIN ---------- */
+
+
+.sectionHeader {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/* ---------- SAVINGS SPECIFIC TASKS ---------- */
+
+
+.savingsSpecificTaskListItem {
+    padding-bottom: 2%;
+    line-height: 1.5;
+    font-size: large;
+    font-weight: 400;
+}
+
+.savingsSpecificTasksHeader {
+    height: 37vh;
+    width: 33.5vw;
+    grid-row: 2;
+    grid-column: 1 / 3;
+    overflow: auto;
+    border-radius: 20px;
+    padding-left: 1.5%;
+}
+
+.savingsSpecificTasks {
+    height: 37vh;
+    width: 33.5vw;
+    background-color: #3D8DE3;
+    grid-row: 2;
+    grid-column: 1 / 3;
+    overflow: auto;
+    border-radius: 20px;
+    padding-left: 1.5%;
+}
+/* ---------- RESOURCES ---------- */
+
+
+.devTwoWeeksResources {
+    height: 79vh;
+    width: 25vw;
+    background-color: #3D8DE3;
+    grid-row: 1 / 3;
+    grid-column: 3;
+    border-radius: 20px;
+    padding-left: 1%;
+    overflow: auto;
+    text-align: center;
+  }
+
+  .devTwoWeeksMainResourceDiv {
+    text-align: center;
+  }
+
+.resourceAnchor {
+    color: black;
+}
+
+.devFirstTwoWeeksResourceItem {
+    margin-top: 4.5%;
+    padding: 0%;
+    font-size: large;
+    font-weight: 400;
+}
+
+.sectionItems {
+    margin-top: 2%;
+}
+
+/* ---------- REFLECTION POINTS ---------- */
+
+.devTwoWeeksReflectionPoints {
+    height: 37vh;
+    width: 20vw;
+    background-color: #154360;
+    grid-row: 2;
+    grid-column: 2 / 4;
+    text-align: left;
+    border-radius: 20px;
+    overflow: auto;
+    margin-left: 7.5%;
+}
+
+#devTwoWeeksReflectionPointsHeader {
+    padding-bottom: 5%;
+    color: white;
+}
+
+#devTwoWeeksddReflectionPointInputBox {
+    height: 100px;
+    width: 80%;
+}
+
+.addReflectionPointInputDiv {
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+
+/* ---------- Add Task ---------- */
+
+.DevTwoWeeksAddTask {
+    height: 37vh;
+    width: 20vw;
+    background-color: #154360;
+    color: white;
+    grid-row: 1;
+    grid-column: 2;
+    margin-left: 15%;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+#addTaskHeader {
+    margin-bottom: 10%;
+}
+
+#devTwoWeeksAddTaskInputBox {
+    height: 40px;
+    width: 80%;
+}
+
+.addTaskInputDiv {
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+.FirstTwoWeeksAddTaskButtonDiv {
+    text-align: center;
+}
+
+#FirstTwoWeeksAddTaskButton {
+    width: 130px;
+    height: 40px;
+    background-color: #01DEB2;
+    border-radius: 40px;
+    border: #02b893 solid 2px;
+}
+
+.FirstTwoWeeksSubmitReflectionButtonDiv {
+    text-align: center;
+}
+
+#FirstTwoWeeksSubmitReflectionButton {
+    width: 130px;
+    height: 40px;
+    background-color: #01DEB2;
+    border-radius: 40px;
+    border: #02b893 solid 2px;
+}
+
+.sectionOptions {
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+/* ---------- GET UP TO SPEED ---------- */
+
+
+.getUpToSpeedTaskItem {
+    padding-bottom: 2%;
+    line-height: 1.5;
+    font-size: large;
+    font-weight: 400;
+}
+
+
+
