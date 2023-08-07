@@ -22,7 +22,10 @@ const FirstMonth = () => {
     "Attend a social event!",
   ]);
 
-  const [devFirstMonthAllResources, setDevFirstMonthAllResources] = useState([
+  const [
+    productManagerFirstMonthAllResources,
+    setProductManagerFirstMonthAllResources,
+  ] = useState([
     {
       text: "Contextual Org Chart",
       link: "Fake Link",
@@ -44,15 +47,7 @@ const FirstMonth = () => {
       link: "Fake Link",
     },
     {
-      text: "SonarQube",
-      link: "Fake Link",
-    },
-    {
       text: "Savings Cheat Sheet",
-      link: "Fake Link",
-    },
-    {
-      text: "DSApp Code Layers",
       link: "Fake Link",
     },
   ]);
@@ -101,10 +96,10 @@ const FirstMonth = () => {
       {/* ---------- RESOURCES ----------  */}
 
       <ResourcesComponent
-        resources={devFirstMonthAllResources}
-        varient="FirstMonthDevResources"
-        mainDiv="DevFirstMonthMainResourceDiv"
-        resourceItem="DevFirstMonthResourceItem"
+        resources={productManagerFirstMonthAllResources}
+        varient="productManagerFirstMonthResources"
+        mainDiv="productManagerFirstMonthMainResourceDiv"
+        resourceItem="productManagerFirstMonthResourceItem"
       />
 
       {/* ---------- REFLECTION POINTS ----------  */}
