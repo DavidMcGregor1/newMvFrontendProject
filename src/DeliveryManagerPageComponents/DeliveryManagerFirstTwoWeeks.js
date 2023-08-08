@@ -25,13 +25,12 @@ const FirstTwoWeeks = () => {
     "Take a look at the digital library - an index page into the active savings confluence space",
     "Take part in a squad retro meeting. If you don't have an invite, contact your product manager.",
     "Take part in a squad planning meeting. If you don't have an invite, contact your product manager",
-    "Review squad code in a merge request",
-    "Get a feel for how we review code and what our code looks like. Make any comments you like on the code review",
-    "Pick up your first ticket",
-    "Pair with another developer - work on a ticket with another developer in the squad to learn more about how we work",
   ]);
 
-  const [devTwoWeeksAllResources, setDevTwoWeeksAllResources] = useState([
+  const [
+    deliveryManagerFirstTwoWeeksResources,
+    setDeliveryManagerFirstTwoWeeksResources,
+  ] = useState([
     {
       text: "New Starter Knowledge Base",
       link: "Fake Link",
@@ -61,31 +60,7 @@ const FirstTwoWeeks = () => {
       link: "Fake Link",
     },
     {
-      text: "Quick Start Guide",
-      link: "Fake Link",
-    },
-    {
-      text: "GitLab Access Guide",
-      link: "Fake Link",
-    },
-    {
       text: "Jenkins",
-      link: "Fake Link",
-    },
-    {
-      text: "Coding Standards Miro",
-      link: "Fake Link",
-    },
-    {
-      text: "SonarQube",
-      link: "Fake Link",
-    },
-    {
-      text: "Workday",
-      link: "Fake Link",
-    },
-    {
-      text: "Savings Cheat Sheet",
       link: "Fake Link",
     },
   ]);
@@ -144,10 +119,10 @@ const FirstTwoWeeks = () => {
       {/* ---------- RESOURCES ---------- */}
 
       <ResourcesComponent
-        resources={devTwoWeeksAllResources}
-        varient="devTwoWeeksResources"
-        mainDiv="DevFirstTwoWeeksMainResourceDiv"
-        resourceItem="DevFirstTwoWeeksResourceItem"
+        resources={deliveryManagerFirstTwoWeeksResources}
+        varient="deliveryManagerFirstTwoWeeksResources"
+        mainDiv="deliveryManagerFirstTwoWeeksMainResourceDiv"
+        resourceItem="deliveryManagerFirstTwoWeeksResourceItem"
       />
 
       {/* ---------- SAVINGS SPECIFIC TASKS ---------- */}

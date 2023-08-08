@@ -10,42 +10,14 @@ import GetCompliantSection from "../UniversalComponents/GetCompliantSection";
 import PeopleToMeetSection from "../UniversalComponents/PeopleToMeetSection";
 
 const Week1Div = () => {
-  const zeusSquadPeopleToMeet = [
-    "Zeus Squad Member 1",
-    "Zeus Squad Member 2",
-    "Zeus Squad Member 3",
-    "Zeus Squad Member 4",
-    "Zeus Squad Member 5",
-    "Zeus Squad Member 6",
-  ];
-
-  const prosperitySquadPeopleToMeet = [
-    "Prosperity Squad Member 1",
-    "Prosperity Squad Member 2",
-    "Prosperity Squad Member 3",
-    "Prosperity Squad Member 4",
-    "Prosperity Squad Member 5",
-    "Prosperity Squad Member 6",
-  ];
-
-  const automatesSquadPeopleToMeet = [
-    "Automates Squad Member 1",
-    "Automates Squad Member 2",
-    "Automates Squad Member 3",
-    "Automates Squad Member 4",
-    "Automates Squad Member 5",
-    "Automates Squad Member 6",
-  ];
-
-  const developmentSquad = "Zeus";
-
-  const [chosenArray, setChosenArray] = useState(
-    developmentSquad === "Zeus"
-      ? zeusSquadPeopleToMeet
-      : developmentSquad === "Prosperity"
-      ? prosperitySquadPeopleToMeet
-      : automatesSquadPeopleToMeet
-  );
+  const [chosenArray, setChosenArray] = useState([
+    "Delivery Manager Person 1",
+    "Delivery Manager Person 2",
+    "Delivery Manager Person 3",
+    "Delivery Manager Person 4",
+    "Delivery Manager Person 5",
+    "Delivery Manager Person 6",
+  ]);
 
   const [basicSetUpTasks, setBasicSetUpTasks] = useState([
     "Check access to systems",
@@ -65,7 +37,10 @@ const Week1Div = () => {
     "Complete payroll form (sent via email) and send to (replace with real email)",
   ]);
 
-  const [devAllResources, setDevAllResources] = useState([
+  const [
+    deliveryManagerWeek1AllResources,
+    setDeliveryManagerWeek1AllResources,
+  ] = useState([
     {
       text: "Active Savings Confluence Page",
       link: "fakeLink",
@@ -82,28 +57,6 @@ const Week1Div = () => {
       text: "Workday",
       link: "fakeLink",
     },
-    {
-      text: "Jenkins",
-      link: "fakeLink",
-    },
-
-    {
-      text: "Quick Start Guide",
-      link: "fakeLink",
-    },
-    {
-      text: "Development Setup Guide",
-      link: "fakeLink",
-    },
-    {
-      text: "GitLab Access Guide",
-      link: "fakeLink",
-    },
-    {
-      text: "Introduction and Useful Info",
-      link: "fakeLink",
-    },
-
     {
       text: "Savings Cheat Sheet",
       link: "fakeLink",
@@ -167,10 +120,10 @@ const Week1Div = () => {
       {/* ---------- RESOURCES ---------- */}
 
       <ResourcesComponent
-        resources={devAllResources}
-        varient="devWeek1Resources"
-        mainDiv="devWeek1MainResourceDiv"
-        resourceItem="devWeek1ResourceItem"
+        resources={deliveryManagerWeek1AllResources}
+        varient="deliveryManagerWeek1Resources"
+        mainDiv="deliveryManagerWeek1MainResourceDiv"
+        resourceItem="deliveryManagerWeek1ResourceItem"
       />
 
       {/* ---------- GET COMPLIANT ---------- */}

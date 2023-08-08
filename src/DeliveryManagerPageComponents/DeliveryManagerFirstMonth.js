@@ -23,7 +23,10 @@ const FirstMonth = () => {
     "Attend a social event!",
   ]);
 
-  const [devFirstMonthAllResources, setDevFirstMonthAllResources] = useState([
+  const [
+    deliveryManagerFirstMonthAllResources,
+    setDeliveryManagerFirstMonthAllResources,
+  ] = useState([
     {
       text: "Contextual Org Chart",
       link: "Fake Link",
@@ -45,15 +48,7 @@ const FirstMonth = () => {
       link: "Fake Link",
     },
     {
-      text: "SonarQube",
-      link: "Fake Link",
-    },
-    {
       text: "Savings Cheat Sheet",
-      link: "Fake Link",
-    },
-    {
-      text: "DSApp Code Layers",
       link: "Fake Link",
     },
   ]);
@@ -102,10 +97,10 @@ const FirstMonth = () => {
       {/* ---------- RESOURCES ----------  */}
 
       <ResourcesComponent
-        resources={devFirstMonthAllResources}
-        varient="FirstMonthDevResources"
-        mainDiv="DevFirstMonthMainResourceDiv"
-        resourceItem="DevFirstMonthResourceItem"
+        resources={deliveryManagerFirstMonthAllResources}
+        varient="DeliveryManagerWeek1Resources"
+        mainDiv="DeliveryManagerFirstMonthMainResourceDiv"
+        resourceItem="DeliveryManagerFirstMonthResourceItem"
       />
 
       {/* ---------- REFLECTION POINTS ----------  */}

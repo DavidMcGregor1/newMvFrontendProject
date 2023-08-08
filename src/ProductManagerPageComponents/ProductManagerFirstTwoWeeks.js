@@ -25,10 +25,6 @@ const FirstTwoWeeks = () => {
     "Take a look at the digital library - an index page into the active savings confluence space",
     "Take part in a squad retro meeting",
     "Take part in a squad planning meeting",
-    "Review squad code in a merge request",
-    "Get a feel for how we review code and what our code looks like. Make any comments you like on the code review",
-    "Pick up your first ticket",
-    "Pair with another developer - work on a ticket with another developer in the squad to learn more about how we work",
   ]);
 
   const [
