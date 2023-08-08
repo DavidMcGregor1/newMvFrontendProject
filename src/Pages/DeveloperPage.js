@@ -65,14 +65,6 @@ function DeveloperPage() {
       </div>
 
       <div className="flexDiv">
-        {/* <div className="arrowDivColumn">
-          <div className="leftArrowContainer">
-            <p className="arrow" onClick={goBackward}>
-              &lt;
-            </p>
-          </div>
-        </div> */}
-
         <div ref={(el) => (divRefs.current[0] = el)}>
           <Week1Div />
         </div>
@@ -89,13 +81,7 @@ function DeveloperPage() {
           <FirstMonth />
         </div>
 
-        <div className="arrowDivColumnR">
-          {/* <div className="rightArrowContainer">
-            <p className="arrow" onClick={goForward}>
-              &gt;
-            </p>
-          </div> */}
-        </div>
+        <div className="arrowDivColumnR"></div>
       </div>
     </div>
   );
