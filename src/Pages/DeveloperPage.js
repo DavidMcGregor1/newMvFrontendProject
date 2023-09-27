@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import Week1Div from "../DevPageComponents/Week1Div";
 import FirstTwoWeeks from "../DevPageComponents/FirstTwoWeeks";
 import FirstMonth from "../DevPageComponents/FirstMonth";
+import TaskList from "../UniversalComponents/TaskList";
 
 function DeveloperPage() {
   const [activeDiv, setActiveDiv] = useState("div1");
@@ -72,7 +73,8 @@ function DeveloperPage() {
         <div
           ref={(el) => (divRefs.current[1] = el)}
           style={{ display: "none" }}>
-          <FirstTwoWeeks />
+          {/* <FirstTwoWeeks /> */}
+          <TaskList />
         </div>
 
         <div
