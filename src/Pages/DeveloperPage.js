@@ -73,8 +73,7 @@ function DeveloperPage() {
         <div
           ref={(el) => (divRefs.current[1] = el)}
           style={{ display: "none" }}>
-          {/* <FirstTwoWeeks /> */}
-          <TaskList />
+          <FirstTwoWeeks />
         </div>
 
         <div
