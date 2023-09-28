@@ -48,18 +48,6 @@ const Week1Div = () => {
       : automatesSquadPeopleToMeet
   );
 
-  // useEffect(() => {
-  //   // Fetch tasks from your API when the component mounts
-  //   axios
-  //     .get("http://127.0.0.1:3001/api/tasks")
-  //     .then((response) => {
-  //       setTasks(response.data);
-  //     })
-  //     .catch((error) => {
-  //       console.error(error);
-  //     });
-  // }, []); // Empty dependency array to run the effect once
-
   const [basicSetUpTasks, setBasicSetUpTasks] = useState([
     "Check access to systems",
     "Go through the Development Setup guide",
