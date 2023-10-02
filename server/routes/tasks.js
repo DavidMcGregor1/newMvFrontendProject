@@ -1,10 +1,7 @@
-// backend/routes/tasks.js
-
 const express = require("express");
 const router = express.Router();
-const Task = require("../models/task"); // Import the Task Model
+const Task = require("../models/task");
 
-// Create a new task
 router.post("/tasks", async (req, res) => {
   try {
     const newTask = new Task(req.body);
@@ -20,7 +17,6 @@ router.get("/", (req, res) => {
   res.json({ message: "API is working" });
 });
 
-// Get all tasks
 router.get("/tasks", async (req, res) => {
   try {
     const tasks = await Task.find();
@@ -30,7 +26,5 @@ router.get("/tasks", async (req, res) => {
     res.status(500).json({ error: "Error fetching tasks" });
   }
 });
-
-// ... Define other API endpoints related to tasks ...
 
 module.exports = router;

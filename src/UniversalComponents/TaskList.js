@@ -5,7 +5,6 @@ function TaskList() {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    // Fetch tasks from your API when the component mounts
     axios
       .get("http://127.0.0.1:3001/api/tasks")
       .then((response) => {
@@ -14,7 +13,7 @@ function TaskList() {
       .catch((error) => {
         console.error(error);
       });
-  }, []); // Empty dependency array to run the effect once
+  }, []);
 
   return (
     <div>
